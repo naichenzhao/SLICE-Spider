@@ -18,4 +18,4 @@ Parts needed per spider
 - 12x M3 flanged bearing for joints: https://www.amazon.com/uxcell-Flanged-3x6x2-5mm-Shielded-Bearings/dp/B08H27NJ5N/ref=sr_1_4?keywords=M3+bearing&qid=1695672434&s=industrial&sr=1-4
 - 16x M2 threaded heat insert: https://www.mcmaster.com/94180A307/
 
-- Assortment of M2 and M3 screws
+- Assortment of M2 and M3 screws/nuts
