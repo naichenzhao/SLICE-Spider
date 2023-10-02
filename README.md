@@ -2,6 +2,8 @@
 
 something something, torque controlled robot spider
 
+![Screenshot 2023-09-25 160851](https://github.com/naichenzhao/SLICE-Spider/assets/49353868/ed1bb13b-3f3b-442c-b42c-5fdb1a0802e2)
+
 
 ## Manufacturing
 - SLS_Leg_Lower and SLS_Lever_Lower can be laser cut out of acrylic
