@@ -36,11 +36,10 @@
     </visual>
     <collision>
       <origin
-        xyz="0 0 0"
+        xyz="0.027 -0.0525 0.035"
         rpy="0 0 0" />
       <geometry>
-        <mesh
-          filename="package://spider-viz/meshes/base_link.STL" />
+        <box size="0.07 0.07 0.01" />
       </geometry>
     </collision>
   </link>
@@ -76,11 +75,10 @@
     </visual>
     <collision>
       <origin
-        xyz="0 0 0"
+        xyz="0.02 0.0135 0"
         rpy="0 0 0" />
       <geometry>
-        <mesh
-          filename="package://spider-viz/meshes/upper_11.STL" />
+        <box size="0.06 0.01 0.015" />
       </geometry>
     </collision>
   </link>
@@ -134,11 +132,10 @@
     </visual>
     <collision>
       <origin
-        xyz="0 0 0"
+        xyz="0 -0.015 -0.012"
         rpy="0 0 0" />
       <geometry>
-        <mesh
-          filename="package://spider-viz/meshes/lower_11.STL" />
+        <box size="0.005 0.09 0.01" />
       </geometry>
     </collision>
   </link>
@@ -187,11 +184,10 @@
     </visual>
     <collision>
       <origin
-        xyz="0 0 0"
+        xyz="0.02 0.0135 0"
         rpy="0 0 0" />
       <geometry>
-        <mesh
-          filename="package://spider-viz/meshes/upper_21.STL" />
+        <box size="0.06 0.01 0.015" />
       </geometry>
     </collision>
   </link>
@@ -245,11 +241,10 @@
     </visual>
     <collision>
       <origin
-        xyz="0 0 0"
+        xyz="0 -0.015 -0.012"
         rpy="0 0 0" />
       <geometry>
-        <mesh
-          filename="package://spider-viz/meshes/lower_21.STL" />
+        <box size="0.005 0.09 0.01" />
       </geometry>
     </collision>
   </link>
@@ -298,11 +293,10 @@
     </visual>
     <collision>
       <origin
-        xyz="0 0 0"
+        xyz="0.02 0.0135 0"
         rpy="0 0 0" />
       <geometry>
-        <mesh
-          filename="package://spider-viz/meshes/upper_32.STL" />
+        <box size="0.06 0.01 0.015" />
       </geometry>
     </collision>
   </link>
@@ -356,11 +350,10 @@
     </visual>
     <collision>
       <origin
-        xyz="0 0 0"
+        xyz="0 -0.015 -0.012"
         rpy="0 0 0" />
       <geometry>
-        <mesh
-          filename="package://spider-viz/meshes/lower_32.STL" />
+        <box size="0.005 0.09 0.01" />
       </geometry>
     </collision>
   </link>
@@ -409,11 +402,10 @@
     </visual>
     <collision>
       <origin
-        xyz="0 0 0"
+        xyz="0.02 0.0135 0"
         rpy="0 0 0" />
       <geometry>
-        <mesh
-          filename="package://spider-viz/meshes/upper_42.STL" />
+        <box size="0.06 0.01 0.015" />
       </geometry>
     </collision>
   </link>
@@ -467,11 +459,10 @@
     </visual>
     <collision>
       <origin
-        xyz="0 0 0"
+        xyz="0 -0.015 -0.012"
         rpy="0 0 0" />
       <geometry>
-        <mesh
-          filename="package://spider-viz/meshes/lower_42.STL" />
+        <box size="0.005 0.09 0.01" />
       </geometry>
     </collision>
   </link>
