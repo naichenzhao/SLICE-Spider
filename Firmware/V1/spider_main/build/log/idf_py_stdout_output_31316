@@ -1,0 +1,165 @@
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x1 (POWERON),boot:0x4 (DOWNLOAD(USB/UART0/SDIO_FEI_FEO))
+waiting for download
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875720,len:0x1804
+load:0x4086c410,len:0xddc
+load:0x4086e610,len:0x2dfc
+entry 0x4086c41a
+[0;32mI (23) boot: ESP-IDF v5.3-dev-1043-g8c9e29898f 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Dec 28 2023 17:36:40[0m
+[0;32mI (24) boot: chip revision: v0.0[0m
+[0;32mI (28) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (33) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (81) boot: End of partition table[0m
+[0;32mI (85) esp_image: segment 0: paddr=00010020 vaddr=42018020 size=096e0h ( 38624) map[0m
+[0;32mI (102) esp_image: segment 1: paddr=00019708 vaddr=40800000 size=06910h ( 26896) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=10ec4h ( 69316) map[0m
+[0;32mI (125) esp_image: segment 3: paddr=00030eec vaddr=40806910 size=03b84h ( 15236) load[0m
+[0;32mI (129) esp_image: segment 4: paddr=00034a78 vaddr=4080a4a0 size=01334h (  4916) load[0m
+[0;32mI (134) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (136) boot: Disabling RNG early entropy source...[0m
+[0;32mI (153) cpu_start: Unicore app[0m
+[0;33mW (162) clk: esp_perip_clk_init() has not been implemented yet[0m
+[0;32mI (169) cpu_start: Pro cpu start user code[0m
+[0;32mI (169) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (169) cpu_start: Application information:[0m
+[0;32mI (172) cpu_start: Project name:     app-template[0m
+[0;32mI (177) cpu_start: App version:      d5c3689-dirty[0m
+[0;32mI (183) cpu_start: Compile time:     Dec 28 2023 17:39:08[0m
+[0;32mI (189) cpu_start: ELF file SHA256:  f839afd78...[0m
+[0;32mI (194) cpu_start: ESP-IDF:          v5.3-dev-1043-g8c9e29898f[0m
+[0;32mI (201) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (205) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (210) cpu_start: Chip rev:         v0.0[0m
+[0;32mI (215) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (222) heap_init: At 4080C7A0 len 0006FE70 (447 KiB): RAM[0m
+[0;32mI (228) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (234) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (241) spi_flash: detected chip: generic[0m
+[0;32mI (245) spi_flash: flash io: dio[0m
+[0;33mW (249) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (263) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (269) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (276) coexist: coex firmware version: c02915e[0m
+[0;32mI (291) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (291) main_task: Started on CPU0[0m
+[0;32mI (291) main_task: Calling app_main()[0m
+[0;32mI (291) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0] Hello world!
+[1] Hello world!
+[2] Hello world!
+[3] Hello world!
+[4] Hello world!
+[5] Hello world!
+[6] Hello world!
+[7] Hello world!
+[8] Hello world!
+[9] Hello world!
+[10] Hello world!
+[11] Hello world!
+[12] Hello world!
+[13] Hello world!
+[14] Hello world!
+[15] Hello world!
+[16] Hello world!
+[17] Hello world!
+[18] Hello world!
+[19] Hello world!
+[20] Hello world!
+[21] Hello world!
+[22] Hello world!
+[23] Hello world!
+[24] Hello world!
+[25] Hello world!
+[26] Hello world!
+[27] Hello world!
+[28] Hello world!
+[29] Hello world!
+[30] Hello world!
+[31] Hello world!
+[32] Hello world!
+[33] Hello world!
+[34] Hello world!
+[35] Hello world!
+[36] Hello world!
+[37] Hello world!
+[38] Hello world!
+[39] Hello world!
+[40] Hello world!
+[41] Hello world!
+[42] Hello world!
+[43] Hello world!
+[44] Hello world!
+[45] Hello world!
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875720,len:0x1804
+load:0x4086c410,len:0xddc
+load:0x4086e610,len:0x2dfc
+entry 0x4086c41a
+[0;32mI (23) boot: ESP-IDF v5.3-dev-1043-g8c9e29898f 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Dec 28 2023 17:36:40[0m
+[0;32mI (24) boot: chip revision: v0.0[0m
+[0;32mI (28) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (33) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (81) boot: End of partition table[0m
+[0;32mI (85) esp_image: segment 0: paddr=00010020 vaddr=42018020 size=096e0h ( 38624) map[0m
+[0;32mI (102) esp_image: segment 1: paddr=00019708 vaddr=40800000 size=06910h ( 26896) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=10ec4h ( 69316) map[0m
+[0;32mI (125) esp_image: segment 3: paddr=00030eec vaddr=40806910 size=03b84h ( 15236) load[0m
+[0;32mI (129) esp_image: segment 4: paddr=00034a78 vaddr=4080a4a0 size=01334h (  4916) load[0m
+[0;32mI (134) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (136) boot: Disabling RNG early entropy source...[0m
+[0;32mI (153) cpu_start: Unicore app[0m
+[0;33mW (162) clk: esp_perip_clk_init() has not been implemented yet[0m
+[0;32mI (169) cpu_start: Pro cpu start user code[0m
+[0;32mI (169) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (169) cpu_start: Application information:[0m
+[0;32mI (172) cpu_start: Project name:     app-template[0m
+[0;32mI (177) cpu_start: App version:      d5c3689-dirty[0m
+[0;32mI (183) cpu_start: Compile time:     Dec 28 2023 17:39:08[0m
+[0;32mI (189) cpu_start: ELF file SHA256:  f839afd78...[0m
+[0;32mI (194) cpu_start: ESP-IDF:          v5.3-dev-1043-g8c9e29898f[0m
+[0;32mI (201) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (205) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (210) cpu_start: Chip rev:         v0.0[0m
+[0;32mI (215) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (222) heap_init: At 4080C7A0 len 0006FE70 (447 KiB): RAM[0m
+[0;32mI (228) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (234) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (241) spi_flash: detected chip: generic[0m
+[0;32mI (245) spi_flash: flash io: dio[0m
+[0;33mW (249) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (263) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (269) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (276) coexist: coex firmware version: c02915e[0m
+[0;32mI (291) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (291) main_task: Started on CPU0[0m
+[0;32mI (291) main_task: Calling app_main()[0m
+[0;32mI (291) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0] Hello world!
+[1] Hello world!
+[2] Hello world!
