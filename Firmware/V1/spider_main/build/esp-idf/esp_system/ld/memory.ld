@@ -1,10 +1,10 @@
 /*
- * SPDX-FileCopyrightText: 2022 Espressif Systems (Shanghai) CO LTD
+ * SPDX-FileCopyrightText: 2021 Espressif Systems (Shanghai) CO LTD
  *
  * SPDX-License-Identifier: Apache-2.0
  */
 /**
- *                    ESP32-C6 Linker Script Memory Layout
+ *                    ESP32-C3 Linker Script Memory Layout
  * This file describes the memory layout (memory blocks) by virtual memory addresses.
  * This linker script is passed through the C preprocessor to include configuration options.
  * Please use preprocessor features sparingly!
@@ -24,17 +24,14 @@
 /* CPU instruction prefetch padding size for flash mmap scenario */
 _esp_flash_mmap_prefetch_pad_size = 16;
 /* CPU instruction prefetch padding size for memory protection scenario */
-_esp_memprot_prefetch_pad_size = 0;
+_esp_memprot_prefetch_pad_size = 16;
 /* Memory alignment size for PMS */
-_esp_memprot_align_size = 0;
-_esp_mmu_block_size = (0x8000);
+_esp_memprot_align_size = 512;
+_esp_mmu_block_size = (0x10000);
     /* rtc timer data (s_rtc_timer_retain_mem, see esp_clk.c files). For rtc_timer_data_in_rtc_mem section. */
 /**
  * physical memory is mapped twice to the vritual address (IRAM and DRAM).
  * `I_D_SRAM_OFFSET` is the offset between the two locations of the same physical memory
- */
-/*
- * IDRAM0_2_SEG_SIZE_DEFAULT is used when page size is 64KB
  */
 MEMORY
 {
@@ -44,9 +41,9 @@ MEMORY
    *  are connected to the data port of the CPU and eg allow byte-wise access.
    */
   /* IRAM for PRO CPU. */
-  iram0_0_seg (RX) : org = (0x40800000), len = 0x4086E610 - (0x40800000 - 0x40800000) - (0x40800000)
+  iram0_0_seg (RX) : org = (0x4037C000 + 0x4000), len = 0x403CE710 - (0x4037C000 - 0x3FC7C000) - (0x3FC7C000 + 0x4000)
   /* Flash mapped instruction data */
-  irom_seg (RX) : org = 0x42000020, len = (0x8000 << 8) - 0x20
+  iram0_2_seg (RX) : org = 0x42000020, len = 0x800000-0x20
   /**
    * (0x20 offset above is a convenience for the app binary image generation.
    * Flash cache has 64KB pages. The .bin file which is flashed to the chip
@@ -58,40 +55,37 @@ MEMORY
    * Shared data RAM, excluding memory reserved for ROM bss/data/stack.
    * Enabling Bluetooth & Trace Memory features in menuconfig will decrease the amount of RAM available.
    */
-  dram0_0_seg (RW) : org = (0x40800000), len = 0x4086E610 - (0x40800000 - 0x40800000) - (0x40800000)
+  dram0_0_seg (RW) : org = (0x3FC7C000 + 0x4000), len = 0x403CE710 - (0x4037C000 - 0x3FC7C000) - (0x3FC7C000 + 0x4000)
   /* Flash mapped constant data */
-  drom_seg (R) : org = 0x42000020, len = (0x8000 << 8) - 0x20
-  /* (See irom_seg for meaning of 0x20 offset in the above.) */
+  drom0_0_seg (R) : org = 0x3C000020, len = 0x800000-0x20
+  /* (See iram0_2_seg for meaning of 0x20 offset in the above.) */
   /**
-   * lp ram memory (RWX). Persists over deep sleep. // TODO: IDF-5667
+   * RTC fast memory (executable). Persists over deep sleep.
    */
-  lp_ram_seg(RW) : org = 0x50000000, len = 0x4000 - (0 + (24))
-  /* We reduced the size of lp_ram_seg by RESERVE_RTC_MEM value.
-     It reserves the amount of LP memory that we use for this memory segment.
+  rtc_iram_seg(RWX) : org = 0x50000000, len = 0x2000 - (0 + (24))
+  /* We reduced the size of rtc_iram_seg by RESERVE_RTC_MEM value.
+     It reserves the amount of RTC fast memory that we use for this memory segment.
      This segment is intended for keeping:
        - (lower addr) rtc timer data (s_rtc_timer_retain_mem, see esp_clk.c files).
        - (higher addr) bootloader rtc data (s_bootloader_retain_mem, when a Kconfig option is on).
      The aim of this is to keep data that will not be moved around and have a fixed address.
   */
-  lp_reserved_seg(RW) : org = 0x50000000 + 0x4000 - (0 + (24)), len = (0 + (24))
+  rtc_reserved_seg(RW) : org = 0x50000000 + 0x2000 - (0 + (24)), len = (0 + (24))
 }
 /* Heap ends at top of dram0_0_seg */
 _heap_end = 0x40000000;
 _data_seg_org = ORIGIN(rtc_data_seg);
 /**
  *  The lines below define location alias for .rtc.data section
- *  C6 has no distinguished LP(RTC) fast and slow memory sections, instead, there is a unified LP_RAM section
- *  Thus, the following region segments are not configurable like on other targets
+ *  As C3 only has RTC fast memory, this is not configurable like on other targets
  */
-REGION_ALIAS("rtc_iram_seg", lp_ram_seg );
 REGION_ALIAS("rtc_data_seg", rtc_iram_seg );
 REGION_ALIAS("rtc_slow_seg", rtc_iram_seg );
 REGION_ALIAS("rtc_data_location", rtc_iram_seg );
-REGION_ALIAS("rtc_reserved_seg", lp_reserved_seg );
-  REGION_ALIAS("default_code_seg", irom_seg);
-  REGION_ALIAS("default_rodata_seg", drom_seg);
+  REGION_ALIAS("default_code_seg", iram0_2_seg);
+  REGION_ALIAS("default_rodata_seg", drom0_0_seg);
 /**
- *  If rodata default segment is placed in `drom_seg`, then flash's first rodata section must
+ *  If rodata default segment is placed in `drom0_0_seg`, then flash's first rodata section must
  *  also be first in the segment.
  */
   ASSERT(_flash_rodata_dummy_start == ORIGIN(default_rodata_seg),

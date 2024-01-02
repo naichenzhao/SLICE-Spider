@@ -7,6 +7,8 @@ idf_component_register(SRCS
     "encoder.h"
     "switch.c"
     "switch.h"
+    "i2c.h"
+    "i2c.c"
     INCLUDE_DIRS "."
     REQUIRES rotary_encoder esp_timer)
 

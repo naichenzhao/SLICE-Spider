@@ -29,13 +29,10 @@
 /Users/naichenzhao/Desktop/SLICE/SLICE-Spider/Firmware/V1/spider_main/build/esp-idf/app_trace/libapp_trace.a
 /Users/naichenzhao/Desktop/SLICE/SLICE-Spider/Firmware/V1/spider_main/build/esp-idf/esp_event/libesp_event.a
 /Users/naichenzhao/Desktop/SLICE/SLICE-Spider/Firmware/V1/spider_main/build/esp-idf/nvs_flash/libnvs_flash.a
-/Users/naichenzhao/Desktop/SLICE/SLICE-Spider/Firmware/V1/spider_main/build/esp-idf/esp_driver_pcnt/libesp_driver_pcnt.a
 /Users/naichenzhao/Desktop/SLICE/SLICE-Spider/Firmware/V1/spider_main/build/esp-idf/esp_driver_spi/libesp_driver_spi.a
-/Users/naichenzhao/Desktop/SLICE/SLICE-Spider/Firmware/V1/spider_main/build/esp-idf/esp_driver_mcpwm/libesp_driver_mcpwm.a
 /Users/naichenzhao/Desktop/SLICE/SLICE-Spider/Firmware/V1/spider_main/build/esp-idf/esp_driver_i2s/libesp_driver_i2s.a
 /Users/naichenzhao/Desktop/SLICE/SLICE-Spider/Firmware/V1/spider_main/build/esp-idf/sdmmc/libsdmmc.a
 /Users/naichenzhao/Desktop/SLICE/SLICE-Spider/Firmware/V1/spider_main/build/esp-idf/esp_driver_sdspi/libesp_driver_sdspi.a
-/Users/naichenzhao/Desktop/SLICE/SLICE-Spider/Firmware/V1/spider_main/build/esp-idf/esp_driver_sdio/libesp_driver_sdio.a
 /Users/naichenzhao/Desktop/SLICE/SLICE-Spider/Firmware/V1/spider_main/build/esp-idf/esp_driver_rmt/libesp_driver_rmt.a
 /Users/naichenzhao/Desktop/SLICE/SLICE-Spider/Firmware/V1/spider_main/build/esp-idf/esp_driver_tsens/libesp_driver_tsens.a
 /Users/naichenzhao/Desktop/SLICE/SLICE-Spider/Firmware/V1/spider_main/build/esp-idf/esp_driver_sdm/libesp_driver_sdm.a
@@ -69,7 +66,6 @@
 /Users/naichenzhao/Desktop/SLICE/SLICE-Spider/Firmware/V1/spider_main/build/esp-idf/espcoredump/libespcoredump.a
 /Users/naichenzhao/Desktop/SLICE/SLICE-Spider/Firmware/V1/spider_main/build/esp-idf/wear_levelling/libwear_levelling.a
 /Users/naichenzhao/Desktop/SLICE/SLICE-Spider/Firmware/V1/spider_main/build/esp-idf/fatfs/libfatfs.a
-/Users/naichenzhao/Desktop/SLICE/SLICE-Spider/Firmware/V1/spider_main/build/esp-idf/ieee802154/libieee802154.a
 /Users/naichenzhao/Desktop/SLICE/SLICE-Spider/Firmware/V1/spider_main/build/esp-idf/json/libjson.a
 /Users/naichenzhao/Desktop/SLICE/SLICE-Spider/Firmware/V1/spider_main/build/esp-idf/mqtt/libmqtt.a
 /Users/naichenzhao/Desktop/SLICE/SLICE-Spider/Firmware/V1/spider_main/build/esp-idf/nvs_sec_provider/libnvs_sec_provider.a

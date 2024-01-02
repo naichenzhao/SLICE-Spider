@@ -1,0 +1,44 @@
+[0;33m--- WARNING: Serial ports accessed as /dev/tty.* will hang gdb if launched.[0m
+[0;33m--- Using /dev/cu.usbserial-DU0CUKCC instead...[0m
+[0;33m--- esp-idf-monitor 1.3.4 on /dev/cu.usbserial-DU0CUKCC 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33mStack dump detected[0m
+[0;33m0x4080340a: s_i2c_handle_complete at /Users/naichenzhao/esp/esp-idf/components/esp_driver_i2c/i2c_slave.c:85
+[0m
+[0;33m0x40807c28: xTaskIncrementTick at /Users/naichenzhao/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3273
+[0m
+[0;33m0x40800001: _vector_table at ??:?
+[0m
+[0;33m
+Backtrace:
+
+[0m
+[0;33m0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33mStack dump detected[0m
+[0;33m0x4080340a: s_i2c_handle_complete at /Users/naichenzhao/esp/esp-idf/components/esp_driver_i2c/i2c_slave.c:85
+[0m
+[0;33m0x40807c28: xTaskIncrementTick at /Users/naichenzhao/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3273
+[0m
+[0;33m0x40800001: _vector_table at ??:?
+[0m
+[0;33m
+Backtrace:
+
+[0m
+[0;33m0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33mStack dump detected[0m
+[0;33m0x4080340a: s_i2c_handle_complete at /Users/naichenzhao/esp/esp-idf/components/esp_driver_i2c/i2c_slave.c:85
+[0m
+[0;33m0x40807c28: xTaskIncrementTick at /Users/naichenzhao/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3273
+[0m
+[0;33m0x40800001: _vector_table at ??:?
+[0m
+[0;33m
+Backtrace:
+
+[0m
+[0;33m0x4001975a: software_reset_cpu in ROM
+[0m
+[0m

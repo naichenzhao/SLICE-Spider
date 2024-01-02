@@ -1,0 +1,105 @@
+[0;33m--- WARNING: Serial ports accessed as /dev/tty.* will hang gdb if launched.[0m
+[0;33m--- Using /dev/cu.usbserial-DU0CUKCC instead...[0m
+[0;33m--- esp-idf-monitor 1.3.4 on /dev/cu.usbserial-DU0CUKCC 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33mStack dump detected[0m
+[0;33m0x40806e52: vPortYield at /Users/naichenzhao/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:652 (discriminator 3)
+[0m
+[0;33m0x40806e4a: vPortYield at /Users/naichenzhao/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:652 (discriminator 3)
+[0m
+[0;33m0x40807250: SysTickIsrHandler at /Users/naichenzhao/esp/esp-idf/components/freertos/port_systick.c:138 (discriminator 2)
+[0m
+[0;33m0x40028192: __retarget_lock_release_recursive in ROM
+[0m
+[0;33m0x40807d48: vTaskDelay at /Users/naichenzhao/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:1567
+[0m
+[0;33m0x40020ed6: wdt_hal_write_protect_disable in ROM
+[0m
+[0;33m0x40802b9c: tick_hook at /Users/naichenzhao/esp/esp-idf/components/esp_system/int_wdt.c:97
+[0m
+[0;33m0x408079b0: pcTaskGetName at /Users/naichenzhao/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:2737 (discriminator 1)
+[0m
+[0;33m0x40800001: _vector_table at ??:?
+[0m
+[0;33m
+Backtrace:
+
+[0m
+[0;33m0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33mStack dump detected[0m
+[0;33m0x40806e52: vPortYield at /Users/naichenzhao/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:652 (discriminator 3)
+[0m
+[0;33m0x40806e4a: vPortYield at /Users/naichenzhao/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:652 (discriminator 3)
+[0m
+[0;33m0x40807250: SysTickIsrHandler at /Users/naichenzhao/esp/esp-idf/components/freertos/port_systick.c:138 (discriminator 2)
+[0m
+[0;33m0x40028192: __retarget_lock_release_recursive in ROM
+[0m
+[0;33m0x40807d48: vTaskDelay at /Users/naichenzhao/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:1567
+[0m
+[0;33m0x40020ed6: wdt_hal_write_protect_disable in ROM
+[0m
+[0;33m0x40802b9c: tick_hook at /Users/naichenzhao/esp/esp-idf/components/esp_system/int_wdt.c:97
+[0m
+[0;33m0x408079b0: pcTaskGetName at /Users/naichenzhao/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:2737 (discriminator 1)
+[0m
+[0;33m0x40800001: _vector_table at ??:?
+[0m
+[0;33m
+Backtrace:
+
+[0m
+[0;33m0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33mStack dump detected[0m
+[0;33m0x40806e52: vPortYield at /Users/naichenzhao/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:652 (discriminator 3)
+[0m
+[0;33m0x40806e4a: vPortYield at /Users/naichenzhao/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:652 (discriminator 3)
+[0m
+[0;33m0x40807250: SysTickIsrHandler at /Users/naichenzhao/esp/esp-idf/components/freertos/port_systick.c:138 (discriminator 2)
+[0m
+[0;33m0x40028192: __retarget_lock_release_recursive in ROM
+[0m
+[0;33m0x40807d48: vTaskDelay at /Users/naichenzhao/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:1567
+[0m
+[0;33m0x40020ed6: wdt_hal_write_protect_disable in ROM
+[0m
+[0;33m0x40802b9c: tick_hook at /Users/naichenzhao/esp/esp-idf/components/esp_system/int_wdt.c:97
+[0m
+[0;33m0x408079b0: pcTaskGetName at /Users/naichenzhao/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:2737 (discriminator 1)
+[0m
+[0;33m0x40800001: _vector_table at ??:?
+[0m
+[0;33m
+Backtrace:
+
+[0m
+[0;33m0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33mStack dump detected[0m
+[0;33m0x40806e52: vPortYield at /Users/naichenzhao/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:652 (discriminator 3)
+[0m
+[0;33m0x40806e4a: vPortYield at /Users/naichenzhao/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:652 (discriminator 3)
+[0m
+[0;33m0x40807250: SysTickIsrHandler at /Users/naichenzhao/esp/esp-idf/components/freertos/port_systick.c:138 (discriminator 2)
+[0m
+[0;33m0x40028192: __retarget_lock_release_recursive in ROM
+[0m
+[0;33m0x40807d48: vTaskDelay at /Users/naichenzhao/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:1567
+[0m
+[0;33m0x40020ed6: wdt_hal_write_protect_disable in ROM
+[0m
+[0;33m0x40802b9c: tick_hook at /Users/naichenzhao/esp/esp-idf/components/esp_system/int_wdt.c:97
+[0m
+[0;33m0x408079b0: pcTaskGetName at /Users/naichenzhao/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:2737 (discriminator 1)
+[0m
+[0;33m0x40800001: _vector_table at ??:?
+[0m
+[0;33m
+Backtrace:
+
+[0m
+[0;33m0x4001975a: software_reset_cpu in ROM
+[0m
+[0m

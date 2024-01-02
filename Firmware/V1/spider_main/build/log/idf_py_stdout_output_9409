@@ -1,0 +1,2863 @@
+[0m
+[0;32mI (233) ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e34
+entry 0x403cc71a
+[0;32mI (30) boot: ESP-IDF v5.3-dev-1043-g8c9e29898f 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Dec 30 2023 23:50:17[0m
+[0;32mI (31) boot: chip revision: v0.4[0m
+[0;32mI (35) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (40) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (73) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (80) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (88) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0b148h ( 45384) map[0m
+[0;32mI (108) esp_image: segment 1: paddr=0001b170 vaddr=3fc8b600 size=012bch (  4796) load[0m
+[0;32mI (110) esp_image: segment 2: paddr=0001c434 vaddr=40380000 size=03be4h ( 15332) load[0m
+[0;32mI (120) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1af5ch (110428) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=0003af84 vaddr=40383be4 size=07954h ( 31060) load[0m
+[0;32mI (153) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (153) boot: Disabling RNG early entropy source...[0m
+[0;32mI (164) cpu_start: Unicore app[0m
+[0;32mI (173) cpu_start: Pro cpu start user code[0m
+[0;32mI (173) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (173) cpu_start: Application information:[0m
+[0;32mI (176) cpu_start: Project name:     app-template[0m
+[0;32mI (182) cpu_start: App version:      12bcd80-dirty[0m
+[0;32mI (187) cpu_start: Compile time:     Dec 30 2023 23:50:02[0m
+[0;32mI (193) cpu_start: ELF file SHA256:  364637158...[0m
+[0;32mI (199) cpu_start: ESP-IDF:          v5.3-dev-1043-g8c9e29898f[0m
+[0;32mI (205) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (210) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (215) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (219) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (227) heap_init: At 3FC8D880 len 00032780 (201 KiB): RAM[0m
+[0;32mI (233) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (240) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (247) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (254) spi_flash: detected chip: generic[0m
+[0;32mI (258) spi_flash: flash io: dio[0m
+[0;33mW (261) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (275) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (281) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (289) main_task: Started on CPU0[0m
+[0;32mI (299) main_task: Calling app_main()[0m
+[0;32mI (799) gpio: GPIO[0]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (799) gpio: GPIO[1]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+IO Expander Found!
+ESP32 Found!
+I2C Setup done
+---------- Finished Initialization ---------- 
+
+count: 0, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 1, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 2, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 3, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 4, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 5, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 6, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 7, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 8, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 9, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 10, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 11, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 12, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 13, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 14, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 15, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 16, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 17, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 18, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 19, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 20, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 21, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 22, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 23, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 24, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 25, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 26, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 27, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 28, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 29, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 30, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 31, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 32, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 33, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 34, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 35, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 36, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 37, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 38, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 39, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 40, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 41, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 42, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 43, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 44, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 45, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 46, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 47, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 48, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 49, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 50, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 51, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 52, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 53, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 54, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 55, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 56, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 57, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 58, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 59, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 60, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 61, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 62, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 63, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 64, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 65, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 66, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 67, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 68, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 69, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 70, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 71, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 72, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 73, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 74, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 75, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 76, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 77, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 78, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 79, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 80, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 81, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 82, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 83, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 84, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 85, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 86, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 87, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 88, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 89, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 90, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 91, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 92, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 93, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 94, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 95, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 96, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 97, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 98, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 99, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 100, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 101, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 102, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 103, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 104, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 105, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 106, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 107, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 108, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 109, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 110, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 111, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 112, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 113, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 114, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 115, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 116, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 117, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 118, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 119, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 120, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 121, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 122, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 123, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 124, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 125, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 126, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 127, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 128, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 129, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 130, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 131, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 132, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 133, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 134, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 135, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 136, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 137, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 138, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 139, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 140, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 141, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 142, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 143, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 144, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 145, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 146, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 147, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 148, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 149, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 150, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 151, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 152, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 153, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 154, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 155, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 156, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 157, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 158, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 159, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 160, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 161, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 162, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 163, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 164, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 165, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 166, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 167, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 168, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 169, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 170, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 171, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 172, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 173, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 174, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 175, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 176, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 177, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 178, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 179, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 180, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 181, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 182, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 183, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 184, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 185, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 186, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 187, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 188, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 189, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 190, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 191, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 192, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 193, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 194, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 195, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 196, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 197, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 198, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 199, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 200, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 201, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 202, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 203, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 204, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 205, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 206, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 207, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 208, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 209, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 210, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 211, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 212, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 213, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 214, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 215, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 216, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 217, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 218, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 219, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 220, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 221, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 222, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 223, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 224, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 225, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 226, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 227, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 228, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 229, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 230, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 231, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 232, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 233, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 234, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 235, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 236, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 237, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 238, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 239, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 240, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 241, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 242, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 243, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 244, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 245, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 246, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 247, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 248, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 249, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 250, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 251, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 252, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 253, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 254, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 255, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 0, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 1, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 2, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 3, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 4, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 5, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 6, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 7, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 8, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 9, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 10, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 11, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 12, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 13, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 14, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 15, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 16, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 17, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 18, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 19, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 20, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 21, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 22, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 23, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 24, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 25, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 26, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 27, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 28, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 29, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 30, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 31, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 32, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 33, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 34, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 35, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 36, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 37, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 38, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 39, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 40, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 41, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 42, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 43, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 44, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 45, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 46, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 47, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 48, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 49, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 50, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 51, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 52, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 53, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 54, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 55, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 56, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 57, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 58, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 59, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 60, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 61, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 62, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 63, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 64, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 65, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 66, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 67, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 68, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 69, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 70, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 71, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 72, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 73, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 74, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 75, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 76, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 77, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 78, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 79, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 80, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 81, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 82, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 83, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 84, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 85, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 86, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 87, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 88, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 89, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 90, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 91, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 92, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 93, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 94, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 95, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 96, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 97, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 98, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 99, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 100, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 101, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 102, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 103, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 104, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 105, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 106, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 107, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 108, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 109, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 110, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 111, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 112, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 113, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 114, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 115, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 116, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 117, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 118, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 119, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 120, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 121, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 122, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 123, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 124, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 125, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 126, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 127, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 128, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 129, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 130, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 131, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 132, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 133, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 134, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 135, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 136, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 137, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 138, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 139, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 140, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 141, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 142, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 143, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 144, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 145, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 146, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 147, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 148, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 149, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 150, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 151, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 152, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 153, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 154, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 155, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 156, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 157, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 158, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 159, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 160, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 161, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 162, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 163, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 164, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 165, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 166, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 167, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 168, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 169, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 170, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 171, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 172, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 173, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 174, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 175, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 176, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 177, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 178, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 179, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 180, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 181, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 182, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 183, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 184, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 185, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 186, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 187, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 188, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 189, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 190, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 191, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 192, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 193, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 194, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 195, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 196, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 197, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 198, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 199, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 200, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 201, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 202, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 203, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 204, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 205, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 206, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 207, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 208, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 209, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 210, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 211, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 212, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 213, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 214, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 215, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 216, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 217, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 218, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 219, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 220, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 221, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 222, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 223, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 224, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 225, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 226, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 227, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 228, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 229, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 230, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 231, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 232, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 233, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 234, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 235, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 236, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 237, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 238, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 239, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 240, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 241, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 242, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 243, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 244, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 245, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 246, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 247, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 248, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 249, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 250, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 251, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 252, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 253, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 254, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 255, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 0, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 1, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 2, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 3, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 4, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 5, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 6, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 7, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 8, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 9, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 10, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 11, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 12, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 13, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 14, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 15, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 16, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 17, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 18, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 19, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 20, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 21, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 22, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 23, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 24, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 25, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 26, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 27, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 28, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 29, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 30, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 31, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 32, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 33, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 34, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 35, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 36, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 37, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 38, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 39, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 40, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 41, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 42, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 43, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 44, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 45, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 46, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 47, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 48, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 49, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 50, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 51, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 52, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 53, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 54, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 55, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 56, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 57, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 58, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 59, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 60, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 61, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 62, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 63, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 64, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 65, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 66, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 67, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 68, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 69, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 70, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 71, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 72, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 73, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 74, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 75, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 76, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 77, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 78, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 79, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 80, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 81, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 82, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 83, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 84, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 85, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 86, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 87, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 88, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 89, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 90, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 91, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 92, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 93, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 94, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 95, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 96, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 97, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 98, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 99, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 100, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 101, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 102, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 103, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 104, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 105, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 106, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 107, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 108, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 109, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 110, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 111, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 112, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 113, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 114, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 115, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 116, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 117, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 118, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 119, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 120, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 121, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 122, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 123, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 124, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 125, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 126, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 127, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 128, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 129, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 130, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 131, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 132, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 133, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 134, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 135, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 136, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 137, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 138, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 139, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 140, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 141, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 142, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 143, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 144, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 145, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 146, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 147, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 148, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 149, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 150, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 151, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 152, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 153, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 154, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 155, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 156, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 157, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 158, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 159, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 160, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 161, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 162, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 163, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 164, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 165, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 166, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 167, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 168, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 169, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 170, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 171, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 172, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 173, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 174, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 175, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 176, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 177, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 178, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 179, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 180, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 181, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 182, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 183, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 184, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 185, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 186, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 187, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 188, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 189, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 190, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 191, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 192, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 193, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 194, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 195, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 196, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 197, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 198, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 199, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 200, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 201, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 202, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 203, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 204, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 205, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 206, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 207, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 208, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 209, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 210, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 211, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 212, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 213, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 214, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 215, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 216, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 217, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 218, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 219, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 220, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 221, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 222, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 223, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 224, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 225, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 226, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 227, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 228, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 229, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 230, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 231, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 232, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 233, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 234, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 235, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 236, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 237, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 238, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 239, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 240, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 241, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 242, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 243, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 244, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 245, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 246, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 247, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 248, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 249, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 250, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 251, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 252, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 253, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 254, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 255, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 0, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 1, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 2, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 3, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 4, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 5, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 6, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 7, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 8, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 9, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 10, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 11, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 12, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 13, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 14, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 15, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 16, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 17, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 18, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 19, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 20, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 21, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 22, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 23, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 24, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 25, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 26, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 27, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 28, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 29, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 30, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 31, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 32, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 33, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 34, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 35, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 36, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 37, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 38, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 39, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 40, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 41, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 42, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 43, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 44, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 45, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 46, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 47, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 48, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 49, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 50, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 51, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 52, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 53, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 54, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 55, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 56, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 57, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 58, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 59, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 60, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 61, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 62, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 63, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 64, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 65, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 66, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 67, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 68, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 69, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 70, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 71, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 72, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 73, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 74, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 75, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 76, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 77, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 78, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 79, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 80, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 81, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 82, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 83, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 84, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 85, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 86, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 87, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 88, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 89, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 90, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 91, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 92, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 93, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 94, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 95, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 96, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 97, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 98, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 99, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 100, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 101, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 102, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 103, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 104, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 105, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 106, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 107, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 108, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 109, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 110, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 111, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 112, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 113, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 114, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 115, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 116, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 117, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 118, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 119, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 120, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 121, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 122, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 123, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 124, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 125, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 126, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 127, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 128, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 129, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 130, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 131, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 132, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 133, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 134, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 135, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 136, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 137, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 138, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 139, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 140, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 141, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 142, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 143, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 144, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 145, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 146, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 147, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 148, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 149, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 150, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 151, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 152, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 153, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 154, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 155, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 156, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 157, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 158, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 159, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 160, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 161, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 162, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 163, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 164, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 165, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 166, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 167, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 168, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 169, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 170, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 171, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 172, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 173, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 174, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 175, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 176, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 177, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 178, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 179, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 180, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 181, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 182, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 183, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 184, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 185, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 186, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 187, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 188, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 189, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 190, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 191, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 192, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 193, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 194, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 195, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 196, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 197, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 198, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 199, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 200, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 201, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 202, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 203, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 204, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 205, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 206, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 207, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 208, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 209, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 210, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 211, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 212, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 213, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 214, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 215, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 216, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 217, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 218, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 219, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 220, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 221, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 222, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 223, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 224, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 225, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 226, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 227, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 228, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 229, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 230, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 231, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 232, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 233, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 234, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 235, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 236, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 237, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 238, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 239, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 240, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 241, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 242, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 243, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 244, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 245, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 246, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 247, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 248, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 249, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 250, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 251, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 252, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 253, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 254, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 255, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 0, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 1, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 2, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 3, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 4, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 5, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 6, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 7, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 8, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 9, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 10, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 11, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 12, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 13, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 14, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 15, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 16, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 17, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 18, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 19, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 20, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 21, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 22, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 23, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 24, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 25, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 26, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 27, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 28, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 29, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 30, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 31, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 32, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 33, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 34, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 35, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 36, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 37, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 38, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 39, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 40, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 41, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 42, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 43, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 44, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 45, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 46, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 47, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 48, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 49, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 50, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 51, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 52, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 53, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 54, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 55, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 56, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 57, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 58, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 59, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 60, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 61, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 62, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 63, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 64, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 65, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 66, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 67, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 68, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 69, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 70, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 71, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 72, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 73, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 74, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 75, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 76, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 77, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 78, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 79, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 80, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 81, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 82, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 83, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 84, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 85, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 86, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 87, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 88, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 89, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 90, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 91, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 92, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 93, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 94, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 95, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 96, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 97, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 98, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 99, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 100, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 101, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 102, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 103, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 104, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 105, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 106, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 107, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 108, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 109, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 110, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 111, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 112, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 113, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 114, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 115, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 116, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 117, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 118, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 119, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 120, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 121, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 122, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 123, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 124, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 125, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 126, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 127, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 128, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 129, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 130, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 131, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 132, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 133, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 134, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 135, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 136, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 137, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 138, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 139, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 140, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 141, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 142, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 143, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 144, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 145, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 146, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 147, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 148, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 149, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 150, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 151, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 152, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 153, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 154, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 155, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 156, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 157, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 158, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 159, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 160, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 161, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 162, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 163, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 164, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 165, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 166, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 167, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 168, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 169, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 170, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 171, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 172, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 173, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 174, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 175, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 176, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 177, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 178, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 179, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 180, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 181, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 182, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 183, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 184, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 185, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 186, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 187, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 188, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 189, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 190, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 191, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 192, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 193, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 194, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 195, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 196, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 197, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 198, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 199, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 200, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 201, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 202, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 203, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 204, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 205, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 206, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 207, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 208, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 209, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 210, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 211, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 212, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 213, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 214, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 215, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 216, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 217, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 218, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 219, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 220, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 221, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 222, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 223, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 224, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 225, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 226, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 227, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 228, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 229, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 230, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 231, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 232, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 233, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 234, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 235, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 236, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 237, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 238, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 239, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 240, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 241, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 242, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 243, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 244, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 245, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 246, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 247, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 248, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 249, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 250, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 251, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 252, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 253, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 254, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 255, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 0, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 1, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 2, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 3, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 4, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 5, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 6, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 7, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 8, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 9, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 10, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 11, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 12, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 13, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 14, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 15, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 16, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 17, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 18, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 19, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 20, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 21, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 22, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 23, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 24, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 25, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 26, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 27, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 28, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 29, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 30, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 31, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 32, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 33, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 34, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 35, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 36, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 37, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 38, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 39, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 40, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 41, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 42, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 43, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 44, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 45, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 46, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 47, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 48, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 49, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 50, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 51, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 52, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 53, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 54, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 55, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 56, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 57, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 58, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 59, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 60, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 61, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 62, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 63, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 64, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 65, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 66, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 67, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 68, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 69, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 70, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 71, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 72, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 73, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 74, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 75, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 76, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 77, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 78, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 79, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 80, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 81, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 82, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 83, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 84, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 85, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 86, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 87, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 88, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 89, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 90, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 91, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 92, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 93, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 94, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 95, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 96, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 97, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 98, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 99, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 100, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 101, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 102, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 103, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 104, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 105, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 106, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 107, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 108, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 109, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 110, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 111, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 112, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 113, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 114, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 115, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 116, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 117, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0
+count: 118, recieved_data: 0 0 0 0
+recieved_data: ff ff ff ff
+count: 119, recieved_data: 255 255 255 255
+recieved_data: 0 0 0 0
+count: 120, recieved_data: 0 0 0 0
+recieved_data: 0 0 0 0

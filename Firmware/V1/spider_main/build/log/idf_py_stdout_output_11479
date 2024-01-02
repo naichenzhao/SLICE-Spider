@@ -1,0 +1,112 @@
+ rev:     v0.3[0m
+�ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e34
+entry 0x403cc71a
+[0;32mI (30) boot: ESP-IDF v5.3-dev-1043-g8c9e29898f 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Dec 30 2023 23:50:17[0m
+[0;32mI (31) boot: chip revision: v0.4[0m
+[0;32mI (35) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (40) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (73) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (80) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (88) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0b198h ( 45464) map[0m
+[0;32mI (108) esp_image: segment 1: paddr=0001b1c0 vaddr=3fc8b600 size=012bch (  4796) load[0m
+[0;32mI (110) esp_image: segment 2: paddr=0001c484 vaddr=40380000 size=03b94h ( 15252) load[0m
+[0;32mI (120) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1b094h (110740) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=0003b0bc vaddr=40383b94 size=079a4h ( 31140) load[0m
+[0;32mI (153) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (153) boot: Disabling RNG early entropy source...[0m
+[0;32mI (165) cpu_start: Unicore app[0m
+[0;32mI (173) cpu_start: Pro cpu start user code[0m
+[0;32mI (173) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (173) cpu_start: Application information:[0m
+[0;32mI (176) cpu_start: Project name:     app-template[0m
+[0;32mI (182) cpu_start: App version:      12bcd80-dirty[0m
+[0;32mI (187) cpu_start: Compile time:     Dec 30 2023 23:50:02[0m
+[0;32mI (193) cpu_start: ELF file SHA256:  578baedc3...[0m
+[0;32mI (199) cpu_start: ESP-IDF:          v5.3-dev-1043-g8c9e29898f[0m
+[0;32mI (205) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (210) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (215) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (219) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (227) heap_init: At 3FC8D880 len 00032780 (201 KiB): RAM[0m
+[0;32mI (233) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (240) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (247) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (254) spi_flash: detected chip: generic[0m
+[0;32mI (258) spi_flash: flash io: dio[0m
+[0;33mW (262) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (275) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (281) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (289) main_task: Started on CPU0[0m
+[0;32mI (299) main_task: Calling app_main()[0m
+[0;32mI (799) gpio: GPIO[0]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (799) gpio: GPIO[1]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+IO Expander Found!
+ESP32 Found!
+I2C Setup done
+---------- Finished Initialization ---------- 
+
+count: 0, recieved_data: 0 0 0 0
+count: 1, recieved_data: 126 127 125 128
+count: 2, recieved_data: 128 126 129 255
+count: 3, recieved_data: 127 128 126 129
+count: 4, recieved_data: 252 253 251 254
+count: 5, recieved_data: 254 255 253 0
+count: 6, recieved_data: 255 0 254 1
+count: 7, recieved_data: 0 1 255 2
+count: 8, recieved_data: 1 2 0 3
+count: 9, recieved_data: 2 3 1 4
+count: 10, recieved_data: 3 4 2 5
+count: 11, recieved_data: 4 5 3 6
+count: 12, recieved_data: 5 6 4 7
+count: 13, recieved_data: 6 7 5 8
+count: 14, recieved_data: 7 8 6 9
+count: 15, recieved_data: 8 9 7 10
+count: 16, recieved_data: 9 10 8 11
+count: 17, recieved_data: 10 11 9 12
+count: 18, recieved_data: 11 12 10 13
+count: 19, recieved_data: 12 13 11 14
+count: 20, recieved_data: 13 14 12 15
+count: 21, recieved_data: 14 15 13 16
+count: 22, recieved_data: 15 16 14 17
+count: 23, recieved_data: 16 17 15 18
+count: 24, recieved_data: 17 18 16 19
+count: 25, recieved_data: 18 19 17 20
+count: 26, recieved_data: 19 20 18 21
+count: 27, recieved_data: 20 21 19 22
+count: 28, recieved_data: 21 22 20 23
+count: 29, recieved_data: 22 23 21 24
+count: 30, recieved_data: 23 24 22 25
+count: 31, recieved_data: 24 25 23 26
+count: 32, recieved_data: 25 26 24 27
+count: 33, recieved_data: 26 27 25 28
+count: 34, recieved_data: 27 28 26 29
+count: 35, recieved_data: 28 29 27 30
+count: 36, recieved_data: 29 30 28 31
+count: 37, recieved_data: 30 31 29 32
+count: 38, recieved_data: 31 32 30 33
+count: 39, recieved_data: 32 33 31 34
+count: 40, recieved_data: 33 34 32 35
+count: 41, recieved_data: 34 35 33 36
+count: 42, recieved_data: 35 36 34 37
+count: 43, recieved_data: 36 37 35 38
+count: 44, recieved_data: 37 38 36 39
+count: 45, recieved_data: 38 39 37 40
+count: 46, recieved_data: 39 40 38 41
+count: 47, recieved_data: 40 41 39 42
+count: 48, recieved_data: 41 42 40 43
+count: 49, recieved_data: 42 43 41 44
+count: 50, recieved_data: 43 44 42 45

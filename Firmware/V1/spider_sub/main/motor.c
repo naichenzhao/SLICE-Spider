@@ -3,8 +3,6 @@
 
 
 #include "motor.h"
-#include "encoder.h"
-#include "switch.h"
 
 #define LEDC_TIMER LEDC_TIMER_0
 #define LEDC_MODE LEDC_LOW_SPEED_MODE
@@ -72,54 +70,4 @@ void set_motor(int num, float speed) {
         }
         ledc_update_duty(LEDC_MODE, CHANNELS[num]);
     }
-}
-
-void home_motor_sw(int num) {
-    printf("Homing motor: %d\n", num);
-
-    int counter = 0;
-    while (counter < 10) {
-        set_motor(num, 4000);
-        if (read_switch(num)) {
-            counter++;
-        } else {
-            counter = 0;
-        }
-    }
-    printf("Found button\n");
-
-    while (read_switch(num)) {
-        // set_motor(num, 0);
-        set_motor(num, -3600);
-    }
-
-    set_motor(num, 0);
-    reset_encoder(num);
-
-    printf("Finished: %d\n", num);
-}
-
-void home_motor_enc(int num) {
-    printf("Homing motor: %d\n", num);
-
-    int counter = 0;
-    while (counter < 10) {
-        set_motor(num, 4000);
-        if (read_switch(num)) {
-            counter++;
-        } else {
-            counter = 0;
-        }
-    }
-    printf("Found button\n");
-
-    while (read_switch(num)) {
-        // set_motor(num, 0);
-        set_motor(num, -3600);
-    }
-
-    set_motor(num, 0);
-    reset_encoder(num);
-
-    printf("Finished: %d\n", num);
 }

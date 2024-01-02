@@ -52,6 +52,7 @@ void motor_init(void) {
     init_single_motor(1);
     init_single_motor(2);
     init_single_motor(3);
+    printf("Motor Setup done\n");
 }
 
 void set_motor(int num, float speed) {

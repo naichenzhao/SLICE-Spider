@@ -63,26 +63,6 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_PCNT_SUPPORTED",
-        "name": "SOC_PCNT_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_MCPWM_SUPPORTED",
-        "name": "SOC_MCPWM_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
         "id": "SOC_TWAI_SUPPORTED",
         "name": "SOC_TWAI_SUPPORTED",
         "range": null,
@@ -93,38 +73,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_ETM_SUPPORTED",
-        "name": "SOC_ETM_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_PARLIO_SUPPORTED",
-        "name": "SOC_PARLIO_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
         "id": "SOC_BT_SUPPORTED",
         "name": "SOC_BT_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_IEEE802154_SUPPORTED",
-        "name": "SOC_IEEE802154_SUPPORTED",
         "range": null,
         "title": null,
         "type": "bool"
@@ -163,6 +113,16 @@
         "children": [],
         "depends_on": null,
         "help": null,
+        "id": "SOC_XT_WDT_SUPPORTED",
+        "name": "SOC_XT_WDT_SUPPORTED",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
         "id": "SOC_WIFI_SUPPORTED",
         "name": "SOC_WIFI_SUPPORTED",
         "range": null,
@@ -183,28 +143,18 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_ULP_SUPPORTED",
-        "name": "SOC_ULP_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_LP_CORE_SUPPORTED",
-        "name": "SOC_LP_CORE_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
         "id": "SOC_EFUSE_KEY_PURPOSE_FIELD",
         "name": "SOC_EFUSE_KEY_PURPOSE_FIELD",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_EFUSE_HAS_EFUSE_RST_BUG",
+        "name": "SOC_EFUSE_HAS_EFUSE_RST_BUG",
         "range": null,
         "title": null,
         "type": "bool"
@@ -373,16 +323,6 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_ECC_SUPPORTED",
-        "name": "SOC_ECC_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
         "id": "SOC_FLASH_ENC_SUPPORTED",
         "name": "SOC_FLASH_ENC_SUPPORTED",
         "range": null,
@@ -403,8 +343,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_SDIO_SLAVE_SUPPORTED",
-        "name": "SOC_SDIO_SLAVE_SUPPORTED",
+        "id": "SOC_MEMPROT_SUPPORTED",
+        "name": "SOC_MEMPROT_SUPPORTED",
         "range": null,
         "title": null,
         "type": "bool"
@@ -415,86 +355,6 @@
         "help": null,
         "id": "SOC_BOD_SUPPORTED",
         "name": "SOC_BOD_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_APM_SUPPORTED",
-        "name": "SOC_APM_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_PMU_SUPPORTED",
-        "name": "SOC_PMU_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_PAU_SUPPORTED",
-        "name": "SOC_PAU_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_LP_TIMER_SUPPORTED",
-        "name": "SOC_LP_TIMER_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_LP_AON_SUPPORTED",
-        "name": "SOC_LP_AON_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_LP_PERIPHERALS_SUPPORTED",
-        "name": "SOC_LP_PERIPHERALS_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_LP_I2C_SUPPORTED",
-        "name": "SOC_LP_I2C_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_ULP_LP_UART_SUPPORTED",
-        "name": "SOC_ULP_LP_UART_SUPPORTED",
         "range": null,
         "title": null,
         "type": "bool"
@@ -613,6 +473,16 @@
         "children": [],
         "depends_on": null,
         "help": null,
+        "id": "SOC_ADC_ARBITER_SUPPORTED",
+        "name": "SOC_ADC_ARBITER_SUPPORTED",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
         "id": "SOC_ADC_DIG_IIR_FILTER_SUPPORTED",
         "name": "SOC_ADC_DIG_IIR_FILTER_SUPPORTED",
         "range": null,
@@ -693,16 +563,6 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_ADC_DIGI_MAX_BITWIDTH",
-        "name": "SOC_ADC_DIGI_MAX_BITWIDTH",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
         "id": "SOC_ADC_DIGI_MIN_BITWIDTH",
         "name": "SOC_ADC_DIGI_MIN_BITWIDTH",
         "range": null,
@@ -713,18 +573,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_ADC_DIGI_IIR_FILTER_NUM",
-        "name": "SOC_ADC_DIGI_IIR_FILTER_NUM",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_ADC_DIGI_MONITOR_NUM",
-        "name": "SOC_ADC_DIGI_MONITOR_NUM",
+        "id": "SOC_ADC_DIGI_MAX_BITWIDTH",
+        "name": "SOC_ADC_DIGI_MAX_BITWIDTH",
         "range": null,
         "title": null,
         "type": "int"
@@ -745,6 +595,26 @@
         "help": null,
         "id": "SOC_ADC_DIGI_DATA_BYTES_PER_CONV",
         "name": "SOC_ADC_DIGI_DATA_BYTES_PER_CONV",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_ADC_DIGI_IIR_FILTER_NUM",
+        "name": "SOC_ADC_DIGI_IIR_FILTER_NUM",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_ADC_DIGI_MONITOR_NUM",
+        "name": "SOC_ADC_DIGI_MONITOR_NUM",
         "range": null,
         "title": null,
         "type": "int"
@@ -813,26 +683,6 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_ADC_CALIB_CHAN_COMPENS_SUPPORTED",
-        "name": "SOC_ADC_CALIB_CHAN_COMPENS_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_ADC_TEMPERATURE_SHARE_INTR",
-        "name": "SOC_ADC_TEMPERATURE_SHARE_INTR",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
         "id": "SOC_ADC_SHARED_POWER",
         "name": "SOC_ADC_SHARED_POWER",
         "range": null,
@@ -873,11 +723,11 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_CACHE_FREEZE_SUPPORTED",
-        "name": "SOC_CACHE_FREEZE_SUPPORTED",
+        "id": "SOC_CACHE_MEMORY_IBANK_SIZE",
+        "name": "SOC_CACHE_MEMORY_IBANK_SIZE",
         "range": null,
         "title": null,
-        "type": "bool"
+        "type": "hex"
     },
     {
         "children": [],
@@ -913,16 +763,6 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_INT_PLIC_SUPPORTED",
-        "name": "SOC_INT_PLIC_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
         "id": "SOC_CPU_BREAKPOINTS_NUM",
         "name": "SOC_CPU_BREAKPOINTS_NUM",
         "range": null,
@@ -948,26 +788,6 @@
         "range": null,
         "title": null,
         "type": "hex"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_CPU_HAS_PMA",
-        "name": "SOC_CPU_HAS_PMA",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_CPU_IDRAM_SPLIT_USING_PMP",
-        "name": "SOC_CPU_IDRAM_SPLIT_USING_PMP",
-        "range": null,
-        "title": null,
-        "type": "bool"
     },
     {
         "children": [],
@@ -1033,36 +853,6 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_GDMA_SUPPORT_ETM",
-        "name": "SOC_GDMA_SUPPORT_ETM",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_ETM_GROUPS",
-        "name": "SOC_ETM_GROUPS",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_ETM_CHANNELS_PER_GROUP",
-        "name": "SOC_ETM_CHANNELS_PER_GROUP",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
         "id": "SOC_GPIO_PORT",
         "name": "SOC_GPIO_PORT",
         "range": null,
@@ -1093,18 +883,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_GPIO_FLEX_GLITCH_FILTER_NUM",
-        "name": "SOC_GPIO_FLEX_GLITCH_FILTER_NUM",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_GPIO_SUPPORT_ETM",
-        "name": "SOC_GPIO_SUPPORT_ETM",
+        "id": "SOC_GPIO_FILTER_CLK_SUPPORT_APB",
+        "name": "SOC_GPIO_FILTER_CLK_SUPPORT_APB",
         "range": null,
         "title": null,
         "type": "bool"
@@ -1113,28 +893,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_GPIO_ETM_EVENTS_PER_GROUP",
-        "name": "SOC_GPIO_ETM_EVENTS_PER_GROUP",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_GPIO_ETM_TASKS_PER_GROUP",
-        "name": "SOC_GPIO_ETM_TASKS_PER_GROUP",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_GPIO_SUPPORT_RTC_INDEPENDENT",
-        "name": "SOC_GPIO_SUPPORT_RTC_INDEPENDENT",
+        "id": "SOC_GPIO_SUPPORT_FORCE_HOLD",
+        "name": "SOC_GPIO_SUPPORT_FORCE_HOLD",
         "range": null,
         "title": null,
         "type": "bool"
@@ -1193,68 +953,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_GPIO_SUPPORT_FORCE_HOLD",
-        "name": "SOC_GPIO_SUPPORT_FORCE_HOLD",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_GPIO_SUPPORT_HOLD_SINGLE_IO_IN_DSLP",
-        "name": "SOC_GPIO_SUPPORT_HOLD_SINGLE_IO_IN_DSLP",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
         "id": "SOC_GPIO_CLOCKOUT_BY_GPIO_MATRIX",
         "name": "SOC_GPIO_CLOCKOUT_BY_GPIO_MATRIX",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_RTCIO_PIN_COUNT",
-        "name": "SOC_RTCIO_PIN_COUNT",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_RTCIO_INPUT_OUTPUT_SUPPORTED",
-        "name": "SOC_RTCIO_INPUT_OUTPUT_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_RTCIO_HOLD_SUPPORTED",
-        "name": "SOC_RTCIO_HOLD_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_RTCIO_WAKE_SUPPORTED",
-        "name": "SOC_RTCIO_WAKE_SUPPORTED",
         "range": null,
         "title": null,
         "type": "bool"
@@ -1403,36 +1103,6 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_I2C_SLAVE_SUPPORT_SLAVE_UNMATCH",
-        "name": "SOC_I2C_SLAVE_SUPPORT_SLAVE_UNMATCH",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_LP_I2C_NUM",
-        "name": "SOC_LP_I2C_NUM",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_LP_I2C_FIFO_LEN",
-        "name": "SOC_LP_I2C_FIFO_LEN",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
         "id": "SOC_I2S_NUM",
         "name": "SOC_I2S_NUM",
         "range": null,
@@ -1523,8 +1193,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_LEDC_SUPPORT_PLL_DIV_CLOCK",
-        "name": "SOC_LEDC_SUPPORT_PLL_DIV_CLOCK",
+        "id": "SOC_LEDC_SUPPORT_APB_CLOCK",
+        "name": "SOC_LEDC_SUPPORT_APB_CLOCK",
         "range": null,
         "title": null,
         "type": "bool"
@@ -1573,56 +1243,6 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_LEDC_GAMMA_CURVE_FADE_SUPPORTED",
-        "name": "SOC_LEDC_GAMMA_CURVE_FADE_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_LEDC_GAMMA_CURVE_FADE_RANGE_MAX",
-        "name": "SOC_LEDC_GAMMA_CURVE_FADE_RANGE_MAX",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_LEDC_FADE_PARAMS_BIT_WIDTH",
-        "name": "SOC_LEDC_FADE_PARAMS_BIT_WIDTH",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_MMU_PAGE_SIZE_CONFIGURABLE",
-        "name": "SOC_MMU_PAGE_SIZE_CONFIGURABLE",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_MMU_PERIPH_NUM",
-        "name": "SOC_MMU_PERIPH_NUM",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
         "id": "SOC_MMU_LINEAR_ADDRESS_REGION_NUM",
         "name": "SOC_MMU_LINEAR_ADDRESS_REGION_NUM",
         "range": null,
@@ -1633,11 +1253,11 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_MMU_DI_VADDR_SHARED",
-        "name": "SOC_MMU_DI_VADDR_SHARED",
+        "id": "SOC_MMU_PERIPH_NUM",
+        "name": "SOC_MMU_PERIPH_NUM",
         "range": null,
         "title": null,
-        "type": "bool"
+        "type": "int"
     },
     {
         "children": [],
@@ -1685,56 +1305,6 @@
         "help": null,
         "id": "SOC_MPU_REGION_WO_SUPPORTED",
         "name": "SOC_MPU_REGION_WO_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_PCNT_GROUPS",
-        "name": "SOC_PCNT_GROUPS",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_PCNT_UNITS_PER_GROUP",
-        "name": "SOC_PCNT_UNITS_PER_GROUP",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_PCNT_CHANNELS_PER_UNIT",
-        "name": "SOC_PCNT_CHANNELS_PER_UNIT",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_PCNT_THRES_POINT_PER_UNIT",
-        "name": "SOC_PCNT_THRES_POINT_PER_UNIT",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_PCNT_SUPPORT_RUNTIME_THRES_UPDATE",
-        "name": "SOC_PCNT_SUPPORT_RUNTIME_THRES_UPDATE",
         "range": null,
         "title": null,
         "type": "bool"
@@ -1833,16 +1403,6 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_RMT_SUPPORT_TX_LOOP_AUTO_STOP",
-        "name": "SOC_RMT_SUPPORT_TX_LOOP_AUTO_STOP",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
         "id": "SOC_RMT_SUPPORT_TX_SYNCHRO",
         "name": "SOC_RMT_SUPPORT_TX_SYNCHRO",
         "range": null,
@@ -1873,6 +1433,16 @@
         "children": [],
         "depends_on": null,
         "help": null,
+        "id": "SOC_RMT_SUPPORT_APB",
+        "name": "SOC_RMT_SUPPORT_APB",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
         "id": "SOC_RMT_SUPPORT_RC_FAST",
         "name": "SOC_RMT_SUPPORT_RC_FAST",
         "range": null,
@@ -1883,8 +1453,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_MCPWM_GROUPS",
-        "name": "SOC_MCPWM_GROUPS",
+        "id": "SOC_RTC_CNTL_CPU_PD_DMA_BUS_WIDTH",
+        "name": "SOC_RTC_CNTL_CPU_PD_DMA_BUS_WIDTH",
         "range": null,
         "title": null,
         "type": "int"
@@ -1893,8 +1463,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_MCPWM_TIMERS_PER_GROUP",
-        "name": "SOC_MCPWM_TIMERS_PER_GROUP",
+        "id": "SOC_RTC_CNTL_CPU_PD_REG_FILE_NUM",
+        "name": "SOC_RTC_CNTL_CPU_PD_REG_FILE_NUM",
         "range": null,
         "title": null,
         "type": "int"
@@ -1903,171 +1473,11 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_MCPWM_OPERATORS_PER_GROUP",
-        "name": "SOC_MCPWM_OPERATORS_PER_GROUP",
+        "id": "SOC_RTCIO_PIN_COUNT",
+        "name": "SOC_RTCIO_PIN_COUNT",
         "range": null,
         "title": null,
         "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_MCPWM_COMPARATORS_PER_OPERATOR",
-        "name": "SOC_MCPWM_COMPARATORS_PER_OPERATOR",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_MCPWM_GENERATORS_PER_OPERATOR",
-        "name": "SOC_MCPWM_GENERATORS_PER_OPERATOR",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_MCPWM_TRIGGERS_PER_OPERATOR",
-        "name": "SOC_MCPWM_TRIGGERS_PER_OPERATOR",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_MCPWM_GPIO_FAULTS_PER_GROUP",
-        "name": "SOC_MCPWM_GPIO_FAULTS_PER_GROUP",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_MCPWM_CAPTURE_TIMERS_PER_GROUP",
-        "name": "SOC_MCPWM_CAPTURE_TIMERS_PER_GROUP",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_MCPWM_CAPTURE_CHANNELS_PER_TIMER",
-        "name": "SOC_MCPWM_CAPTURE_CHANNELS_PER_TIMER",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_MCPWM_GPIO_SYNCHROS_PER_GROUP",
-        "name": "SOC_MCPWM_GPIO_SYNCHROS_PER_GROUP",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_MCPWM_SWSYNC_CAN_PROPAGATE",
-        "name": "SOC_MCPWM_SWSYNC_CAN_PROPAGATE",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_MCPWM_SUPPORT_ETM",
-        "name": "SOC_MCPWM_SUPPORT_ETM",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_MCPWM_CAPTURE_CLK_FROM_GROUP",
-        "name": "SOC_MCPWM_CAPTURE_CLK_FROM_GROUP",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_PARLIO_GROUPS",
-        "name": "SOC_PARLIO_GROUPS",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_PARLIO_TX_UNITS_PER_GROUP",
-        "name": "SOC_PARLIO_TX_UNITS_PER_GROUP",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_PARLIO_RX_UNITS_PER_GROUP",
-        "name": "SOC_PARLIO_RX_UNITS_PER_GROUP",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_PARLIO_TX_UNIT_MAX_DATA_WIDTH",
-        "name": "SOC_PARLIO_TX_UNIT_MAX_DATA_WIDTH",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_PARLIO_RX_UNIT_MAX_DATA_WIDTH",
-        "name": "SOC_PARLIO_RX_UNIT_MAX_DATA_WIDTH",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_PARLIO_TX_RX_SHARE_INTERRUPT",
-        "name": "SOC_PARLIO_TX_RX_SHARE_INTERRUPT",
-        "range": null,
-        "title": null,
-        "type": "bool"
     },
     {
         "children": [],
@@ -2193,18 +1603,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_SDM_CLK_SUPPORT_PLL_F80M",
-        "name": "SOC_SDM_CLK_SUPPORT_PLL_F80M",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_SDM_CLK_SUPPORT_XTAL",
-        "name": "SOC_SDM_CLK_SUPPORT_XTAL",
+        "id": "SOC_SDM_CLK_SUPPORT_APB",
+        "name": "SOC_SDM_CLK_SUPPORT_APB",
         "range": null,
         "title": null,
         "type": "bool"
@@ -2293,6 +1693,16 @@
         "children": [],
         "depends_on": null,
         "help": null,
+        "id": "SOC_SPI_SUPPORT_CLK_APB",
+        "name": "SOC_SPI_SUPPORT_CLK_APB",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
         "id": "SOC_SPI_SUPPORT_CLK_XTAL",
         "name": "SOC_SPI_SUPPORT_CLK_XTAL",
         "range": null,
@@ -2303,18 +1713,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_SPI_SUPPORT_CLK_PLL_F80M",
-        "name": "SOC_SPI_SUPPORT_CLK_PLL_F80M",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_SPI_SUPPORT_CLK_RC_FAST",
-        "name": "SOC_SPI_SUPPORT_CLK_RC_FAST",
+        "id": "SOC_SPI_PERIPH_SUPPORT_CONTROL_DUMMY_OUT",
+        "name": "SOC_SPI_PERIPH_SUPPORT_CONTROL_DUMMY_OUT",
         "range": null,
         "title": null,
         "type": "bool"
@@ -2403,6 +1803,16 @@
         "children": [],
         "depends_on": null,
         "help": null,
+        "id": "SOC_SPI_MEM_SUPPORT_CONFIG_GPIO_BY_EFUSE",
+        "name": "SOC_SPI_MEM_SUPPORT_CONFIG_GPIO_BY_EFUSE",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
         "id": "SOC_SPI_MEM_SUPPORT_WRAP",
         "name": "SOC_SPI_MEM_SUPPORT_WRAP",
         "range": null,
@@ -2425,6 +1835,16 @@
         "help": null,
         "id": "SOC_MEMSPI_SRC_FREQ_40M_SUPPORTED",
         "name": "SOC_MEMSPI_SRC_FREQ_40M_SUPPORTED",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_MEMSPI_SRC_FREQ_26M_SUPPORTED",
+        "name": "SOC_MEMSPI_SRC_FREQ_26M_SUPPORTED",
         "range": null,
         "title": null,
         "type": "bool"
@@ -2493,16 +1913,6 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_SYSTIMER_SUPPORT_RC_FAST",
-        "name": "SOC_SYSTIMER_SUPPORT_RC_FAST",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
         "id": "SOC_SYSTIMER_INT_LEVEL",
         "name": "SOC_SYSTIMER_INT_LEVEL",
         "range": null,
@@ -2518,36 +1928,6 @@
         "range": null,
         "title": null,
         "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_SYSTIMER_SUPPORT_ETM",
-        "name": "SOC_SYSTIMER_SUPPORT_ETM",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_LP_TIMER_BIT_WIDTH_LO",
-        "name": "SOC_LP_TIMER_BIT_WIDTH_LO",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_LP_TIMER_BIT_WIDTH_HI",
-        "name": "SOC_LP_TIMER_BIT_WIDTH_HI",
-        "range": null,
-        "title": null,
-        "type": "int"
     },
     {
         "children": [],
@@ -2593,8 +1973,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_TIMER_GROUP_SUPPORT_RC_FAST",
-        "name": "SOC_TIMER_GROUP_SUPPORT_RC_FAST",
+        "id": "SOC_TIMER_GROUP_SUPPORT_APB",
+        "name": "SOC_TIMER_GROUP_SUPPORT_APB",
         "range": null,
         "title": null,
         "type": "bool"
@@ -2608,16 +1988,6 @@
         "range": null,
         "title": null,
         "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_TIMER_SUPPORT_ETM",
-        "name": "SOC_TIMER_SUPPORT_ETM",
-        "range": null,
-        "title": null,
-        "type": "bool"
     },
     {
         "children": [],
@@ -2643,8 +2013,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_TWAI_CLK_SUPPORT_XTAL",
-        "name": "SOC_TWAI_CLK_SUPPORT_XTAL",
+        "id": "SOC_TWAI_CLK_SUPPORT_APB",
+        "name": "SOC_TWAI_CLK_SUPPORT_APB",
         "range": null,
         "title": null,
         "type": "bool"
@@ -2763,16 +2133,6 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_SECURE_BOOT_V2_ECC",
-        "name": "SOC_SECURE_BOOT_V2_ECC",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
         "id": "SOC_EFUSE_SECURE_BOOT_KEY_DIGESTS",
         "name": "SOC_EFUSE_SECURE_BOOT_KEY_DIGESTS",
         "range": null,
@@ -2833,11 +2193,21 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_CRYPTO_DPA_PROTECTION_SUPPORTED",
-        "name": "SOC_CRYPTO_DPA_PROTECTION_SUPPORTED",
+        "id": "SOC_MEMPROT_CPU_PREFETCH_PAD_SIZE",
+        "name": "SOC_MEMPROT_CPU_PREFETCH_PAD_SIZE",
         "range": null,
         "title": null,
-        "type": "bool"
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_MEMPROT_MEM_ALIGN_SIZE",
+        "name": "SOC_MEMPROT_MEM_ALIGN_SIZE",
+        "range": null,
+        "title": null,
+        "type": "int"
     },
     {
         "children": [],
@@ -2863,28 +2233,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_UART_LP_NUM",
-        "name": "SOC_UART_LP_NUM",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
         "id": "SOC_UART_FIFO_LEN",
         "name": "SOC_UART_FIFO_LEN",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_LP_UART_FIFO_LEN",
-        "name": "SOC_LP_UART_FIFO_LEN",
         "range": null,
         "title": null,
         "type": "int"
@@ -2903,8 +2253,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_UART_SUPPORT_PLL_F80M_CLK",
-        "name": "SOC_UART_SUPPORT_PLL_F80M_CLK",
+        "id": "SOC_UART_SUPPORT_APB_CLK",
+        "name": "SOC_UART_SUPPORT_APB_CLK",
         "range": null,
         "title": null,
         "type": "bool"
@@ -2993,6 +2343,16 @@
         "children": [],
         "depends_on": null,
         "help": null,
+        "id": "SOC_MAC_BB_PD_MEM_SIZE",
+        "name": "SOC_MAC_BB_PD_MEM_SIZE",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
         "id": "SOC_WIFI_LIGHT_SLEEP_CLK_WIDTH",
         "name": "SOC_WIFI_LIGHT_SLEEP_CLK_WIDTH",
         "range": null,
@@ -3013,38 +2373,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_PM_SUPPORT_BEACON_WAKEUP",
-        "name": "SOC_PM_SUPPORT_BEACON_WAKEUP",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
         "id": "SOC_PM_SUPPORT_BT_WAKEUP",
         "name": "SOC_PM_SUPPORT_BT_WAKEUP",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_PM_SUPPORT_EXT1_WAKEUP",
-        "name": "SOC_PM_SUPPORT_EXT1_WAKEUP",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_PM_SUPPORT_EXT1_WAKEUP_MODE_PER_PIN",
-        "name": "SOC_PM_SUPPORT_EXT1_WAKEUP_MODE_PER_PIN",
         "range": null,
         "title": null,
         "type": "bool"
@@ -3063,8 +2393,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_PM_SUPPORT_MODEM_PD",
-        "name": "SOC_PM_SUPPORT_MODEM_PD",
+        "id": "SOC_PM_SUPPORT_WIFI_PD",
+        "name": "SOC_PM_SUPPORT_WIFI_PD",
         "range": null,
         "title": null,
         "type": "bool"
@@ -3073,18 +2403,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_PM_SUPPORT_XTAL32K_PD",
-        "name": "SOC_PM_SUPPORT_XTAL32K_PD",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_PM_SUPPORT_RC32K_PD",
-        "name": "SOC_PM_SUPPORT_RC32K_PD",
+        "id": "SOC_PM_SUPPORT_BT_PD",
+        "name": "SOC_PM_SUPPORT_BT_PD",
         "range": null,
         "title": null,
         "type": "bool"
@@ -3113,26 +2433,6 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_PM_SUPPORT_TOP_PD",
-        "name": "SOC_PM_SUPPORT_TOP_PD",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_PM_SUPPORT_HP_AON_PD",
-        "name": "SOC_PM_SUPPORT_HP_AON_PD",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
         "id": "SOC_PM_SUPPORT_MAC_BB_PD",
         "name": "SOC_PM_SUPPORT_MAC_BB_PD",
         "range": null,
@@ -3143,8 +2443,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_PM_SUPPORT_RTC_PERIPH_PD",
-        "name": "SOC_PM_SUPPORT_RTC_PERIPH_PD",
+        "id": "SOC_PM_CPU_RETENTION_BY_RTCCNTL",
+        "name": "SOC_PM_CPU_RETENTION_BY_RTCCNTL",
         "range": null,
         "title": null,
         "type": "bool"
@@ -3153,8 +2453,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_PM_SUPPORT_PMU_MODEM_STATE",
-        "name": "SOC_PM_SUPPORT_PMU_MODEM_STATE",
+        "id": "SOC_PM_MODEM_RETENTION_BY_BACKUPDMA",
+        "name": "SOC_PM_MODEM_RETENTION_BY_BACKUPDMA",
         "range": null,
         "title": null,
         "type": "bool"
@@ -3163,8 +2463,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_PM_SUPPORT_DEEPSLEEP_CHECK_STUB_ONLY",
-        "name": "SOC_PM_SUPPORT_DEEPSLEEP_CHECK_STUB_ONLY",
+        "id": "SOC_CLK_RC_FAST_D256_SUPPORTED",
+        "name": "SOC_CLK_RC_FAST_D256_SUPPORTED",
         "range": null,
         "title": null,
         "type": "bool"
@@ -3173,41 +2473,11 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_PM_CPU_RETENTION_BY_SW",
-        "name": "SOC_PM_CPU_RETENTION_BY_SW",
+        "id": "SOC_RTC_SLOW_CLK_SUPPORT_RC_FAST_D256",
+        "name": "SOC_RTC_SLOW_CLK_SUPPORT_RC_FAST_D256",
         "range": null,
         "title": null,
         "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_PM_MODEM_RETENTION_BY_REGDMA",
-        "name": "SOC_PM_MODEM_RETENTION_BY_REGDMA",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_PM_RETENTION_HAS_CLOCK_BUG",
-        "name": "SOC_PM_RETENTION_HAS_CLOCK_BUG",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_PM_PAU_LINK_NUM",
-        "name": "SOC_PM_PAU_LINK_NUM",
-        "range": null,
-        "title": null,
-        "type": "int"
     },
     {
         "children": [],
@@ -3223,48 +2493,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_MODEM_CLOCK_IS_INDEPENDENT",
-        "name": "SOC_MODEM_CLOCK_IS_INDEPENDENT",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
         "id": "SOC_CLK_XTAL32K_SUPPORTED",
         "name": "SOC_CLK_XTAL32K_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_CLK_OSC_SLOW_SUPPORTED",
-        "name": "SOC_CLK_OSC_SLOW_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_CLK_RC32K_SUPPORTED",
-        "name": "SOC_CLK_RC32K_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_RCC_IS_INDEPENDENT",
-        "name": "SOC_RCC_IS_INDEPENDENT",
         "range": null,
         "title": null,
         "type": "bool"
@@ -3285,16 +2515,6 @@
         "help": null,
         "id": "SOC_TEMPERATURE_SENSOR_SUPPORT_XTAL",
         "name": "SOC_TEMPERATURE_SENSOR_SUPPORT_XTAL",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_TEMPERATURE_SENSOR_INTR_SUPPORT",
-        "name": "SOC_TEMPERATURE_SENSOR_INTR_SUPPORT",
         "range": null,
         "title": null,
         "type": "bool"
@@ -3363,8 +2583,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_WIFI_HE_SUPPORT",
-        "name": "SOC_WIFI_HE_SUPPORT",
+        "id": "SOC_WIFI_SUPPORT_VARIABLE_BEACON_WINDOW",
+        "name": "SOC_WIFI_SUPPORT_VARIABLE_BEACON_WINDOW",
         "range": null,
         "title": null,
         "type": "bool"
@@ -3393,16 +2613,6 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_ESP_NIMBLE_CONTROLLER",
-        "name": "SOC_ESP_NIMBLE_CONTROLLER",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
         "id": "SOC_BLE_50_SUPPORTED",
         "name": "SOC_BLE_50_SUPPORTED",
         "range": null,
@@ -3423,48 +2633,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_BLE_POWER_CONTROL_SUPPORTED",
-        "name": "SOC_BLE_POWER_CONTROL_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_BLE_PERIODIC_ADV_ENH_SUPPORTED",
-        "name": "SOC_BLE_PERIODIC_ADV_ENH_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
         "id": "SOC_BLUFI_SUPPORTED",
         "name": "SOC_BLUFI_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_BLE_MULTI_CONN_OPTIMIZATION",
-        "name": "SOC_BLE_MULTI_CONN_OPTIMIZATION",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_BLE_USE_WIFI_PWR_CLK_WORKAROUND",
-        "name": "SOC_BLE_USE_WIFI_PWR_CLK_WORKAROUND",
         "range": null,
         "title": null,
         "type": "bool"
@@ -5168,6 +4338,16 @@
         "children": [],
         "depends_on": null,
         "help": null,
+        "id": "ESP_ROM_HAS_MZ_CRC32",
+        "name": "ESP_ROM_HAS_MZ_CRC32",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
         "id": "ESP_ROM_HAS_JPEG_DECODE",
         "name": "ESP_ROM_HAS_JPEG_DECODE",
         "range": null,
@@ -5208,6 +4388,16 @@
         "children": [],
         "depends_on": null,
         "help": null,
+        "id": "ESP_ROM_HAS_ERASE_0_REGION_BUG",
+        "name": "ESP_ROM_HAS_ERASE_0_REGION_BUG",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
         "id": "ESP_ROM_GET_CLK_FREQ",
         "name": "ESP_ROM_GET_CLK_FREQ",
         "range": null,
@@ -5218,48 +4408,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "ESP_ROM_HAS_RVFPLIB",
-        "name": "ESP_ROM_HAS_RVFPLIB",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "ESP_ROM_HAS_HAL_WDT",
-        "name": "ESP_ROM_HAS_HAL_WDT",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "ESP_ROM_HAS_HAL_SYSTIMER",
-        "name": "ESP_ROM_HAS_HAL_SYSTIMER",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "ESP_ROM_HAS_HEAP_TLSF",
-        "name": "ESP_ROM_HAS_HEAP_TLSF",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "ESP_ROM_TLSF_CHECK_PATCH",
-        "name": "ESP_ROM_TLSF_CHECK_PATCH",
+        "id": "ESP_ROM_NEEDS_SWSETUP_WORKAROUND",
+        "name": "ESP_ROM_NEEDS_SWSETUP_WORKAROUND",
         "range": null,
         "title": null,
         "type": "bool"
@@ -5288,8 +4438,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "ESP_ROM_HAS_REGI2C_BUG",
-        "name": "ESP_ROM_HAS_REGI2C_BUG",
+        "id": "ESP_ROM_HAS_ETS_PRINTF_BUG",
+        "name": "ESP_ROM_HAS_ETS_PRINTF_BUG",
         "range": null,
         "title": null,
         "type": "bool"
@@ -5298,28 +4448,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "ESP_ROM_HAS_NEWLIB_NORMAL_FORMAT",
-        "name": "ESP_ROM_HAS_NEWLIB_NORMAL_FORMAT",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "ESP_ROM_REV0_HAS_NO_ECDSA_INTERFACE",
-        "name": "ESP_ROM_REV0_HAS_NO_ECDSA_INTERFACE",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "ESP_ROM_WDT_INIT_PATCH",
-        "name": "ESP_ROM_WDT_INIT_PATCH",
+        "id": "ESP_ROM_HAS_NEWLIB_NANO_FORMAT",
+        "name": "ESP_ROM_HAS_NEWLIB_NANO_FORMAT",
         "range": null,
         "title": null,
         "type": "bool"
@@ -10876,626 +10006,11 @@
                     {
                         "children": [
                             {
-                                "children": [
-                                    {
-                                        "children": [
-                                            {
-                                                "children": [],
-                                                "depends_on": "<choice BT_LE_HCI_INTERFACE>",
-                                                "help": "Use RAM as HCI interface",
-                                                "id": "BT_LE_HCI_INTERFACE_USE_RAM",
-                                                "name": "BT_LE_HCI_INTERFACE_USE_RAM",
-                                                "range": null,
-                                                "title": "ram",
-                                                "type": "bool"
-                                            },
-                                            {
-                                                "children": [],
-                                                "depends_on": "<choice BT_LE_HCI_INTERFACE>",
-                                                "help": "Use UART as HCI interface",
-                                                "id": "BT_LE_HCI_INTERFACE_USE_UART",
-                                                "name": "BT_LE_HCI_INTERFACE_USE_UART",
-                                                "range": null,
-                                                "title": "uart",
-                                                "type": "bool"
-                                            }
-                                        ],
-                                        "depends_on": "BT_CONTROLLER_ENABLED",
-                                        "help": null,
-                                        "id": "component-config-bluetooth-controller-options-hci-config-select-hci-interface",
-                                        "name": "BT_LE_HCI_INTERFACE",
-                                        "title": "Select HCI interface",
-                                        "type": "choice"
-                                    },
-                                    {
-                                        "children": [],
-                                        "depends_on": "BT_LE_HCI_INTERFACE_USE_UART && BT_CONTROLLER_ENABLED",
-                                        "help": "Set the port number of HCI UART",
-                                        "id": "BT_LE_HCI_UART_PORT",
-                                        "name": "BT_LE_HCI_UART_PORT",
-                                        "range": null,
-                                        "title": "HCI UART port",
-                                        "type": "int"
-                                    },
-                                    {
-                                        "children": [],
-                                        "depends_on": "BT_LE_HCI_INTERFACE_USE_UART && BT_CONTROLLER_ENABLED",
-                                        "help": null,
-                                        "id": "BT_LE_HCI_UART_FLOWCTRL",
-                                        "name": "BT_LE_HCI_UART_FLOWCTRL",
-                                        "range": null,
-                                        "title": "HCI uart Hardware Flow ctrl",
-                                        "type": "bool"
-                                    },
-                                    {
-                                        "children": [],
-                                        "depends_on": "BT_LE_HCI_INTERFACE_USE_UART && BT_CONTROLLER_ENABLED",
-                                        "help": null,
-                                        "id": "BT_LE_HCI_UART_TX_PIN",
-                                        "name": "BT_LE_HCI_UART_TX_PIN",
-                                        "range": null,
-                                        "title": "HCI uart Tx gpio",
-                                        "type": "int"
-                                    },
-                                    {
-                                        "children": [],
-                                        "depends_on": "BT_LE_HCI_INTERFACE_USE_UART && BT_CONTROLLER_ENABLED",
-                                        "help": null,
-                                        "id": "BT_LE_HCI_UART_RX_PIN",
-                                        "name": "BT_LE_HCI_UART_RX_PIN",
-                                        "range": null,
-                                        "title": "HCI uart Rx gpio",
-                                        "type": "int"
-                                    },
-                                    {
-                                        "children": [],
-                                        "depends_on": "BT_LE_HCI_UART_FLOWCTRL && BT_CONTROLLER_ENABLED",
-                                        "help": null,
-                                        "id": "BT_LE_HCI_UART_RTS_PIN",
-                                        "name": "BT_LE_HCI_UART_RTS_PIN",
-                                        "range": null,
-                                        "title": "HCI uart RTS gpio",
-                                        "type": "int"
-                                    },
-                                    {
-                                        "children": [],
-                                        "depends_on": "BT_LE_HCI_UART_FLOWCTRL && BT_CONTROLLER_ENABLED",
-                                        "help": null,
-                                        "id": "BT_LE_HCI_UART_CTS_PIN",
-                                        "name": "BT_LE_HCI_UART_CTS_PIN",
-                                        "range": null,
-                                        "title": "HCI uart CTS gpio",
-                                        "type": "int"
-                                    },
-                                    {
-                                        "children": [],
-                                        "depends_on": "BT_LE_HCI_INTERFACE_USE_UART && BT_CONTROLLER_ENABLED",
-                                        "help": "HCI uart baud rate 115200 ~ 1000000",
-                                        "id": "BT_LE_HCI_UART_BAUD",
-                                        "name": "BT_LE_HCI_UART_BAUD",
-                                        "range": null,
-                                        "title": "HCI uart baudrate",
-                                        "type": "int"
-                                    },
-                                    {
-                                        "children": [
-                                            {
-                                                "children": [],
-                                                "depends_on": "<choice BT_LE_HCI_UART_PARITY>",
-                                                "help": "UART_PARITY_DISABLE",
-                                                "id": "BT_LE_HCI_UART_UART_PARITY_DISABLE",
-                                                "name": "BT_LE_HCI_UART_UART_PARITY_DISABLE",
-                                                "range": null,
-                                                "title": "PARITY_DISABLE",
-                                                "type": "bool"
-                                            },
-                                            {
-                                                "children": [],
-                                                "depends_on": "<choice BT_LE_HCI_UART_PARITY>",
-                                                "help": "UART_PARITY_EVEN",
-                                                "id": "BT_LE_HCI_UART_UART_PARITY_EVEN",
-                                                "name": "BT_LE_HCI_UART_UART_PARITY_EVEN",
-                                                "range": null,
-                                                "title": "PARITY_EVEN",
-                                                "type": "bool"
-                                            },
-                                            {
-                                                "children": [],
-                                                "depends_on": "<choice BT_LE_HCI_UART_PARITY>",
-                                                "help": "UART_PARITY_ODD",
-                                                "id": "BT_LE_HCI_UART_UART_PARITY_ODD",
-                                                "name": "BT_LE_HCI_UART_UART_PARITY_ODD",
-                                                "range": null,
-                                                "title": "PARITY_ODD",
-                                                "type": "bool"
-                                            }
-                                        ],
-                                        "depends_on": "BT_LE_HCI_INTERFACE_USE_UART && BT_CONTROLLER_ENABLED",
-                                        "help": null,
-                                        "id": "component-config-bluetooth-controller-options-hci-config-select-uart-parity",
-                                        "name": "BT_LE_HCI_UART_PARITY",
-                                        "title": "select uart parity",
-                                        "type": "choice"
-                                    },
-                                    {
-                                        "children": [],
-                                        "depends_on": "BT_LE_HCI_INTERFACE_USE_UART && BT_CONTROLLER_ENABLED",
-                                        "help": "Set the size of uart task stack",
-                                        "id": "BT_LE_HCI_UART_TASK_STACK_SIZE",
-                                        "name": "BT_LE_HCI_UART_TASK_STACK_SIZE",
-                                        "range": null,
-                                        "title": "HCI uart task stack size",
-                                        "type": "int"
-                                    }
-                                ],
-                                "depends_on": "BT_CONTROLLER_ENABLED",
-                                "id": "component-config-bluetooth-controller-options-hci-config",
-                                "title": "HCI Config",
-                                "type": "menu"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "BT_CONTROLLER_ENABLED",
-                                "help": "Enable NPL porting for controller.",
-                                "id": "BT_LE_CONTROLLER_NPL_OS_PORTING_SUPPORT",
-                                "name": "BT_LE_CONTROLLER_NPL_OS_PORTING_SUPPORT",
-                                "range": null,
-                                "title": null,
-                                "type": "bool"
-                            },
-                            {
-                                "children": [
-                                    {
-                                        "children": [],
-                                        "depends_on": "BT_LE_50_FEATURE_SUPPORT && BT_CONTROLLER_ENABLED",
-                                        "help": "Enable 2M-PHY",
-                                        "id": "BT_LE_LL_CFG_FEAT_LE_2M_PHY",
-                                        "name": "BT_LE_LL_CFG_FEAT_LE_2M_PHY",
-                                        "range": null,
-                                        "title": "Enable 2M Phy",
-                                        "type": "bool"
-                                    },
-                                    {
-                                        "children": [],
-                                        "depends_on": "BT_LE_50_FEATURE_SUPPORT && BT_CONTROLLER_ENABLED",
-                                        "help": "Enable coded-PHY",
-                                        "id": "BT_LE_LL_CFG_FEAT_LE_CODED_PHY",
-                                        "name": "BT_LE_LL_CFG_FEAT_LE_CODED_PHY",
-                                        "range": null,
-                                        "title": "Enable coded Phy",
-                                        "type": "bool"
-                                    },
-                                    {
-                                        "children": [
-                                            {
-                                                "children": [],
-                                                "depends_on": "BT_LE_EXT_ADV && BT_LE_EXT_ADV && BT_CONTROLLER_ENABLED",
-                                                "help": "Change this option to set maximum number of extended advertising\ninstances. Minimum there is always one instance of\nadvertising. Enter how many more advertising instances you\nwant.\nEach extended advertising instance will take about 0.5k DRAM.",
-                                                "id": "BT_LE_MAX_EXT_ADV_INSTANCES",
-                                                "name": "BT_LE_MAX_EXT_ADV_INSTANCES",
-                                                "range": null,
-                                                "title": "Maximum number of extended advertising instances.",
-                                                "type": "int"
-                                            },
-                                            {
-                                                "children": [],
-                                                "depends_on": "BT_LE_EXT_ADV && BT_LE_EXT_ADV && BT_CONTROLLER_ENABLED",
-                                                "help": "Defines the length of the extended adv data. The value should not\nexceed 1650.",
-                                                "id": "BT_LE_EXT_ADV_MAX_SIZE",
-                                                "name": "BT_LE_EXT_ADV_MAX_SIZE",
-                                                "range": null,
-                                                "title": "Maximum length of the advertising data.",
-                                                "type": "int"
-                                            },
-                                            {
-                                                "children": [
-                                                    {
-                                                        "children": [],
-                                                        "depends_on": "BT_LE_ENABLE_PERIODIC_ADV && BT_LE_EXT_ADV && BT_CONTROLLER_ENABLED",
-                                                        "help": "This enables controller transfer periodic sync events to host",
-                                                        "id": "BT_LE_PERIODIC_ADV_SYNC_TRANSFER",
-                                                        "name": "BT_LE_PERIODIC_ADV_SYNC_TRANSFER",
-                                                        "range": null,
-                                                        "title": "Enable Transer Sync Events",
-                                                        "type": "bool"
-                                                    }
-                                                ],
-                                                "depends_on": "BT_LE_EXT_ADV && BT_LE_EXT_ADV && BT_CONTROLLER_ENABLED",
-                                                "help": "Enable this option to start periodic advertisement.",
-                                                "id": "BT_LE_ENABLE_PERIODIC_ADV",
-                                                "name": "BT_LE_ENABLE_PERIODIC_ADV",
-                                                "range": null,
-                                                "title": "Enable periodic advertisement.",
-                                                "type": "bool"
-                                            }
-                                        ],
-                                        "depends_on": "BT_LE_50_FEATURE_SUPPORT && BT_CONTROLLER_ENABLED",
-                                        "help": "Enable this option to do extended advertising. Extended advertising\nwill be supported from BLE 5.0 onwards.",
-                                        "id": "BT_LE_EXT_ADV",
-                                        "name": "BT_LE_EXT_ADV",
-                                        "range": null,
-                                        "title": "Enable extended advertising",
-                                        "type": "bool"
-                                    },
-                                    {
-                                        "children": [],
-                                        "depends_on": "BT_LE_50_FEATURE_SUPPORT && !BT_NIMBLE_ENABLED && BT_CONTROLLER_ENABLED",
-                                        "help": "Set this option to set the upper limit for number of periodic sync\nconnections. This should be less than maximum connections allowed by\ncontroller.",
-                                        "id": "BT_LE_MAX_PERIODIC_SYNCS",
-                                        "name": "BT_LE_MAX_PERIODIC_SYNCS",
-                                        "range": null,
-                                        "title": "Maximum number of periodic advertising syncs",
-                                        "type": "int"
-                                    },
-                                    {
-                                        "children": [],
-                                        "depends_on": "BT_LE_50_FEATURE_SUPPORT && !BT_NIMBLE_ENABLED && BT_CONTROLLER_ENABLED",
-                                        "help": "Set this option to set the upper limit for number of periodic advertiser list.",
-                                        "id": "BT_LE_MAX_PERIODIC_ADVERTISER_LIST",
-                                        "name": "BT_LE_MAX_PERIODIC_ADVERTISER_LIST",
-                                        "range": null,
-                                        "title": "Maximum number of periodic advertiser list",
-                                        "type": "int"
-                                    },
-                                    {
-                                        "children": [],
-                                        "depends_on": "BT_LE_50_FEATURE_SUPPORT && !BT_NIMBLE_ENABLED && IDF_TARGET_ESP32C6 && BT_CONTROLLER_ENABLED",
-                                        "help": "Set this option to enable the Power Control feature on controller",
-                                        "id": "BT_LE_POWER_CONTROL_ENABLED",
-                                        "name": "BT_LE_POWER_CONTROL_ENABLED",
-                                        "range": null,
-                                        "title": "Enable controller support for BLE Power Control",
-                                        "type": "bool"
-                                    }
-                                ],
-                                "depends_on": "!BT_NIMBLE_ENABLED && BT_CONTROLLER_ENABLED",
-                                "help": "Enable BLE 5 feature",
-                                "id": "BT_LE_50_FEATURE_SUPPORT",
-                                "is_menuconfig": true,
-                                "name": "BT_LE_50_FEATURE_SUPPORT",
-                                "range": null,
-                                "title": "Enable BLE 5 feature",
-                                "type": "menu"
-                            },
-                            {
-                                "children": [
-                                    {
-                                        "children": [],
-                                        "depends_on": "!BT_NIMBLE_ENABLED && BT_CONTROLLER_ENABLED",
-                                        "help": "MSYS is a system level mbuf registry. For prepare write & prepare\nresponses MBUFs are allocated out of msys_1 pool. For NIMBLE_MESH\nenabled cases, this block count is increased by 8 than user defined\ncount.",
-                                        "id": "BT_LE_MSYS_1_BLOCK_COUNT",
-                                        "name": "BT_LE_MSYS_1_BLOCK_COUNT",
-                                        "range": null,
-                                        "title": "MSYS_1 Block Count",
-                                        "type": "int"
-                                    },
-                                    {
-                                        "children": [],
-                                        "depends_on": "!BT_NIMBLE_ENABLED && BT_CONTROLLER_ENABLED",
-                                        "help": "Dynamic memory size of block 1",
-                                        "id": "BT_LE_MSYS_1_BLOCK_SIZE",
-                                        "name": "BT_LE_MSYS_1_BLOCK_SIZE",
-                                        "range": null,
-                                        "title": "MSYS_1 Block Size",
-                                        "type": "int"
-                                    },
-                                    {
-                                        "children": [],
-                                        "depends_on": "!BT_NIMBLE_ENABLED && BT_CONTROLLER_ENABLED",
-                                        "help": "Dynamic memory count",
-                                        "id": "BT_LE_MSYS_2_BLOCK_COUNT",
-                                        "name": "BT_LE_MSYS_2_BLOCK_COUNT",
-                                        "range": null,
-                                        "title": "MSYS_2 Block Count",
-                                        "type": "int"
-                                    },
-                                    {
-                                        "children": [],
-                                        "depends_on": "!BT_NIMBLE_ENABLED && BT_CONTROLLER_ENABLED",
-                                        "help": "Dynamic memory size of block 2",
-                                        "id": "BT_LE_MSYS_2_BLOCK_SIZE",
-                                        "name": "BT_LE_MSYS_2_BLOCK_SIZE",
-                                        "range": null,
-                                        "title": "MSYS_2 Block Size",
-                                        "type": "int"
-                                    },
-                                    {
-                                        "children": [],
-                                        "depends_on": "BT_LE_MSYS_INIT_IN_CONTROLLER && !BT_NIMBLE_ENABLED && BT_CONTROLLER_ENABLED",
-                                        "help": "This option sets the source of the shared msys mbuf memory between\nthe Host and the Controller. Allocate the memory from the heap if\nthis option is sets, from the mempool otherwise.",
-                                        "id": "BT_LE_MSYS_BUF_FROM_HEAP",
-                                        "name": "BT_LE_MSYS_BUF_FROM_HEAP",
-                                        "range": null,
-                                        "title": "Get Msys Mbuf from heap",
-                                        "type": "bool"
-                                    },
-                                    {
-                                        "children": [],
-                                        "depends_on": "!BT_NIMBLE_ENABLED && BT_CONTROLLER_ENABLED",
-                                        "help": "The number of ACL data buffers.",
-                                        "id": "BT_LE_ACL_BUF_COUNT",
-                                        "name": "BT_LE_ACL_BUF_COUNT",
-                                        "range": null,
-                                        "title": "ACL Buffer count",
-                                        "type": "int"
-                                    },
-                                    {
-                                        "children": [],
-                                        "depends_on": "!BT_NIMBLE_ENABLED && BT_CONTROLLER_ENABLED",
-                                        "help": "This is the maximum size of the data portion of HCI ACL data packets.\nIt does not include the HCI data header (of 4 bytes)",
-                                        "id": "BT_LE_ACL_BUF_SIZE",
-                                        "name": "BT_LE_ACL_BUF_SIZE",
-                                        "range": null,
-                                        "title": "ACL Buffer size",
-                                        "type": "int"
-                                    },
-                                    {
-                                        "children": [],
-                                        "depends_on": "!BT_NIMBLE_ENABLED && BT_CONTROLLER_ENABLED",
-                                        "help": "This is the size of each HCI event buffer in bytes. In case of\nextended advertising, packets can be fragmented. 257 bytes is the\nmaximum size of a packet.",
-                                        "id": "BT_LE_HCI_EVT_BUF_SIZE",
-                                        "name": "BT_LE_HCI_EVT_BUF_SIZE",
-                                        "range": null,
-                                        "title": "HCI Event Buffer size",
-                                        "type": "int"
-                                    },
-                                    {
-                                        "children": [],
-                                        "depends_on": "!BT_NIMBLE_ENABLED && BT_CONTROLLER_ENABLED",
-                                        "help": "This is the high priority HCI events' buffer size. High-priority\nevent buffers are for everything except advertising reports. If there\nare no free high-priority event buffers then host will try to allocate a\nlow-priority buffer instead",
-                                        "id": "BT_LE_HCI_EVT_HI_BUF_COUNT",
-                                        "name": "BT_LE_HCI_EVT_HI_BUF_COUNT",
-                                        "range": null,
-                                        "title": "High Priority HCI Event Buffer count",
-                                        "type": "int"
-                                    },
-                                    {
-                                        "children": [],
-                                        "depends_on": "!BT_NIMBLE_ENABLED && BT_CONTROLLER_ENABLED",
-                                        "help": "This is the low priority HCI events' buffer size. Low-priority event\nbuffers are only used for advertising reports. If there are no free\nlow-priority event buffers, then an incoming advertising report will\nget dropped",
-                                        "id": "BT_LE_HCI_EVT_LO_BUF_COUNT",
-                                        "name": "BT_LE_HCI_EVT_LO_BUF_COUNT",
-                                        "range": null,
-                                        "title": "Low Priority HCI Event Buffer count",
-                                        "type": "int"
-                                    }
-                                ],
-                                "depends_on": "!BT_NIMBLE_ENABLED && BT_CONTROLLER_ENABLED",
-                                "id": "component-config-bluetooth-controller-options-memory-settings",
-                                "title": "Memory Settings",
-                                "type": "menu"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "BT_CONTROLLER_ENABLED",
-                                "help": "This configures stack size of NimBLE controller task",
-                                "id": "BT_LE_CONTROLLER_TASK_STACK_SIZE",
-                                "name": "BT_LE_CONTROLLER_TASK_STACK_SIZE",
-                                "range": null,
-                                "title": "Controller task stack size",
-                                "type": "int"
-                            },
-                            {
-                                "children": [
-                                    {
-                                        "children": [],
-                                        "depends_on": "BT_LE_CONTROLLER_LOG_ENABLED && BT_CONTROLLER_ENABLED",
-                                        "help": "Enable controller log module",
-                                        "id": "BT_LE_CONTROLLER_LOG_CTRL_ENABLED",
-                                        "name": "BT_LE_CONTROLLER_LOG_CTRL_ENABLED",
-                                        "range": null,
-                                        "title": "enable controller log module",
-                                        "type": "bool"
-                                    },
-                                    {
-                                        "children": [],
-                                        "depends_on": "BT_LE_CONTROLLER_LOG_ENABLED && BT_CONTROLLER_ENABLED",
-                                        "help": "Enable hci log module",
-                                        "id": "BT_LE_CONTROLLER_LOG_HCI_ENABLED",
-                                        "name": "BT_LE_CONTROLLER_LOG_HCI_ENABLED",
-                                        "range": null,
-                                        "title": "enable HCI log module",
-                                        "type": "bool"
-                                    },
-                                    {
-                                        "children": [],
-                                        "depends_on": "BT_LE_CONTROLLER_LOG_ENABLED && BT_CONTROLLER_ENABLED",
-                                        "help": "Only operate in dump mode",
-                                        "id": "BT_LE_CONTROLLER_LOG_DUMP_ONLY",
-                                        "name": "BT_LE_CONTROLLER_LOG_DUMP_ONLY",
-                                        "range": null,
-                                        "title": "Controller log dump mode only",
-                                        "type": "bool"
-                                    },
-                                    {
-                                        "children": [],
-                                        "depends_on": "BT_LE_CONTROLLER_LOG_ENABLED && BT_CONTROLLER_ENABLED",
-                                        "help": "Configure the size of the first BLE controller LOG buffer.",
-                                        "id": "BT_LE_LOG_CTRL_BUF1_SIZE",
-                                        "name": "BT_LE_LOG_CTRL_BUF1_SIZE",
-                                        "range": null,
-                                        "title": "size of the first BLE controller LOG buffer",
-                                        "type": "int"
-                                    },
-                                    {
-                                        "children": [],
-                                        "depends_on": "BT_LE_CONTROLLER_LOG_ENABLED && BT_CONTROLLER_ENABLED",
-                                        "help": "Configure the size of the second BLE controller LOG buffer.",
-                                        "id": "BT_LE_LOG_CTRL_BUF2_SIZE",
-                                        "name": "BT_LE_LOG_CTRL_BUF2_SIZE",
-                                        "range": null,
-                                        "title": "size of the second BLE controller LOG buffer",
-                                        "type": "int"
-                                    },
-                                    {
-                                        "children": [],
-                                        "depends_on": "BT_LE_CONTROLLER_LOG_ENABLED && BT_CONTROLLER_ENABLED",
-                                        "help": "Configure the size of the BLE HCI LOG buffer.",
-                                        "id": "BT_LE_LOG_HCI_BUF_SIZE",
-                                        "name": "BT_LE_LOG_HCI_BUF_SIZE",
-                                        "range": null,
-                                        "title": "size of the BLE HCI LOG buffer",
-                                        "type": "int"
-                                    }
-                                ],
-                                "depends_on": "BT_CONTROLLER_ENABLED",
-                                "help": "Enable controller log",
-                                "id": "BT_LE_CONTROLLER_LOG_ENABLED",
-                                "is_menuconfig": true,
-                                "name": "BT_LE_CONTROLLER_LOG_ENABLED",
-                                "range": null,
-                                "title": "Controller log enable",
-                                "type": "menu"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "BT_CONTROLLER_ENABLED",
-                                "help": "Configure the size of resolving list used in link layer.",
-                                "id": "BT_LE_LL_RESOLV_LIST_SIZE",
-                                "name": "BT_LE_LL_RESOLV_LIST_SIZE",
-                                "range": null,
-                                "title": "BLE LL Resolving list size",
-                                "type": "int"
-                            },
-                            {
-                                "children": [
-                                    {
-                                        "children": [],
-                                        "depends_on": "BT_LE_SECURITY_ENABLE && BT_CONTROLLER_ENABLED",
-                                        "help": "Enable security manager legacy pairing",
-                                        "id": "BT_LE_SM_LEGACY",
-                                        "name": "BT_LE_SM_LEGACY",
-                                        "range": null,
-                                        "title": "Security manager legacy pairing",
-                                        "type": "bool"
-                                    },
-                                    {
-                                        "children": [
-                                            {
-                                                "children": [],
-                                                "depends_on": "BT_LE_SECURITY_ENABLE && BT_LE_SM_SC && BT_CONTROLLER_ENABLED",
-                                                "help": "If this option is enabled, SM uses predefined DH key pair as described\nin Core Specification, Vol. 3, Part H, 2.3.5.6.1. This allows to\ndecrypt air traffic easily and thus should only be used for debugging.",
-                                                "id": "BT_LE_SM_SC_DEBUG_KEYS",
-                                                "name": "BT_LE_SM_SC_DEBUG_KEYS",
-                                                "range": null,
-                                                "title": "Use predefined public-private key pair",
-                                                "type": "bool"
-                                            }
-                                        ],
-                                        "depends_on": "BT_LE_SECURITY_ENABLE && BT_CONTROLLER_ENABLED",
-                                        "help": "Enable security manager secure connections",
-                                        "id": "BT_LE_SM_SC",
-                                        "name": "BT_LE_SM_SC",
-                                        "range": null,
-                                        "title": "Security manager secure connections (4.2)",
-                                        "type": "bool"
-                                    },
-                                    {
-                                        "children": [],
-                                        "depends_on": "BT_LE_SECURITY_ENABLE && BT_CONTROLLER_ENABLED",
-                                        "help": "Enable encryption connection",
-                                        "id": "BT_LE_LL_CFG_FEAT_LE_ENCRYPTION",
-                                        "name": "BT_LE_LL_CFG_FEAT_LE_ENCRYPTION",
-                                        "range": null,
-                                        "title": "Enable LE encryption",
-                                        "type": "bool"
-                                    }
-                                ],
-                                "depends_on": "!BT_NIMBLE_ENABLED && BT_CONTROLLER_ENABLED",
-                                "help": "Enable BLE sm feature",
-                                "id": "BT_LE_SECURITY_ENABLE",
-                                "is_menuconfig": true,
-                                "name": "BT_LE_SECURITY_ENABLE",
-                                "range": null,
-                                "title": "Enable BLE SM feature",
-                                "type": "menu"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "!BT_NIMBLE_ENABLED && BT_CONTROLLER_ENABLED",
-                                "help": "Enable this option to choose mbedTLS instead of TinyCrypt for crypto\ncomputations.",
-                                "id": "BT_LE_CRYPTO_STACK_MBEDTLS",
-                                "name": "BT_LE_CRYPTO_STACK_MBEDTLS",
-                                "range": null,
-                                "title": "Override TinyCrypt with mbedTLS for crypto computations",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "!BT_NIMBLE_ENABLED && BT_CONTROLLER_ENABLED",
-                                "help": "BLE list size",
-                                "id": "BT_LE_WHITELIST_SIZE",
-                                "name": "BT_LE_WHITELIST_SIZE",
-                                "range": null,
-                                "title": "BLE white list size",
-                                "type": "int"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "BT_CONTROLLER_ENABLED",
-                                "help": "config the max count of duplicate scan list",
-                                "id": "BT_LE_LL_DUP_SCAN_LIST_COUNT",
-                                "name": "BT_LE_LL_DUP_SCAN_LIST_COUNT",
-                                "range": null,
-                                "title": "BLE duplicate scan list count",
-                                "type": "int"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "BT_CONTROLLER_ENABLED",
-                                "help": "Sleep clock accuracy of our device (in ppm)",
-                                "id": "BT_LE_LL_SCA",
-                                "name": "BT_LE_LL_SCA",
-                                "range": null,
-                                "title": "BLE Sleep clock accuracy",
-                                "type": "int"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "!BT_NIMBLE_ENABLED && BT_CONTROLLER_ENABLED",
-                                "help": "Defines maximum number of concurrent BLE connections. For ESP32, user\nis expected to configure BTDM_CTRL_BLE_MAX_CONN from controller menu\nalong with this option. Similarly for ESP32-C3 or ESP32-S3, user is expected to\nconfigure BT_CTRL_BLE_MAX_ACT from controller menu.\nEach connection will take about 1k DRAM.",
-                                "id": "BT_LE_MAX_CONNECTIONS",
-                                "name": "BT_LE_MAX_CONNECTIONS",
-                                "range": null,
-                                "title": "Maximum number of concurrent connections",
-                                "type": "int"
-                            },
-                            {
-                                "children": [
-                                    {
-                                        "children": [],
-                                        "depends_on": "<choice BT_LE_COEX_PHY_CODED_TX_RX_TLIM>",
-                                        "help": "Always enable the limitation on max tx/rx time for Coded-PHY connection",
-                                        "id": "BT_LE_COEX_PHY_CODED_TX_RX_TLIM_EN",
-                                        "name": "BT_LE_COEX_PHY_CODED_TX_RX_TLIM_EN",
-                                        "range": null,
-                                        "title": "Force Enable",
-                                        "type": "bool"
-                                    },
-                                    {
-                                        "children": [],
-                                        "depends_on": "<choice BT_LE_COEX_PHY_CODED_TX_RX_TLIM>",
-                                        "help": "Disable the limitation on max tx/rx time for Coded-PHY connection",
-                                        "id": "BT_LE_COEX_PHY_CODED_TX_RX_TLIM_DIS",
-                                        "name": "BT_LE_COEX_PHY_CODED_TX_RX_TLIM_DIS",
-                                        "range": null,
-                                        "title": "Force Disable",
-                                        "type": "bool"
-                                    }
-                                ],
-                                "depends_on": "ESP_COEX_SW_COEXIST_ENABLE && BT_CONTROLLER_ENABLED",
-                                "help": "When using PHY-Coded in BLE connection, limitation on max tx/rx time can be applied to\nbetter avoid dramatic performance deterioration of Wi-Fi.",
-                                "id": "component-config-bluetooth-controller-options-coexistence-limit-on-max-tx-rx-time-for-coded-phy-connection",
-                                "name": "BT_LE_COEX_PHY_CODED_TX_RX_TLIM",
-                                "title": "Coexistence: limit on MAX Tx/Rx time for coded-PHY connection",
-                                "type": "choice"
-                            },
-                            {
                                 "children": [],
                                 "depends_on": "BT_CONTROLLER_ENABLED",
                                 "help": null,
-                                "id": "BT_LE_COEX_PHY_CODED_TX_RX_TLIM_EFF",
-                                "name": "BT_LE_COEX_PHY_CODED_TX_RX_TLIM_EFF",
+                                "id": "BT_CTRL_MODE_EFF",
+                                "name": "BT_CTRL_MODE_EFF",
                                 "range": null,
                                 "title": null,
                                 "type": "int"
@@ -11503,52 +10018,502 @@
                             {
                                 "children": [],
                                 "depends_on": "BT_CONTROLLER_ENABLED",
-                                "help": "Enable BLE sleep",
-                                "id": "BT_LE_SLEEP_ENABLE",
-                                "name": "BT_LE_SLEEP_ENABLE",
+                                "help": "BLE maximum activities of bluetooth controller\uff0cboth of connections,\nscan , sync and adv(periodic adv, multi-adv). Each instance needs to\nconsume 828 bytes, you can save RAM by modifying the instance value\naccording to actual needs.",
+                                "id": "BT_CTRL_BLE_MAX_ACT",
+                                "name": "BT_CTRL_BLE_MAX_ACT",
                                 "range": null,
-                                "title": "Enable BLE sleep",
-                                "type": "bool"
+                                "title": "BLE Max Instances",
+                                "type": "int"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "BT_CONTROLLER_ENABLED",
+                                "help": null,
+                                "id": "BT_CTRL_BLE_MAX_ACT_EFF",
+                                "name": "BT_CTRL_BLE_MAX_ACT_EFF",
+                                "range": null,
+                                "title": null,
+                                "type": "int"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "BT_CONTROLLER_ENABLED",
+                                "help": "BLE ACL buffer have two methods to be allocated. One is persistent allocating\n(alloate when controller initialise, never free until controller de-initialise)\nanother is dynamically allocating (allocate before TX and free after TX).",
+                                "id": "BT_CTRL_BLE_STATIC_ACL_TX_BUF_NB",
+                                "name": "BT_CTRL_BLE_STATIC_ACL_TX_BUF_NB",
+                                "range": null,
+                                "title": "BLE static ACL TX buffer numbers",
+                                "type": "int"
                             },
                             {
                                 "children": [
                                     {
                                         "children": [],
-                                        "depends_on": "<choice BT_LE_LP_CLK_SRC>",
-                                        "help": "User main XTAL as RTC clock source.\nThis option is recommended if external 32.768k XTAL is not available.\nUsing the external 32.768 kHz XTAL will have lower current consumption\nin light sleep compared to using the main XTAL.",
-                                        "id": "BT_LE_LP_CLK_SRC_MAIN_XTAL",
-                                        "name": "BT_LE_LP_CLK_SRC_MAIN_XTAL",
+                                        "depends_on": "<choice BT_CTRL_PINNED_TO_CORE_CHOICE>",
+                                        "help": null,
+                                        "id": "BT_CTRL_PINNED_TO_CORE_0",
+                                        "name": "BT_CTRL_PINNED_TO_CORE_0",
                                         "range": null,
-                                        "title": "Use main XTAL as RTC clock source",
+                                        "title": "Core 0 (PRO CPU)",
                                         "type": "bool"
                                     },
                                     {
                                         "children": [],
-                                        "depends_on": "<choice BT_LE_LP_CLK_SRC>",
-                                        "help": "Use the same slow clock source as system RTC\nUsing any clock source other than external 32.768 kHz XTAL supports only\nlegacy ADV and SCAN due to low clock accuracy.",
-                                        "id": "BT_LE_LP_CLK_SRC_DEFAULT",
-                                        "name": "BT_LE_LP_CLK_SRC_DEFAULT",
+                                        "depends_on": "!FREERTOS_UNICORE && <choice BT_CTRL_PINNED_TO_CORE_CHOICE>",
+                                        "help": null,
+                                        "id": "BT_CTRL_PINNED_TO_CORE_1",
+                                        "name": "BT_CTRL_PINNED_TO_CORE_1",
                                         "range": null,
-                                        "title": "Use system RTC slow clock source",
+                                        "title": "Core 1 (APP CPU)",
                                         "type": "bool"
                                     }
                                 ],
-                                "depends_on": "BT_CONTROLLER_ENABLED",
-                                "help": null,
-                                "id": "component-config-bluetooth-controller-options-ble-low-power-clock-source",
-                                "name": "BT_LE_LP_CLK_SRC",
-                                "title": "BLE low power clock source",
+                                "depends_on": "!FREERTOS_UNICORE && BT_CONTROLLER_ENABLED",
+                                "help": "Specify the cpu core to run bluetooth controller.\nCan not specify no-affinity.",
+                                "id": "component-config-bluetooth-controller-options-the-cpu-core-which-bluetooth-controller-run",
+                                "name": "BT_CTRL_PINNED_TO_CORE_CHOICE",
+                                "title": "The cpu core which bluetooth controller run",
                                 "type": "choice"
                             },
                             {
                                 "children": [],
-                                "depends_on": "!BT_NIMBLE_ENABLED && BT_CONTROLLER_ENABLED",
-                                "help": "Set this option to use Esp Timer which has higher priority timer\ninstead of FreeRTOS timer",
-                                "id": "BT_LE_USE_ESP_TIMER",
-                                "name": "BT_LE_USE_ESP_TIMER",
+                                "depends_on": "BT_CONTROLLER_ENABLED",
+                                "help": null,
+                                "id": "BT_CTRL_PINNED_TO_CORE",
+                                "name": "BT_CTRL_PINNED_TO_CORE",
                                 "range": null,
-                                "title": "Enable Esp Timer for Callout",
-                                "type": "bool"
+                                "title": null,
+                                "type": "int"
+                            },
+                            {
+                                "children": [
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice BT_CTRL_HCI_MODE_CHOICE>",
+                                        "help": "Normal option. Mostly, choose this VHCI when bluetooth host run on ESP32S3 or ESP32C3.",
+                                        "id": "BT_CTRL_HCI_MODE_VHCI",
+                                        "name": "BT_CTRL_HCI_MODE_VHCI",
+                                        "range": null,
+                                        "title": "VHCI",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice BT_CTRL_HCI_MODE_CHOICE>",
+                                        "help": "If use external bluetooth host which run on other hardware and use UART as the HCI interface,\nchoose this option.",
+                                        "id": "BT_CTRL_HCI_MODE_UART_H4",
+                                        "name": "BT_CTRL_HCI_MODE_UART_H4",
+                                        "range": null,
+                                        "title": "UART(H4)",
+                                        "type": "bool"
+                                    }
+                                ],
+                                "depends_on": "BT_CONTROLLER_ENABLED",
+                                "help": "Specify HCI mode as VHCI or UART(H4)",
+                                "id": "component-config-bluetooth-controller-options-hci-mode",
+                                "name": "BT_CTRL_HCI_MODE_CHOICE",
+                                "title": "HCI mode",
+                                "type": "choice"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "BT_CONTROLLER_ENABLED",
+                                "help": "HCI mode as VHCI or UART(H4)",
+                                "id": "BT_CTRL_HCI_TL",
+                                "name": "BT_CTRL_HCI_TL",
+                                "range": null,
+                                "title": null,
+                                "type": "int"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "BT_CONTROLLER_ENABLED",
+                                "help": "The maxinum number of suplicate scan filter",
+                                "id": "BT_CTRL_ADV_DUP_FILT_MAX",
+                                "name": "BT_CTRL_ADV_DUP_FILT_MAX",
+                                "range": null,
+                                "title": "The maxinum number of 5.0 extend duplicate scan filter",
+                                "type": "int"
+                            },
+                            {
+                                "children": [
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice BT_BLE_CCA_MODE>",
+                                        "help": null,
+                                        "id": "BT_BLE_CCA_MODE_NONE",
+                                        "name": "BT_BLE_CCA_MODE_NONE",
+                                        "range": null,
+                                        "title": "NONE",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice BT_BLE_CCA_MODE>",
+                                        "help": null,
+                                        "id": "BT_BLE_CCA_MODE_HW",
+                                        "name": "BT_BLE_CCA_MODE_HW",
+                                        "range": null,
+                                        "title": "Hardware",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice BT_BLE_CCA_MODE>",
+                                        "help": null,
+                                        "id": "BT_BLE_CCA_MODE_SW",
+                                        "name": "BT_BLE_CCA_MODE_SW",
+                                        "range": null,
+                                        "title": "Software",
+                                        "type": "bool"
+                                    }
+                                ],
+                                "depends_on": "BT_CONTROLLER_ENABLED",
+                                "help": "Define BT BLE CCA mode",
+                                "id": "component-config-bluetooth-controller-options-ble-cca-mode",
+                                "name": "BT_BLE_CCA_MODE",
+                                "title": "BLE CCA mode",
+                                "type": "choice"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "BT_CONTROLLER_ENABLED",
+                                "help": null,
+                                "id": "BT_BLE_CCA_MODE",
+                                "name": "BT_BLE_CCA_MODE",
+                                "range": null,
+                                "title": null,
+                                "type": "int"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "BT_CONTROLLER_ENABLED",
+                                "help": "It is the threshold value of HW CCA, if the value is 30, it means CCA threshold is -30 dBm.",
+                                "id": "BT_CTRL_HW_CCA_VAL",
+                                "name": "BT_CTRL_HW_CCA_VAL",
+                                "range": null,
+                                "title": "CCA threshold value",
+                                "type": "int"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "BT_CONTROLLER_ENABLED",
+                                "help": "If other devices are sending packets in the air and the signal is strong,\nthe packet hw to be sent this time is cancelled.",
+                                "id": "BT_CTRL_HW_CCA_EFF",
+                                "name": "BT_CTRL_HW_CCA_EFF",
+                                "range": null,
+                                "title": null,
+                                "type": "int"
+                            },
+                            {
+                                "children": [
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice BT_CTRL_CE_LENGTH_TYPE>",
+                                        "help": null,
+                                        "id": "BT_CTRL_CE_LENGTH_TYPE_ORIG",
+                                        "name": "BT_CTRL_CE_LENGTH_TYPE_ORIG",
+                                        "range": null,
+                                        "title": "ORIGINAL",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice BT_CTRL_CE_LENGTH_TYPE>",
+                                        "help": null,
+                                        "id": "BT_CTRL_CE_LENGTH_TYPE_CE",
+                                        "name": "BT_CTRL_CE_LENGTH_TYPE_CE",
+                                        "range": null,
+                                        "title": "Use CE parameter for HCI command",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice BT_CTRL_CE_LENGTH_TYPE>",
+                                        "help": null,
+                                        "id": "BT_CTRL_CE_LENGTH_TYPE_SD",
+                                        "name": "BT_CTRL_CE_LENGTH_TYPE_SD",
+                                        "range": null,
+                                        "title": "Use Espressif self-defined method",
+                                        "type": "bool"
+                                    }
+                                ],
+                                "depends_on": "BT_CONTROLLER_ENABLED",
+                                "help": "Specify connection event length determination",
+                                "id": "component-config-bluetooth-controller-options-connection-event-length-determination-method",
+                                "name": "BT_CTRL_CE_LENGTH_TYPE",
+                                "title": "Connection event length determination method",
+                                "type": "choice"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "BT_CONTROLLER_ENABLED",
+                                "help": null,
+                                "id": "BT_CTRL_CE_LENGTH_TYPE_EFF",
+                                "name": "BT_CTRL_CE_LENGTH_TYPE_EFF",
+                                "range": null,
+                                "title": null,
+                                "type": "int"
+                            },
+                            {
+                                "children": [
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice BT_CTRL_TX_ANTENNA_INDEX>",
+                                        "help": null,
+                                        "id": "BT_CTRL_TX_ANTENNA_INDEX_0",
+                                        "name": "BT_CTRL_TX_ANTENNA_INDEX_0",
+                                        "range": null,
+                                        "title": "Antenna 0",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice BT_CTRL_TX_ANTENNA_INDEX>",
+                                        "help": null,
+                                        "id": "BT_CTRL_TX_ANTENNA_INDEX_1",
+                                        "name": "BT_CTRL_TX_ANTENNA_INDEX_1",
+                                        "range": null,
+                                        "title": "Antenna 1",
+                                        "type": "bool"
+                                    }
+                                ],
+                                "depends_on": "BT_CONTROLLER_ENABLED",
+                                "help": "Specify default Tx antenna used for bluetooth",
+                                "id": "component-config-bluetooth-controller-options-default-tx-anntena-used",
+                                "name": "BT_CTRL_TX_ANTENNA_INDEX",
+                                "title": "default Tx anntena used",
+                                "type": "choice"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "BT_CONTROLLER_ENABLED",
+                                "help": null,
+                                "id": "BT_CTRL_TX_ANTENNA_INDEX_EFF",
+                                "name": "BT_CTRL_TX_ANTENNA_INDEX_EFF",
+                                "range": null,
+                                "title": null,
+                                "type": "int"
+                            },
+                            {
+                                "children": [
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice BT_CTRL_RX_ANTENNA_INDEX>",
+                                        "help": null,
+                                        "id": "BT_CTRL_RX_ANTENNA_INDEX_0",
+                                        "name": "BT_CTRL_RX_ANTENNA_INDEX_0",
+                                        "range": null,
+                                        "title": "Antenna 0",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice BT_CTRL_RX_ANTENNA_INDEX>",
+                                        "help": null,
+                                        "id": "BT_CTRL_RX_ANTENNA_INDEX_1",
+                                        "name": "BT_CTRL_RX_ANTENNA_INDEX_1",
+                                        "range": null,
+                                        "title": "Antenna 1",
+                                        "type": "bool"
+                                    }
+                                ],
+                                "depends_on": "BT_CONTROLLER_ENABLED",
+                                "help": "Specify default Rx antenna used for bluetooth",
+                                "id": "component-config-bluetooth-controller-options-default-rx-anntena-used",
+                                "name": "BT_CTRL_RX_ANTENNA_INDEX",
+                                "title": "default Rx anntena used",
+                                "type": "choice"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "BT_CONTROLLER_ENABLED",
+                                "help": null,
+                                "id": "BT_CTRL_RX_ANTENNA_INDEX_EFF",
+                                "name": "BT_CTRL_RX_ANTENNA_INDEX_EFF",
+                                "range": null,
+                                "title": null,
+                                "type": "int"
+                            },
+                            {
+                                "children": [
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice BT_CTRL_DFT_TX_POWER_LEVEL>",
+                                        "help": null,
+                                        "id": "BT_CTRL_DFT_TX_POWER_LEVEL_N24",
+                                        "name": "BT_CTRL_DFT_TX_POWER_LEVEL_N24",
+                                        "range": null,
+                                        "title": "-24dBm",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice BT_CTRL_DFT_TX_POWER_LEVEL>",
+                                        "help": null,
+                                        "id": "BT_CTRL_DFT_TX_POWER_LEVEL_N21",
+                                        "name": "BT_CTRL_DFT_TX_POWER_LEVEL_N21",
+                                        "range": null,
+                                        "title": "-21dBm",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice BT_CTRL_DFT_TX_POWER_LEVEL>",
+                                        "help": null,
+                                        "id": "BT_CTRL_DFT_TX_POWER_LEVEL_N18",
+                                        "name": "BT_CTRL_DFT_TX_POWER_LEVEL_N18",
+                                        "range": null,
+                                        "title": "-18dBm",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice BT_CTRL_DFT_TX_POWER_LEVEL>",
+                                        "help": null,
+                                        "id": "BT_CTRL_DFT_TX_POWER_LEVEL_N15",
+                                        "name": "BT_CTRL_DFT_TX_POWER_LEVEL_N15",
+                                        "range": null,
+                                        "title": "-15dBm",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice BT_CTRL_DFT_TX_POWER_LEVEL>",
+                                        "help": null,
+                                        "id": "BT_CTRL_DFT_TX_POWER_LEVEL_N12",
+                                        "name": "BT_CTRL_DFT_TX_POWER_LEVEL_N12",
+                                        "range": null,
+                                        "title": "-12dBm",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice BT_CTRL_DFT_TX_POWER_LEVEL>",
+                                        "help": null,
+                                        "id": "BT_CTRL_DFT_TX_POWER_LEVEL_N9",
+                                        "name": "BT_CTRL_DFT_TX_POWER_LEVEL_N9",
+                                        "range": null,
+                                        "title": "-9dBm",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice BT_CTRL_DFT_TX_POWER_LEVEL>",
+                                        "help": null,
+                                        "id": "BT_CTRL_DFT_TX_POWER_LEVEL_N6",
+                                        "name": "BT_CTRL_DFT_TX_POWER_LEVEL_N6",
+                                        "range": null,
+                                        "title": "-6dBm",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice BT_CTRL_DFT_TX_POWER_LEVEL>",
+                                        "help": null,
+                                        "id": "BT_CTRL_DFT_TX_POWER_LEVEL_N3",
+                                        "name": "BT_CTRL_DFT_TX_POWER_LEVEL_N3",
+                                        "range": null,
+                                        "title": "-3dBm",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice BT_CTRL_DFT_TX_POWER_LEVEL>",
+                                        "help": null,
+                                        "id": "BT_CTRL_DFT_TX_POWER_LEVEL_N0",
+                                        "name": "BT_CTRL_DFT_TX_POWER_LEVEL_N0",
+                                        "range": null,
+                                        "title": "0dBm",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice BT_CTRL_DFT_TX_POWER_LEVEL>",
+                                        "help": null,
+                                        "id": "BT_CTRL_DFT_TX_POWER_LEVEL_P3",
+                                        "name": "BT_CTRL_DFT_TX_POWER_LEVEL_P3",
+                                        "range": null,
+                                        "title": "+3dBm",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice BT_CTRL_DFT_TX_POWER_LEVEL>",
+                                        "help": null,
+                                        "id": "BT_CTRL_DFT_TX_POWER_LEVEL_P6",
+                                        "name": "BT_CTRL_DFT_TX_POWER_LEVEL_P6",
+                                        "range": null,
+                                        "title": "+6dBm",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice BT_CTRL_DFT_TX_POWER_LEVEL>",
+                                        "help": null,
+                                        "id": "BT_CTRL_DFT_TX_POWER_LEVEL_P9",
+                                        "name": "BT_CTRL_DFT_TX_POWER_LEVEL_P9",
+                                        "range": null,
+                                        "title": "+9dBm",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice BT_CTRL_DFT_TX_POWER_LEVEL>",
+                                        "help": null,
+                                        "id": "BT_CTRL_DFT_TX_POWER_LEVEL_P12",
+                                        "name": "BT_CTRL_DFT_TX_POWER_LEVEL_P12",
+                                        "range": null,
+                                        "title": "+12dBm",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice BT_CTRL_DFT_TX_POWER_LEVEL>",
+                                        "help": null,
+                                        "id": "BT_CTRL_DFT_TX_POWER_LEVEL_P15",
+                                        "name": "BT_CTRL_DFT_TX_POWER_LEVEL_P15",
+                                        "range": null,
+                                        "title": "+15dBm",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice BT_CTRL_DFT_TX_POWER_LEVEL>",
+                                        "help": null,
+                                        "id": "BT_CTRL_DFT_TX_POWER_LEVEL_P18",
+                                        "name": "BT_CTRL_DFT_TX_POWER_LEVEL_P18",
+                                        "range": null,
+                                        "title": "+18dBm",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice BT_CTRL_DFT_TX_POWER_LEVEL>",
+                                        "help": null,
+                                        "id": "BT_CTRL_DFT_TX_POWER_LEVEL_P21",
+                                        "name": "BT_CTRL_DFT_TX_POWER_LEVEL_P21",
+                                        "range": null,
+                                        "title": "+21dBm",
+                                        "type": "bool"
+                                    }
+                                ],
+                                "depends_on": "BT_CONTROLLER_ENABLED",
+                                "help": "Specify default Tx power level",
+                                "id": "component-config-bluetooth-controller-options-ble-default-tx-power-level",
+                                "name": "BT_CTRL_DFT_TX_POWER_LEVEL",
+                                "title": "BLE default Tx power level",
+                                "type": "choice"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "BT_CONTROLLER_ENABLED",
+                                "help": null,
+                                "id": "BT_CTRL_DFT_TX_POWER_LEVEL_EFF",
+                                "name": "BT_CTRL_DFT_TX_POWER_LEVEL_EFF",
+                                "range": null,
+                                "title": null,
+                                "type": "int"
                             },
                             {
                                 "children": [
@@ -11587,89 +10552,281 @@
                                         "children": [
                                             {
                                                 "children": [],
-                                                "depends_on": "<choice BT_LE_SCAN_DUPL_TYPE>",
-                                                "help": "This way is to use advertiser address filtering. The adv packet of the same address is only\nallowed to be reported once",
-                                                "id": "BT_LE_SCAN_DUPL_TYPE_DEVICE",
-                                                "name": "BT_LE_SCAN_DUPL_TYPE_DEVICE",
+                                                "depends_on": "<choice BT_CTRL_SCAN_DUPL_TYPE>",
+                                                "help": "Advertising packets with the same address, address type, and advertising type are reported once.",
+                                                "id": "BT_CTRL_SCAN_DUPL_TYPE_DEVICE",
+                                                "name": "BT_CTRL_SCAN_DUPL_TYPE_DEVICE",
                                                 "range": null,
                                                 "title": "Scan Duplicate By Device Address",
                                                 "type": "bool"
                                             },
                                             {
                                                 "children": [],
-                                                "depends_on": "<choice BT_LE_SCAN_DUPL_TYPE>",
-                                                "help": "This way is to use advertising data filtering. All same advertising data only allow to be reported\nonce even though they are from different devices.",
-                                                "id": "BT_LE_SCAN_DUPL_TYPE_DATA",
-                                                "name": "BT_LE_SCAN_DUPL_TYPE_DATA",
+                                                "depends_on": "<choice BT_CTRL_SCAN_DUPL_TYPE>",
+                                                "help": "Advertising packets with identical advertising data, address type, and advertising type\nare reported only once, even if they originate from different devices.",
+                                                "id": "BT_CTRL_SCAN_DUPL_TYPE_DATA",
+                                                "name": "BT_CTRL_SCAN_DUPL_TYPE_DATA",
                                                 "range": null,
                                                 "title": "Scan Duplicate By Advertising Data",
                                                 "type": "bool"
                                             },
                                             {
                                                 "children": [],
-                                                "depends_on": "<choice BT_LE_SCAN_DUPL_TYPE>",
-                                                "help": "This way is to use advertising data and device address filtering. All different adv packets with\nthe same address are allowed to be reported.",
-                                                "id": "BT_LE_SCAN_DUPL_TYPE_DATA_DEVICE",
-                                                "name": "BT_LE_SCAN_DUPL_TYPE_DATA_DEVICE",
+                                                "depends_on": "<choice BT_CTRL_SCAN_DUPL_TYPE>",
+                                                "help": "Advertising packets with the same address, advertising data, address type,\nand advertising type are reported only once.",
+                                                "id": "BT_CTRL_SCAN_DUPL_TYPE_DATA_DEVICE",
+                                                "name": "BT_CTRL_SCAN_DUPL_TYPE_DATA_DEVICE",
                                                 "range": null,
                                                 "title": "Scan Duplicate By Device Address And Advertising Data",
                                                 "type": "bool"
                                             }
                                         ],
-                                        "depends_on": "BT_LE_SCAN_DUPL && BT_CONTROLLER_ENABLED",
+                                        "depends_on": "BT_CTRL_BLE_SCAN_DUPL && BT_CONTROLLER_ENABLED",
                                         "help": "Scan duplicate have three ways. one is \"Scan Duplicate By Device Address\", This way is to use\nadvertiser address filtering. The adv packet of the same address is only allowed to be reported once.\nAnother way is \"Scan Duplicate By Device Address And Advertising Data\". This way is to use advertising\ndata and device address filtering. All different adv packets with the same address are allowed to be\nreported. The last way is \"Scan Duplicate By Advertising Data\". This way is to use advertising data\nfiltering. All same advertising data only allow to be reported once even though they are from\ndifferent devices.",
                                         "id": "component-config-bluetooth-controller-options-ble-scan-duplicate-options-scan-duplicate-type",
-                                        "name": "BT_LE_SCAN_DUPL_TYPE",
+                                        "name": "BT_CTRL_SCAN_DUPL_TYPE",
                                         "title": "Scan Duplicate Type",
                                         "type": "choice"
                                     },
                                     {
                                         "children": [],
-                                        "depends_on": "BT_LE_SCAN_DUPL && BT_CONTROLLER_ENABLED",
+                                        "depends_on": "BT_CTRL_BLE_SCAN_DUPL && BT_CONTROLLER_ENABLED",
                                         "help": null,
-                                        "id": "BT_LE_SCAN_DUPL_TYPE",
-                                        "name": "BT_LE_SCAN_DUPL_TYPE",
+                                        "id": "BT_CTRL_SCAN_DUPL_TYPE",
+                                        "name": "BT_CTRL_SCAN_DUPL_TYPE",
                                         "range": null,
                                         "title": null,
                                         "type": "int"
                                     },
                                     {
                                         "children": [],
-                                        "depends_on": "BT_LE_SCAN_DUPL && BT_CONTROLLER_ENABLED",
+                                        "depends_on": "BT_CTRL_BLE_SCAN_DUPL && BT_CONTROLLER_ENABLED",
                                         "help": "Maximum number of devices which can be recorded in scan duplicate filter.\nWhen the maximum amount of device in the filter is reached, the cache will be refreshed.",
-                                        "id": "BT_LE_SCAN_DUPL_CACHE_SIZE",
-                                        "name": "BT_LE_SCAN_DUPL_CACHE_SIZE",
+                                        "id": "BT_CTRL_SCAN_DUPL_CACHE_SIZE",
+                                        "name": "BT_CTRL_SCAN_DUPL_CACHE_SIZE",
                                         "range": null,
                                         "title": "Maximum number of devices in scan duplicate filter",
                                         "type": "int"
                                     },
                                     {
                                         "children": [],
-                                        "depends_on": "BT_LE_SCAN_DUPL && BT_CONTROLLER_ENABLED",
+                                        "depends_on": "BT_CTRL_BLE_SCAN_DUPL && BT_CONTROLLER_ENABLED",
                                         "help": "If the period value is non-zero, the controller will periodically clear the device information\nstored in the scan duuplicate filter. If it is 0, the scan duuplicate filter will not be cleared\nuntil the scanning is disabled. Duplicate advertisements for this period should not be sent to the\nHost in advertising report events.\nThere are two scenarios where the ADV packet will be repeatedly reported:\n1. The duplicate scan cache is full, the controller will delete the oldest device information and\nadd new device information.\n2. When the refresh period is up, the controller will clear all device information and start filtering\nagain.",
-                                        "id": "BT_LE_SCAN_DUPL_CACHE_REFRESH_PERIOD",
-                                        "name": "BT_LE_SCAN_DUPL_CACHE_REFRESH_PERIOD",
+                                        "id": "BT_CTRL_DUPL_SCAN_CACHE_REFRESH_PERIOD",
+                                        "name": "BT_CTRL_DUPL_SCAN_CACHE_REFRESH_PERIOD",
                                         "range": null,
                                         "title": "Duplicate scan list refresh period (seconds)",
                                         "type": "int"
+                                    },
+                                    {
+                                        "children": [
+                                            {
+                                                "children": [],
+                                                "depends_on": "BT_CTRL_BLE_MESH_SCAN_DUPL_EN && BT_CONTROLLER_ENABLED",
+                                                "help": "Maximum number of adv packets which can be recorded in duplicate scan cache for BLE Mesh.\nWhen the maximum amount of device in the filter is reached, the cache will be refreshed.",
+                                                "id": "BT_CTRL_MESH_DUPL_SCAN_CACHE_SIZE",
+                                                "name": "BT_CTRL_MESH_DUPL_SCAN_CACHE_SIZE",
+                                                "range": null,
+                                                "title": "Maximum number of Mesh adv packets in scan duplicate filter",
+                                                "type": "int"
+                                            }
+                                        ],
+                                        "depends_on": "BT_CTRL_BLE_SCAN_DUPL && BT_CONTROLLER_ENABLED",
+                                        "help": "This enables the BLE scan duplicate for special BLE Mesh scan.",
+                                        "id": "BT_CTRL_BLE_MESH_SCAN_DUPL_EN",
+                                        "name": "BT_CTRL_BLE_MESH_SCAN_DUPL_EN",
+                                        "range": null,
+                                        "title": "Special duplicate scan mechanism for BLE Mesh scan",
+                                        "type": "bool"
                                     }
                                 ],
                                 "depends_on": "BT_CONTROLLER_ENABLED",
                                 "help": "This select enables parameters setting of BLE scan duplicate.",
-                                "id": "BT_LE_SCAN_DUPL",
-                                "name": "BT_LE_SCAN_DUPL",
+                                "id": "BT_CTRL_BLE_SCAN_DUPL",
+                                "name": "BT_CTRL_BLE_SCAN_DUPL",
                                 "range": null,
                                 "title": "BLE Scan Duplicate Options",
                                 "type": "bool"
                             },
                             {
+                                "children": [
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice BT_CTRL_COEX_PHY_CODED_TX_RX_TLIM>",
+                                        "help": "Always enable the limitation on max tx/rx time for Coded-PHY connection",
+                                        "id": "BT_CTRL_COEX_PHY_CODED_TX_RX_TLIM_EN",
+                                        "name": "BT_CTRL_COEX_PHY_CODED_TX_RX_TLIM_EN",
+                                        "range": null,
+                                        "title": "Force Enable",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice BT_CTRL_COEX_PHY_CODED_TX_RX_TLIM>",
+                                        "help": "Disable the limitation on max tx/rx time for Coded-PHY connection",
+                                        "id": "BT_CTRL_COEX_PHY_CODED_TX_RX_TLIM_DIS",
+                                        "name": "BT_CTRL_COEX_PHY_CODED_TX_RX_TLIM_DIS",
+                                        "range": null,
+                                        "title": "Force Disable",
+                                        "type": "bool"
+                                    }
+                                ],
+                                "depends_on": "ESP_COEX_SW_COEXIST_ENABLE && BT_CONTROLLER_ENABLED",
+                                "help": "When using PHY-Coded in BLE connection, limitation on max tx/rx time can be applied to\nbetter avoid dramatic performance deterioration of Wi-Fi.",
+                                "id": "component-config-bluetooth-controller-options-coexistence-limit-on-max-tx-rx-time-for-coded-phy-connection",
+                                "name": "BT_CTRL_COEX_PHY_CODED_TX_RX_TLIM",
+                                "title": "Coexistence: limit on MAX Tx/Rx time for coded-PHY connection",
+                                "type": "choice"
+                            },
+                            {
                                 "children": [],
                                 "depends_on": "BT_CONTROLLER_ENABLED",
                                 "help": null,
-                                "id": "BT_LE_MSYS_INIT_IN_CONTROLLER",
-                                "name": "BT_LE_MSYS_INIT_IN_CONTROLLER",
+                                "id": "BT_CTRL_COEX_PHY_CODED_TX_RX_TLIM_EFF",
+                                "name": "BT_CTRL_COEX_PHY_CODED_TX_RX_TLIM_EFF",
                                 "range": null,
-                                "title": "Msys Mbuf Init in Controller",
+                                "title": null,
+                                "type": "int"
+                            },
+                            {
+                                "children": [
+                                    {
+                                        "children": [
+                                            {
+                                                "children": [
+                                                    {
+                                                        "children": [
+                                                            {
+                                                                "children": [],
+                                                                "depends_on": "<choice BT_CTRL_LOW_POWER_CLOCK>",
+                                                                "help": "Main crystal can be used as low power clock for bluetooth modem sleep. If this option is\nselected, bluetooth modem sleep can work under Dynamic Frequency Scaling(DFS) enabled, and\nbluetooth can work under light sleep enabled. Main crystal has a relatively better performance\nthan other bluetooth low power clock sources.",
+                                                                "id": "BT_CTRL_LPCLK_SEL_MAIN_XTAL",
+                                                                "name": "BT_CTRL_LPCLK_SEL_MAIN_XTAL",
+                                                                "range": null,
+                                                                "title": "Main crystal",
+                                                                "type": "bool"
+                                                            },
+                                                            {
+                                                                "children": [],
+                                                                "depends_on": "RTC_CLK_SRC_EXT_CRYS && <choice BT_CTRL_LOW_POWER_CLOCK>",
+                                                                "help": "External 32kHz crystal has a nominal frequency of 32.768kHz and provides good frequency\nstability. If used as Bluetooth low power clock, External 32kHz can support Bluetooth\nmodem sleep to be used with both DFS and light sleep.",
+                                                                "id": "BT_CTRL_LPCLK_SEL_EXT_32K_XTAL",
+                                                                "name": "BT_CTRL_LPCLK_SEL_EXT_32K_XTAL",
+                                                                "range": null,
+                                                                "title": "External 32kHz crystal",
+                                                                "type": "bool"
+                                                            },
+                                                            {
+                                                                "children": [],
+                                                                "depends_on": "RTC_CLK_SRC_INT_RC && <choice BT_CTRL_LOW_POWER_CLOCK>",
+                                                                "help": "Internal 150kHz RC oscillator. The accuracy of this clock is a lot larger than 500ppm which is required\nin Bluetooth communication, so don't select this option in scenarios such as BLE connection state.",
+                                                                "id": "BT_CTRL_LPCLK_SEL_RTC_SLOW",
+                                                                "name": "BT_CTRL_LPCLK_SEL_RTC_SLOW",
+                                                                "range": null,
+                                                                "title": "Internal 150kHz RC oscillator",
+                                                                "type": "bool"
+                                                            }
+                                                        ],
+                                                        "depends_on": "BT_CTRL_MODEM_SLEEP_MODE_1 && BT_CONTROLLER_ENABLED",
+                                                        "help": "Select the low power clock source for bluetooth controller",
+                                                        "id": "component-config-bluetooth-controller-options-modem-sleep-options-bluetooth-modem-sleep-bluetooth-modem-sleep-mode-1-bluetooth-low-power-clock",
+                                                        "name": "BT_CTRL_LOW_POWER_CLOCK",
+                                                        "title": "Bluetooth low power clock",
+                                                        "type": "choice"
+                                                    }
+                                                ],
+                                                "depends_on": "BT_CTRL_MODEM_SLEEP && BT_CONTROLLER_ENABLED",
+                                                "help": "Mode 1 is the currently supported sleep mode. In this mode,\nbluetooth controller sleeps between and BLE events. A low\npower clock is used to maintain bluetooth reference clock.",
+                                                "id": "BT_CTRL_MODEM_SLEEP_MODE_1",
+                                                "name": "BT_CTRL_MODEM_SLEEP_MODE_1",
+                                                "range": null,
+                                                "title": "Bluetooth Modem sleep Mode 1",
+                                                "type": "bool"
+                                            }
+                                        ],
+                                        "depends_on": "!BT_CTRL_HCI_MODE_UART_H4 && BT_CONTROLLER_ENABLED",
+                                        "help": "Enable/disable bluetooth controller low power mode.\nModem sleep is not supported to be used with UART HCI.",
+                                        "id": "BT_CTRL_MODEM_SLEEP",
+                                        "name": "BT_CTRL_MODEM_SLEEP",
+                                        "range": null,
+                                        "title": "Bluetooth modem sleep",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "(BT_CTRL_LPCLK_SEL_MAIN_XTAL || BT_CTRL_LPCLK_SEL_EXT_32K_XTAL) && FREERTOS_USE_TICKLESS_IDLE && BT_CONTROLLER_ENABLED",
+                                        "help": "If this option is selected, the main crystal will power up during light sleep when the low power clock\nselects an external 32kHz crystal but the external 32kHz crystal does not exist or the low power clock\nselects the main crystal.",
+                                        "id": "BT_CTRL_MAIN_XTAL_PU_DURING_LIGHT_SLEEP",
+                                        "name": "BT_CTRL_MAIN_XTAL_PU_DURING_LIGHT_SLEEP",
+                                        "range": null,
+                                        "title": "power up main XTAL during light sleep",
+                                        "type": "bool"
+                                    }
+                                ],
+                                "depends_on": "BT_CONTROLLER_ENABLED",
+                                "id": "component-config-bluetooth-controller-options-modem-sleep-options",
+                                "title": "MODEM SLEEP Options",
+                                "type": "menu"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "BT_CONTROLLER_ENABLED",
+                                "help": null,
+                                "id": "BT_CTRL_SLEEP_MODE_EFF",
+                                "name": "BT_CTRL_SLEEP_MODE_EFF",
+                                "range": null,
+                                "title": null,
+                                "type": "int"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "BT_CONTROLLER_ENABLED",
+                                "help": null,
+                                "id": "BT_CTRL_SLEEP_CLOCK_EFF",
+                                "name": "BT_CTRL_SLEEP_CLOCK_EFF",
+                                "range": null,
+                                "title": null,
+                                "type": "int"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "BT_CONTROLLER_ENABLED",
+                                "help": null,
+                                "id": "BT_CTRL_HCI_TL_EFF",
+                                "name": "BT_CTRL_HCI_TL_EFF",
+                                "range": null,
+                                "title": null,
+                                "type": "int"
+                            },
+                            {
+                                "children": [
+                                    {
+                                        "children": [],
+                                        "depends_on": "BT_CTRL_AGC_RECORRECT_EN && BT_CONTROLLER_ENABLED",
+                                        "help": "Enable coded phy AGC recorrect",
+                                        "id": "BT_CTRL_CODED_AGC_RECORRECT_EN",
+                                        "name": "BT_CTRL_CODED_AGC_RECORRECT_EN",
+                                        "range": null,
+                                        "title": "Enable coded phy AGC recorrect",
+                                        "type": "bool"
+                                    }
+                                ],
+                                "depends_on": "BT_CONTROLLER_ENABLED",
+                                "help": "Enable uncoded phy AGC recorrect",
+                                "id": "BT_CTRL_AGC_RECORRECT_EN",
+                                "name": "BT_CTRL_AGC_RECORRECT_EN",
+                                "range": null,
+                                "title": "Enable HW AGC recorrect",
+                                "type": "bool"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "BT_CONTROLLER_ENABLED",
+                                "help": "Disable active scan backoff. The bluetooth spec requires that scanners should run a backoff procedure to\nminimize collision of scan request PDUs from nultiple scanners. If scan backoff is disabled, in active\nscanning, scan request PDU will be sent every time when HW receives scannable ADV PDU.",
+                                "id": "BT_CTRL_SCAN_BACKOFF_UPPERLIMITMAX",
+                                "name": "BT_CTRL_SCAN_BACKOFF_UPPERLIMITMAX",
+                                "range": null,
+                                "title": "Disable active scan backoff",
                                 "type": "bool"
                             }
                         ],
@@ -15385,38 +14542,78 @@
                                 "children": [
                                     {
                                         "children": [],
-                                        "depends_on": "<choice ESP32C6_REV_MIN>",
+                                        "depends_on": "<choice ESP32C3_REV_MIN>",
                                         "help": null,
-                                        "id": "ESP32C6_REV_MIN_0",
-                                        "name": "ESP32C6_REV_MIN_0",
+                                        "id": "ESP32C3_REV_MIN_0",
+                                        "name": "ESP32C3_REV_MIN_0",
                                         "range": null,
-                                        "title": "Rev v0.0",
+                                        "title": "Rev v0.0 (ECO0)",
                                         "type": "bool"
                                     },
                                     {
                                         "children": [],
-                                        "depends_on": "<choice ESP32C6_REV_MIN>",
+                                        "depends_on": "<choice ESP32C3_REV_MIN>",
                                         "help": null,
-                                        "id": "ESP32C6_REV_MIN_1",
-                                        "name": "ESP32C6_REV_MIN_1",
+                                        "id": "ESP32C3_REV_MIN_1",
+                                        "name": "ESP32C3_REV_MIN_1",
                                         "range": null,
                                         "title": "Rev v0.1 (ECO1)",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice ESP32C3_REV_MIN>",
+                                        "help": null,
+                                        "id": "ESP32C3_REV_MIN_2",
+                                        "name": "ESP32C3_REV_MIN_2",
+                                        "range": null,
+                                        "title": "Rev v0.2 (ECO2)",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice ESP32C3_REV_MIN>",
+                                        "help": null,
+                                        "id": "ESP32C3_REV_MIN_3",
+                                        "name": "ESP32C3_REV_MIN_3",
+                                        "range": null,
+                                        "title": "Rev v0.3 (ECO3)",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice ESP32C3_REV_MIN>",
+                                        "help": null,
+                                        "id": "ESP32C3_REV_MIN_4",
+                                        "name": "ESP32C3_REV_MIN_4",
+                                        "range": null,
+                                        "title": "Rev v0.4 (ECO4)",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice ESP32C3_REV_MIN>",
+                                        "help": null,
+                                        "id": "ESP32C3_REV_MIN_101",
+                                        "name": "ESP32C3_REV_MIN_101",
+                                        "range": null,
+                                        "title": "Rev v1.1",
                                         "type": "bool"
                                     }
                                 ],
                                 "depends_on": null,
                                 "help": "Required minimum chip revision. ESP-IDF will check for it and\nreject to boot if the chip revision fails the check.\nThis ensures the chip used will have some modifications (features, or bugfixes).\n\nThe complied binary will only support chips above this revision,\nthis will also help to reduce binary size.",
-                                "id": "component-config-hardware-settings-chip-revision-minimum-supported-esp32-c6-revision",
-                                "name": "ESP32C6_REV_MIN",
-                                "title": "Minimum Supported ESP32-C6 Revision",
+                                "id": "component-config-hardware-settings-chip-revision-minimum-supported-esp32-c3-revision",
+                                "name": "ESP32C3_REV_MIN",
+                                "title": "Minimum Supported ESP32-C3 Revision",
                                 "type": "choice"
                             },
                             {
                                 "children": [],
                                 "depends_on": null,
                                 "help": null,
-                                "id": "ESP32C6_REV_MIN_FULL",
-                                "name": "ESP32C6_REV_MIN_FULL",
+                                "id": "ESP32C3_REV_MIN_FULL",
+                                "name": "ESP32C3_REV_MIN_FULL",
                                 "range": null,
                                 "title": null,
                                 "type": "int"
@@ -15435,8 +14632,8 @@
                                 "children": [],
                                 "depends_on": null,
                                 "help": null,
-                                "id": "ESP32C6_REV_MAX_FULL",
-                                "name": "ESP32C6_REV_MAX_FULL",
+                                "id": "ESP32C3_REV_MAX_FULL",
+                                "name": "ESP32C3_REV_MAX_FULL",
                                 "range": null,
                                 "title": null,
                                 "type": "int"
@@ -15553,29 +14750,29 @@
                                 "children": [
                                     {
                                         "children": [],
-                                        "depends_on": "<choice ESP32C6_UNIVERSAL_MAC_ADDRESSES>",
+                                        "depends_on": "<choice ESP32C3_UNIVERSAL_MAC_ADDRESSES>",
                                         "help": null,
-                                        "id": "ESP32C6_UNIVERSAL_MAC_ADDRESSES_TWO",
-                                        "name": "ESP32C6_UNIVERSAL_MAC_ADDRESSES_TWO",
+                                        "id": "ESP32C3_UNIVERSAL_MAC_ADDRESSES_TWO",
+                                        "name": "ESP32C3_UNIVERSAL_MAC_ADDRESSES_TWO",
                                         "range": null,
                                         "title": "Two",
                                         "type": "bool"
                                     },
                                     {
                                         "children": [],
-                                        "depends_on": "<choice ESP32C6_UNIVERSAL_MAC_ADDRESSES>",
+                                        "depends_on": "<choice ESP32C3_UNIVERSAL_MAC_ADDRESSES>",
                                         "help": null,
-                                        "id": "ESP32C6_UNIVERSAL_MAC_ADDRESSES_FOUR",
-                                        "name": "ESP32C6_UNIVERSAL_MAC_ADDRESSES_FOUR",
+                                        "id": "ESP32C3_UNIVERSAL_MAC_ADDRESSES_FOUR",
+                                        "name": "ESP32C3_UNIVERSAL_MAC_ADDRESSES_FOUR",
                                         "range": null,
                                         "title": "Four",
                                         "type": "bool"
                                     }
                                 ],
                                 "depends_on": null,
-                                "help": "Configure the number of universally administered (by IEEE) MAC addresses.\n\nDuring initialization, MAC addresses for each network interface are generated or derived from a\nsingle base MAC address.\n\nIf the number of universal MAC addresses is four, all four interfaces (WiFi station, WiFi softap,\nBluetooth and Ethernet) receive a universally administered MAC address. These are generated\nsequentially by adding 0, 1, 2 and 3 (respectively) to the final octet of the base MAC address.\n\nIf the number of universal MAC addresses is two, only two interfaces (WiFi station and Bluetooth)\nreceive a universally administered MAC address. These are generated sequentially by adding 0\nand 1 (respectively) to the base MAC address. The remaining two interfaces (WiFi softap and Ethernet)\nreceive local MAC addresses. These are derived from the universal WiFi station and Bluetooth MAC\naddresses, respectively.\n\nWhen using the default (Espressif-assigned) base MAC address, either setting can be used. When using\na custom universal MAC address range, the correct setting will depend on the allocation of MAC\naddresses in this range (either 2 or 4 per device.)\n\nNote that ESP32-C6 has no integrated Ethernet MAC. Although it's possible to use the esp_read_mac()\nAPI to return a MAC for Ethernet, this can only be used with an external MAC peripheral.",
+                                "help": "Configure the number of universally administered (by IEEE) MAC addresses.\n\nDuring initialization, MAC addresses for each network interface are generated or derived from a\nsingle base MAC address.\n\nIf the number of universal MAC addresses is four, all four interfaces (WiFi station, WiFi softap,\nBluetooth and Ethernet) receive a universally administered MAC address. These are generated\nsequentially by adding 0, 1, 2 and 3 (respectively) to the final octet of the base MAC address.\n\nIf the number of universal MAC addresses is two, only two interfaces (WiFi station and Bluetooth)\nreceive a universally administered MAC address. These are generated sequentially by adding 0\nand 1 (respectively) to the base MAC address. The remaining two interfaces (WiFi softap and Ethernet)\nreceive local MAC addresses. These are derived from the universal WiFi station and Bluetooth MAC\naddresses, respectively.\n\nWhen using the default (Espressif-assigned) base MAC address, either setting can be used. When using\na custom universal MAC address range, the correct setting will depend on the allocation of MAC\naddresses in this range (either 2 or 4 per device.)\n\nNote that ESP32-C3 has no integrated Ethernet MAC. Although it's possible to use the esp_read_mac()\nAPI to return a MAC for Ethernet, this can only be used with an external MAC peripheral.",
                                 "id": "component-config-hardware-settings-mac-config-number-of-universally-administered-by-ieee-mac-address",
-                                "name": "ESP32C6_UNIVERSAL_MAC_ADDRESSES",
+                                "name": "ESP32C3_UNIVERSAL_MAC_ADDRESSES",
                                 "title": "Number of universally administered (by IEEE) MAC address",
                                 "type": "choice"
                             },
@@ -15583,8 +14780,8 @@
                                 "children": [],
                                 "depends_on": null,
                                 "help": null,
-                                "id": "ESP32C6_UNIVERSAL_MAC_ADDRESSES",
-                                "name": "ESP32C6_UNIVERSAL_MAC_ADDRESSES",
+                                "id": "ESP32C3_UNIVERSAL_MAC_ADDRESSES",
+                                "name": "ESP32C3_UNIVERSAL_MAC_ADDRESSES",
                                 "range": null,
                                 "title": null,
                                 "type": "int"
@@ -15762,7 +14959,7 @@
                                         "id": "RTC_CLK_SRC_INT_RC",
                                         "name": "RTC_CLK_SRC_INT_RC",
                                         "range": null,
-                                        "title": "Internal 150 kHz RC oscillator",
+                                        "title": "Internal 136kHz RC oscillator",
                                         "type": "bool"
                                     },
                                     {
@@ -15789,10 +14986,10 @@
                                         "children": [],
                                         "depends_on": "<choice RTC_CLK_SRC>",
                                         "help": null,
-                                        "id": "RTC_CLK_SRC_INT_RC32K",
-                                        "name": "RTC_CLK_SRC_INT_RC32K",
+                                        "id": "RTC_CLK_SRC_INT_8MD256",
+                                        "name": "RTC_CLK_SRC_INT_8MD256",
                                         "range": null,
-                                        "title": "Internal 32kHz RC oscillator",
+                                        "title": "Internal 17.5MHz oscillator, divided by 256",
                                         "type": "bool"
                                     }
                                 ],
@@ -15806,7 +15003,7 @@
                             {
                                 "children": [],
                                 "depends_on": null,
-                                "help": "When the startup code initializes RTC_SLOW_CLK, it can perform\ncalibration by comparing the RTC_SLOW_CLK frequency with main XTAL\nfrequency. This option sets the number of RTC_SLOW_CLK cycles measured\nby the calibration routine. Higher numbers increase calibration\nprecision, which may be important for applications which spend a lot of\ntime in deep sleep. Lower numbers reduce startup time.\n\nWhen this option is set to 0, clock calibration will not be performed at\nstartup, and approximate clock frequencies will be assumed:\n\n- 136000 Hz if internal RC oscillator is used as clock source. For this use value 1024.\n- 32768 Hz if the 32k crystal oscillator is used. For this use value 3000 or more.\n    In case more value will help improve the definition of the launch of the crystal.\n    If the crystal could not start, it will be switched to internal RC.",
+                                "help": "When the startup code initializes RTC_SLOW_CLK, it can perform\ncalibration by comparing the RTC_SLOW_CLK frequency with main XTAL\nfrequency. This option sets the number of RTC_SLOW_CLK cycles measured\nby the calibration routine. Higher numbers increase calibration\nprecision, which may be important for applications which spend a lot of\ntime in deep sleep. Lower numbers reduce startup time.\n\nWhen this option is set to 0, clock calibration will not be performed at\nstartup, and approximate clock frequencies will be assumed:\n\n- 150000 Hz if internal RC oscillator is used as clock source. For this use value 1024.\n- 32768 Hz if the 32k crystal oscillator is used. For this use value 3000 or more.\n    In case more value will help improve the definition of the launch of the crystal.\n    If the crystal could not start, it will be switched to internal RC.",
                                 "id": "RTC_CLK_CAL_CYCLES",
                                 "name": "RTC_CLK_CAL_CYCLES",
                                 "range": [
@@ -16741,16 +15938,6 @@
                                 "children": [],
                                 "depends_on": "<choice ESP_DEFAULT_CPU_FREQ_MHZ>",
                                 "help": null,
-                                "id": "ESP_DEFAULT_CPU_FREQ_MHZ_120",
-                                "name": "ESP_DEFAULT_CPU_FREQ_MHZ_120",
-                                "range": null,
-                                "title": "120 MHz",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "<choice ESP_DEFAULT_CPU_FREQ_MHZ>",
-                                "help": null,
                                 "id": "ESP_DEFAULT_CPU_FREQ_MHZ_160",
                                 "name": "ESP_DEFAULT_CPU_FREQ_MHZ_160",
                                 "range": null,
@@ -17516,7 +16703,7 @@
                                     }
                                 ],
                                 "depends_on": "!IDF_ENV_FPGA",
-                                "help": "The ESP32-C6 has a built-in brownout detector which can detect if the voltage is lower than\na specific value. If this happens, it will reset the chip in order to prevent unintended\nbehaviour.",
+                                "help": "The ESP32-C3 has a built-in brownout detector which can detect if the voltage is lower than\na specific value. If this happens, it will reset the chip in order to prevent unintended\nbehaviour.",
                                 "id": "ESP_BROWNOUT_DET",
                                 "name": "ESP_BROWNOUT_DET",
                                 "range": null,
@@ -17830,7 +17017,7 @@
                         "name": "ESP_WIFI_STATIC_RX_BUFFER_NUM",
                         "range": [
                             2,
-                            128
+                            25
                         ],
                         "title": "Max number of WiFi static RX buffers",
                         "type": "int"
@@ -17994,7 +17181,7 @@
                                 "name": "ESP_WIFI_TX_BA_WIN",
                                 "range": [
                                     2,
-                                    64
+                                    32
                                 ],
                                 "title": "WiFi AMPDU TX BA window size",
                                 "type": "int"
@@ -18018,7 +17205,7 @@
                                 "name": "ESP_WIFI_RX_BA_WIN",
                                 "range": [
                                     2,
-                                    64
+                                    32
                                 ],
                                 "title": "WiFi AMPDU RX BA window size",
                                 "type": "int"
@@ -20379,10 +19566,7 @@
                                 "help": "The number of 802.15.4 receive buffers",
                                 "id": "IEEE802154_RX_BUFFER_SIZE",
                                 "name": "IEEE802154_RX_BUFFER_SIZE",
-                                "range": [
-                                    2,
-                                    100
-                                ],
+                                "range": null,
                                 "title": "The number of 802.15.4 receive buffers",
                                 "type": "int"
                             },
@@ -20452,10 +19636,7 @@
                                 "help": "set the CCA threshold, in dB",
                                 "id": "IEEE802154_CCA_THRESHOLD",
                                 "name": "IEEE802154_CCA_THRESHOLD",
-                                "range": [
-                                    -120,
-                                    0
-                                ],
+                                "range": null,
                                 "title": "CCA detection threshold",
                                 "type": "int"
                             },
@@ -20465,10 +19646,7 @@
                                 "help": "set the pending table size",
                                 "id": "IEEE802154_PENDING_TABLE_SIZE",
                                 "name": "IEEE802154_PENDING_TABLE_SIZE",
-                                "range": [
-                                    1,
-                                    100
-                                ],
+                                "range": null,
                                 "title": "Pending table size",
                                 "type": "int"
                             },
@@ -25857,6 +25035,66 @@
                                 "help": null,
                                 "id": "SPI_FLASH_VENDOR_XMC_SUPPORTED",
                                 "name": "SPI_FLASH_VENDOR_XMC_SUPPORTED",
+                                "range": null,
+                                "title": null,
+                                "type": "bool"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "!APP_BUILD_TYPE_PURE_RAM_APP",
+                                "help": null,
+                                "id": "SPI_FLASH_VENDOR_GD_SUPPORTED",
+                                "name": "SPI_FLASH_VENDOR_GD_SUPPORTED",
+                                "range": null,
+                                "title": null,
+                                "type": "bool"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "!APP_BUILD_TYPE_PURE_RAM_APP",
+                                "help": null,
+                                "id": "SPI_FLASH_VENDOR_ISSI_SUPPORTED",
+                                "name": "SPI_FLASH_VENDOR_ISSI_SUPPORTED",
+                                "range": null,
+                                "title": null,
+                                "type": "bool"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "!APP_BUILD_TYPE_PURE_RAM_APP",
+                                "help": null,
+                                "id": "SPI_FLASH_VENDOR_MXIC_SUPPORTED",
+                                "name": "SPI_FLASH_VENDOR_MXIC_SUPPORTED",
+                                "range": null,
+                                "title": null,
+                                "type": "bool"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "!APP_BUILD_TYPE_PURE_RAM_APP",
+                                "help": null,
+                                "id": "SPI_FLASH_VENDOR_WINBOND_SUPPORTED",
+                                "name": "SPI_FLASH_VENDOR_WINBOND_SUPPORTED",
+                                "range": null,
+                                "title": null,
+                                "type": "bool"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "!APP_BUILD_TYPE_PURE_RAM_APP",
+                                "help": null,
+                                "id": "SPI_FLASH_VENDOR_BOYA_SUPPORTED",
+                                "name": "SPI_FLASH_VENDOR_BOYA_SUPPORTED",
+                                "range": null,
+                                "title": null,
+                                "type": "bool"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "!APP_BUILD_TYPE_PURE_RAM_APP",
+                                "help": null,
+                                "id": "SPI_FLASH_VENDOR_TH_SUPPORTED",
+                                "name": "SPI_FLASH_VENDOR_TH_SUPPORTED",
                                 "range": null,
                                 "title": null,
                                 "type": "bool"
