@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "app-template",
-    "project_version":    "12bcd80-dirty",
+    "project_version":    "aa1d34f-dirty",
     "project_path":       "/Users/naichenzhao/Desktop/SLICE/SLICE-Spider/Firmware/V1/spider_main",
     "idf_path":           "/Users/naichenzhao/esp/esp-idf",
     "build_dir":          "/Users/naichenzhao/Desktop/SLICE/SLICE-Spider/Firmware/V1/spider_main/build",
@@ -11,7 +11,7 @@
     "app_elf":            "app-template.elf",
     "app_bin":            "app-template.bin",
     "build_type":         "flash_app",
-    "git_revision":       "v5.3-dev-1043-g8c9e29898f",
+    "git_revision":       "v5.3-dev-1043-g8c9e29898f-dirty",
     "target":             "esp32c3",
     "rev":                "",
     "min_rev":            "3",
