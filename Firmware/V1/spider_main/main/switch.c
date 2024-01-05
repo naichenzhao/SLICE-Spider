@@ -14,12 +14,13 @@
 #include "i2c.h"
 
 int SW_REMAP[8] = {1, 0, 5, 4, 3, 2, 6, 7};
+uint8_t vals;
 
 
-uint8_t read_switches() {
-    return i2c_read_io();
+void read_switches() {
+    vals = i2c_read_io();
 }
 
 uint8_t read_switch(int num) {
-    return (0x01) & (i2c_read_io() >> SW_REMAP[num]);
+    return (0x01) & (vals >> SW_REMAP[num]);
 }

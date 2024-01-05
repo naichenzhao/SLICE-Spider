@@ -1,0 +1,929 @@
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x1 (POWERON),boot:0x1c (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875720,len:0x1804
+load:0x4086c410,len:0xddc
+load:0x4086e610,len:0x2dfc
+entry 0x4086c41a
+[0;32mI (23) boot: ESP-IDF v5.3-dev-1043-g8c9e29898f-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Jan  3 2024 22:09:54[0m
+[0;32mI (25) boot: chip revision: v0.0[0m
+[0;32mI (29) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (33) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (67) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (74) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (86) esp_image: segment 0: paddr=00010020 vaddr=42018020 size=0ac30h ( 44080) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001ac58 vaddr=40800000 size=053c0h ( 21440) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=151b4h ( 86452) map[0m
+[0;32mI (129) esp_image: segment 3: paddr=000351dc vaddr=408053c0 size=0590ch ( 22796) load[0m
+[0;32mI (135) esp_image: segment 4: paddr=0003aaf0 vaddr=4080acd0 size=013c4h (  5060) load[0m
+[0;32mI (139) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (141) boot: Disabling RNG early entropy source...[0m
+[0;32mI (157) cpu_start: Unicore app[0m
+[0;33mW (166) clk: esp_perip_clk_init() has not been implemented yet[0m
+[0;32mI (173) cpu_start: Pro cpu start user code[0m
+[0;32mI (173) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (173) cpu_start: Application information:[0m
+[0;32mI (176) cpu_start: Project name:     app-template[0m
+[0;32mI (181) cpu_start: App version:      e85ee8e-dirty[0m
+[0;32mI (186) cpu_start: Compile time:     Jan  3 2024 22:09:40[0m
+[0;32mI (193) cpu_start: ELF file SHA256:  669024029...[0m
+[0;32mI (198) cpu_start: ESP-IDF:          v5.3-dev-1043-g8c9e29898f-dirty[0m
+[0;32mI (205) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (210) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (215) cpu_start: Chip rev:         v0.0[0m
+[0;32mI (219) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (226) heap_init: At 4080D130 len 0006F4E0 (445 KiB): RAM[0m
+[0;32mI (233) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (239) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (246) spi_flash: detected chip: generic[0m
+[0;32mI (250) spi_flash: flash io: dio[0m
+[0;33mW (254) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (267) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (274) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (281) coexist: coex firmware version: c02915e[0m
+[0;32mI (295) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (296) main_task: Started on CPU0[0m
+[0;32mI (296) main_task: Calling app_main()[0m
+[0;32mI (796) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (796) gpio: GPIO[3]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (796) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (806) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Motor Setup done
+Encoder Setup done
+[0;32mI (816) gpio: GPIO[13]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (826) gpio: GPIO[12]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+IO Expander Found!
+ESP32 Found!
+I2C Setup done
+Homing motor: 0
+Found button
+Finished: 0
+0
+motor speed: 42770.000000
+0
+motor speed: 43706.000000
+0
+motor speed: 44548.398438
+0
+motor speed: 45306.558594
+0
+motor speed: 45988.902344
+0
+motor speed: 46603.015625
+1
+motor speed: 46497.746094
+3
+motor speed: 45664.816406
+5
+motor speed: 44754.742188
+8
+motor speed: 43117.308594
+11
+motor speed: 41402.984375
+14
+motor speed: 39619.496094
+17
+motor speed: 37773.757812
+21
+motor speed: 35214.031250
+25
+motor speed: 32589.439453
+30
+motor speed: 29248.544922
+35
+motor speed: 25840.708984
+40
+motor speed: 22372.654297
+45
+motor speed: 18850.408203
+50
+motor speed: 15279.385742
+56
+motor speed: 11006.499023
+61
+motor speed: 7337.635254
+67
+motor speed: 2976.732422
+73
+motor speed: -1429.318848
+79
+motor speed: -5875.971680
+84
+motor speed: -9701.188477
+89
+motor speed: -13544.852539
+93
+motor speed: -16747.189453
+96
+motor speed: -19292.091797
+98
+motor speed: -21165.107422
+99
+motor speed: -22353.222656
+100
+motor speed: -23502.699219
+100
+motor speed: -23959.458984
+99
+motor speed: -23712.548828
+97
+motor speed: -22752.130859
+94
+motor speed: -21069.359375
+91
+motor speed: -19314.232422
+88
+motor speed: -17494.019531
+85
+motor speed: -15615.228516
+81
+motor speed: -13025.750977
+77
+motor speed: -10374.389648
+72
+motor speed: -7009.398438
+68
+motor speed: -4237.846191
+64
+motor speed: -1422.675659
+59
+motor speed: 2089.741943
+55
+motor speed: 4993.980957
+51
+motor speed: 7928.568359
+48
+motor speed: 10232.534180
+46
+motor speed: 11888.708008
+45
+motor speed: 12881.666016
+45
+motor speed: 13197.531250
+45
+motor speed: 13481.778320
+45
+motor speed: 13737.600586
+46
+motor speed: 13309.875977
+47
+motor speed: 12844.692383
+49
+motor speed: 11687.862305
+52
+motor speed: 9828.319336
+55
+motor speed: 7914.101074
+58
+motor speed: 5950.702148
+62
+motor speed: 3285.079590
+66
+motor speed: 565.186401
+71
+motor speed: -2861.474609
+75
+motor speed: -5688.555664
+78
+motor speed: -7895.721680
+81
+motor speed: -10122.738281
+84
+motor speed: -12367.658203
+85
+motor speed: -13312.750977
+85
+motor speed: -13585.506836
+85
+motor speed: -13830.956055
+85
+motor speed: -14051.860352
+85
+motor speed: -14250.673828
+83
+motor speed: -13113.675781
+81
+motor speed: -11929.915039
+78
+motor speed: -10046.165039
+74
+motor speed: -7452.192871
+71
+motor speed: -5454.756836
+67
+motor speed: -2758.527588
+63
+motor speed: -11.088865
+60
+motor speed: 2124.433838
+57
+motor speed: 4286.982910
+53
+motor speed: 7131.836914
+51
+motor speed: 8697.111328
+49
+motor speed: 10266.193359
+49
+motor speed: 10522.840820
+49
+motor speed: 10753.756836
+49
+motor speed: 10961.581055
+49
+motor speed: 11148.623047
+50
+motor speed: 10658.997070
+52
+motor speed: 9480.135742
+54
+motor speed: 8258.732422
+57
+motor speed: 6341.103027
+60
+motor speed: 4374.604004
+63
+motor speed: 2364.154053
+66
+motor speed: 314.149841
+69
+motor speed: -1771.450317
+73
+motor speed: -4547.065918
+76
+motor speed: -6707.980469
+78
+motor speed: -8235.407227
+80
+motor speed: -9770.459961
+81
+motor speed: -10654.441406
+82
+motor speed: -11530.196289
+82
+motor speed: -11740.607422
+82
+motor speed: -11929.946289
+81
+motor speed: -11442.385742
+80
+motor speed: -10923.350586
+77
+motor speed: -9060.087891
+75
+motor speed: -7800.457520
+71
+motor speed: -5190.490234
+68
+motor speed: -3178.619873
+Homing motor: 1
+Found button
+Finished: 1
+0
+motor speed: 42770.000000
+0
+motor speed: 43706.000000
+0
+motor speed: 44548.398438
+0
+motor speed: 45306.558594
+0
+motor speed: 45988.902344
+0
+motor speed: 46603.015625
+1
+motor speed: 46497.746094
+3
+motor speed: 45664.816406
+5
+motor speed: 44754.742188
+8
+motor speed: 43117.308594
+12
+motor speed: 40745.023438
+15
+motor speed: 38947.097656
+19
+motor speed: 36430.437500
+24
+motor speed: 33186.640625
+29
+motor speed: 29866.193359
+34
+motor speed: 26476.792969
+39
+motor speed: 23025.330078
+45
+motor speed: 18860.052734
+51
+motor speed: 14630.067383
+57
+motor speed: 10341.881836
+64
+motor speed: 5343.351074
+70
+motor speed: 941.212341
+77
+motor speed: -4159.840820
+83
+motor speed: -8654.283203
+89
+motor speed: -13180.433594
+94
+motor speed: -17077.210938
+97
+motor speed: -19669.341797
+100
+motor speed: -22242.800781
+101
+motor speed: -23483.576172
+101
+motor speed: -24022.449219
+100
+motor speed: -23849.437500
+99
+motor speed: -23613.500000
+96
+motor speed: -22005.021484
+93
+motor speed: -20316.728516
+89
+motor speed: -17898.701172
+85
+motor speed: -15401.645508
+80
+motor speed: -12175.528320
+75
+motor speed: -8870.993164
+70
+motor speed: -5495.916504
+64
+motor speed: -1399.378418
+59
+motor speed: 2110.773682
+53
+motor speed: 6328.835938
+48
+motor speed: 9948.367188
+44
+motor speed: 12948.949219
+40
+motor speed: 15970.244141
+38
+motor speed: 17694.275391
+37
+motor speed: 18748.277344
+37
+motor speed: 19119.082031
+37
+motor speed: 19452.773438
+38
+motor speed: 19095.130859
+40
+motor speed: 18035.058594
+43
+motor speed: 16262.595703
+46
+motor speed: 14426.746094
+50
+motor speed: 11875.917969
+54
+motor speed: 9259.339844
+58
+motor speed: 6583.625000
+62
+motor speed: 3854.677246
+67
+motor speed: 419.861237
+72
+motor speed: -3072.500244
+77
+motor speed: -6616.643555
+81
+motor speed: -9549.397461
+85
+motor speed: -12509.643555
+87
+motor speed: -14178.738281
+89
+motor speed: -15841.256836
+89
+motor speed: -16181.994141
+89
+motor speed: -16488.593750
+87
+motor speed: -15448.604492
+85
+motor speed: -14352.150391
+82
+motor speed: -12546.976562
+79
+motor speed: -10681.689453
+75
+motor speed: -8104.366211
+71
+motor speed: -5463.947266
+66
+motor speed: -2108.802490
+61
+motor speed: 1311.860107
+56
+motor speed: 4791.450195
+52
+motor speed: 7666.123535
+48
+motor speed: 10574.096680
+45
+motor speed: 12854.112305
+43
+motor speed: 14488.726562
+43
+motor speed: 14804.318359
+43
+motor speed: 15088.286133
+43
+motor speed: 15343.857422
+45
+motor speed: 14257.943359
+47
+motor speed: 13120.155273
+50
+motor speed: 11277.782227
+53
+motor speed: 9379.015625
+57
+motor speed: 6771.564941
+61
+motor speed: 4104.023438
+Homing motor: 2
+Found button
+Finished: 2
+0
+motor speed: 42770.000000
+0
+motor speed: 43706.000000
+0
+motor speed: 44548.398438
+0
+motor speed: 45306.558594
+0
+motor speed: 45988.902344
+1
+motor speed: 45945.054688
+2
+motor speed: 45825.347656
+4
+motor speed: 44979.457031
+6
+motor speed: 44057.714844
+9
+motor speed: 42409.789062
+12
+motor speed: 40686.015625
+14
+motor speed: 39551.988281
+17
+motor speed: 37713.031250
+21
+motor speed: 35159.375000
+25
+motor speed: 32540.251953
+30
+motor speed: 29204.277344
+35
+motor speed: 25800.867188
+40
+motor speed: 22336.798828
+45
+motor speed: 18818.134766
+50
+motor speed: 15250.340820
+55
+motor speed: 11638.325195
+60
+motor speed: 7986.509277
+66
+motor speed: 3640.919189
+72
+motor speed: -751.350830
+77
+motor speed: -4527.630371
+83
+motor speed: -8985.219727
+88
+motor speed: -12820.311523
+92
+motor speed: -16014.902344
+95
+motor speed: -18552.833984
+97
+motor speed: -20419.574219
+98
+motor speed: -21602.042969
+99
+motor speed: -22746.435547
+99
+motor speed: -23198.625000
+98
+motor speed: -22947.597656
+96
+motor speed: -21983.474609
+94
+motor speed: -20955.333984
+91
+motor speed: -19211.642578
+88
+motor speed: -17401.687500
+85
+motor speed: -15532.128906
+81
+motor speed: -12950.961914
+77
+motor speed: -10307.079102
+73
+motor speed: -7606.784668
+69
+motor speed: -4855.724609
+64
+motor speed: -1401.001953
+59
+motor speed: 2109.280762
+55
+motor speed: 5011.565430
+52
+motor speed: 7286.431152
+49
+motor speed: 9574.376953
+46
+motor speed: 11874.128906
+45
+motor speed: 12868.579102
+45
+motor speed: 13185.753906
+45
+motor speed: 13471.177734
+45
+motor speed: 13728.060547
+46
+motor speed: 13301.290039
+48
+motor speed: 12179.000000
+50
+motor speed: 11008.506836
+53
+motor speed: 9136.699219
+56
+motor speed: 7211.443359
+60
+motor speed: 4580.146973
+63
+motor speed: 2549.110107
+67
+motor speed: -177.352905
+71
+motor speed: -2952.002930
+75
+motor speed: -5769.992676
+78
+motor speed: -7969.015137
+81
+motor speed: -10188.702148
+83
+motor speed: -11769.059570
+85
+motor speed: -13351.746094
+85
+motor speed: -13620.633789
+85
+motor speed: -13862.570312
+85
+motor speed: -14080.313477
+84
+motor speed: -13618.316406
+82
+motor speed: -12464.323242
+80
+motor speed: -11265.297852
+77
+motor speed: -9367.809570
+74
+motor speed: -7419.441895
+71
+motor speed: -5425.308594
+67
+motor speed: -2732.024414
+64
+motor speed: -645.200195
+60
+motor speed: 2131.468750
+57
+motor speed: 4293.343750
+54
+motor speed: 6479.598145
+52
+motor speed: 8029.864746
+50
+motor speed: 9585.470703
+49
+motor speed: 10487.953125
+49
+motor speed: 10722.390625
+49
+motor speed: 10933.351562
+50
+motor speed: 10465.252930
+51
+motor speed: 9963.731445
+53
+motor speed: 8774.199219
+56
+motor speed: 6885.223633
+58
+motor speed: 5602.475098
+61
+motor speed: 3629.672119
+64
+motor speed: 1613.515869
+67
+motor speed: -441.624756
+70
+motor speed: -2531.851318
+73
+motor speed: -4653.658691
+76
+motor speed: -6803.881836
+79
+motor speed: -8979.682617
+81
+motor speed: -10520.540039
+82
+motor speed: -11409.715820
+82
+motor speed: -11632.174805
+82
+motor speed: -11832.357422
+82
+motor speed: -12012.521484
+81
+motor speed: -11516.704102
+80
+motor speed: -10990.236328
+78
+motor speed: -9778.251953
+75
+motor speed: -7869.070801
+72
+motor speed: -5910.174316
+69
+motor speed: -3906.567871
+66
+motor speed: -1862.721680
+63
+motor speed: 217.339874
+60
+motor speed: 2329.987793
+57
+motor speed: 4471.980957
+54
+motor speed: 6640.372559
+52
+motor speed: 8174.561035
+51
+motor speed: 9057.734375
+51
+motor speed: 9274.793945
+51
+motor speed: 9470.114258
+51
+motor speed: 9645.903320
+52
+motor speed: 9146.150391
+53
+motor speed: 8616.138672
+55
+motor speed: 7400.965332
+58
+motor speed: 5488.913086
+60
+motor speed: 4185.395508
+63
+motor speed: 2193.900391
+Homing motor: 3
+Found button
+Finished: 3
+0
+motor speed: 42770.000000
+0
+motor speed: 43706.000000
+0
+motor speed: 44548.398438
+0
+motor speed: 45306.558594
+0
+motor speed: 45988.902344
+0
+motor speed: 46603.015625
+1
+motor speed: 46497.746094
+3
+motor speed: 45664.816406
+5
+motor speed: 44754.742188
+8
+motor speed: 43117.308594
+11
+motor speed: 41402.984375
+15
+motor speed: 38961.535156
+18
+motor speed: 37101.359375
+23
+motor speed: 33870.707031
+27
+motor speed: 31220.017578
+32
+motor speed: 27855.664062
+37
+motor speed: 24426.714844
+42
+motor speed: 20939.662109
+48
+motor speed: 16742.349609
+54
+motor speed: 12483.536133
+60
+motor speed: 8169.403320
+---------- Finished Initialization ---------- 
+
+encoders: 28 56 51 46
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61
+encoders: 28 56 51 61

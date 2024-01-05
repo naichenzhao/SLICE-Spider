@@ -11,11 +11,11 @@
 #include "esp_err.h"
 #include "driver/i2c_master.h"
 
-#define I2C_MASTER_SCL_IO GPIO_NUM_1
-#define I2C_MASTER_SDA_IO GPIO_NUM_0
+// #define I2C_MASTER_SCL_IO GPIO_NUM_1
+// #define I2C_MASTER_SDA_IO GPIO_NUM_0
 
-// #define I2C_MASTER_SCL_IO GPIO_NUM_12
-// #define I2C_MASTER_SDA_IO GPIO_NUM_13
+#define I2C_MASTER_SCL_IO GPIO_NUM_12
+#define I2C_MASTER_SDA_IO GPIO_NUM_13
 
 #define DEV_ADDR GPIO_NUM_13
 
@@ -23,8 +23,6 @@
 #define ESP_PORT 0x58
 i2c_master_dev_handle_t io_handle;
 i2c_master_dev_handle_t esp_handle;
-
-
 
 void i2c_init(void) {
     i2c_master_bus_config_t i2c_mst_config_1 = {
@@ -69,10 +67,6 @@ uint8_t i2c_read_io() {
     return buffer[0];
 }
 
-void esp_WR_RD(uint8_t speed1, uint8_t speed2, uint8_t speed3, uint8_t speed4, uint8_t *data_rd) {
-    uint8_t data_wr[4] = {speed1, speed2, speed3, speed4};
-
-    // ESP_ERROR_CHECK(i2c_master_transmit(esp_handle, data_wr, sizeof(data_wr), -1));
-    ESP_ERROR_CHECK(i2c_master_transmit_receive(esp_handle, data_wr, sizeof(data_wr), data_rd, 4, -1));
-    // i2c_master_receive(esp_handle, data_rd, 4, -1);z
+void esp_WR_RD(uint8_t *motor_pos, uint8_t *encoder_pos) {
+    ESP_ERROR_CHECK(i2c_master_transmit_receive(esp_handle, motor_pos, sizeof(motor_pos), encoder_pos, 4, -1));
 }

@@ -8,37 +8,52 @@
 #include "switch.h" 
 #include "I2C.h"
 
-uint8_t data_rd[16];
+
+uint8_t motor_pos[8];
+uint8_t encoder_pos[8];
+
+void init_position();
 
 void app_main(void) {
     vTaskDelay(500 / portTICK_PERIOD_MS);
     esp_task_wdt_deinit();
     
-
-
-    // motor_init();
-    // encoder_init();
-
+    motor_init();
+    encoder_init();
     i2c_init();
+    for(int i = 0; i < 4; i++) {
+        motor_pos[i] = 0;
+    }
+    
+    init_position();
+
     printf("---------- Finished Initialization ---------- \n\n");
 
-    // for(int i = 0; i < 4; i++) {
-    //     home_motor_sw(i);
-    // }
-    uint8_t count = 0;
+    
 
     while (1) {
-        // printf("%d, %d, %d, %d\n", get_count(0), get_count(1), get_count(2), get_count(3));
-        // printf("%x %x %x %x %x %x %x %x\n", read_switch(0), read_switch(1), read_switch(2), read_switch(3), read_switch(4), read_switch(5), read_switch(6), read_switch(7));
-        printf("count: %d, recieved_data: %d %d %d %d\n", (int)count, (int)data_rd[0], (int)data_rd[1], (int)data_rd[2], (int)data_rd[3]);
-        esp_WR_RD(count, count + 1, count - 1, count + 2, data_rd);
-        count++;
+        // Refresh all the sensor readings
+        read_switches();
+        get_counts(encoder_pos);
+        update_positions(motor_pos);
+        esp_WR_RD(motor_pos + 4, encoder_pos + 4);
 
+        // Run anything in the main loop
+        printf("encoders: %d %d %d %d\n", (int)encoder_pos[0], (int)encoder_pos[1], (int)encoder_pos[2], (int)encoder_pos[3]);
+
+        // Some delay stuff
         vTaskDelay(100 / portTICK_PERIOD_MS);
-        
         
     }
 }
 
-
-
+void init_position() {
+    home_motor_enc(0);
+    goto_pos(0, 65);
+    home_motor_enc(1);
+    goto_pos(1, 65);
+    home_motor_enc(2);
+    goto_pos(2, 65);
+    home_motor_enc(3);
+    goto_pos(3, 65);
+}

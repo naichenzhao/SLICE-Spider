@@ -1,0 +1,146 @@
+[0;33m--- esp-idf-monitor 1.3.4 on /dev/cu.usbserial-DU0CUKCD 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33mStack dump detected[0m
+[0;33m0x42004cb0: uart_tx_char at /Users/naichenzhao/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c:171 (discriminator 1)
+[0m
+[0;33m0x42005db4: uart_write at /Users/naichenzhao/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c:216 (discriminator 2)
+[0m
+[0;33m0x40806f58: esp_ptr_executable at /Users/naichenzhao/esp/esp-idf/components/esp_hw_support/include/esp_memory_utils.h:232
+ (inlined by) vPortTLSPointersDelCb at /Users/naichenzhao/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:722
+[0m
+[0;33m0x40028140: __retarget_lock_acquire_recursive in ROM
+[0m
+[0;33m0x42007538: console_write at /Users/naichenzhao/esp/esp-idf/components/vfs/vfs_console.c:75
+[0m
+[0;33m0x42004ca2: uart_ll_get_txfifo_len at /Users/naichenzhao/esp/esp-idf/components/hal/esp32c6/include/hal/uart_ll.h:578
+ (inlined by) uart_tx_char at /Users/naichenzhao/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c:171
+[0m
+[0;33m0x42005db4: uart_write at /Users/naichenzhao/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c:216 (discriminator 2)
+[0m
+[0;33m0x40806f58: esp_ptr_executable at /Users/naichenzhao/esp/esp-idf/components/esp_hw_support/include/esp_memory_utils.h:232
+ (inlined by) vPortTLSPointersDelCb at /Users/naichenzhao/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:722
+[0m
+[0;33m0x40028140: __retarget_lock_acquire_recursive in ROM
+[0m
+[0;33m0x42007538: console_write at /Users/naichenzhao/esp/esp-idf/components/vfs/vfs_console.c:75
+[0m
+[1;31mFailed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', '/Users/naichenzhao/Desktop/SLICE/SLICE-Spider/Firmware/V1/spider_sub/build/app-template.elf', '-ex', 'target remote | "/Users/naichenzhao/.espressif/python_env/idf5.3_py3.11_env/bin/python" -m "esp_idf_panic_decoder" --target esp32c6 "/var/folders/2h/lww79zv53b510qlyvytqnvq40000gn/T/tmp294_mgqp"', '-ex', 'bt']' returned non-zero exit status 1.
+b'Traceback (most recent call last):\n  File "<frozen runpy>", line 198, in _run_module_as_main\n  File "<frozen runpy>", line 88, in _run_code\n  File "/Users/naichenzhao/.espressif/python_env/idf5.3_py3.11_env/lib/python3.11/site-packages/esp_idf_panic_decoder/__main__.py", line 4, in <module>\n    main()\n  File "/Users/naichenzhao/.espressif/python_env/idf5.3_py3.11_env/lib/python3.11/site-packages/esp_idf_panic_decoder/gdb_panic_server.py", line 281, in main\n    panic_info = PANIC_OUTPUT_PARSERS[args.target](args.input_file.read())\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/Users/naichenzhao/.espressif/python_env/idf5.3_py3.11_env/lib/python3.11/site-packages/esp_idf_panic_decoder/gdb_panic_server.py", line 134, in parse_idf_riscv_panic_output\n    raise ValueError("Couldn\'t parse panic handler output")\nValueError: Couldn\'t parse panic handler output\nRemote connection closed\nNo stack.\n'
+
+[0m
+[0;33mStack dump detected[0m
+[0;33m0x42004c94: uart_ll_get_txfifo_len at /Users/naichenzhao/esp/esp-idf/components/hal/esp32c6/include/hal/uart_ll.h:578
+ (inlined by) uart_tx_char at /Users/naichenzhao/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c:171
+[0m
+[0;33m0x42005db4: uart_write at /Users/naichenzhao/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c:216 (discriminator 2)
+[0m
+[0;33m0x40806f58: esp_ptr_executable at /Users/naichenzhao/esp/esp-idf/components/esp_hw_support/include/esp_memory_utils.h:232
+ (inlined by) vPortTLSPointersDelCb at /Users/naichenzhao/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:722
+[0m
+[0;33m0x40028140: __retarget_lock_acquire_recursive in ROM
+[0m
+[0;33m0x42007538: console_write at /Users/naichenzhao/esp/esp-idf/components/vfs/vfs_console.c:75
+[0m
+[0;33m0x42004c94: uart_ll_get_txfifo_len at /Users/naichenzhao/esp/esp-idf/components/hal/esp32c6/include/hal/uart_ll.h:578
+ (inlined by) uart_tx_char at /Users/naichenzhao/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c:171
+[0m
+[0;33m0x42005db4: uart_write at /Users/naichenzhao/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c:216 (discriminator 2)
+[0m
+[0;33m0x40806f58: esp_ptr_executable at /Users/naichenzhao/esp/esp-idf/components/esp_hw_support/include/esp_memory_utils.h:232
+ (inlined by) vPortTLSPointersDelCb at /Users/naichenzhao/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:722
+[0m
+[0;33m0x40028140: __retarget_lock_acquire_recursive in ROM
+[0m
+[0;33m0x42007538: console_write at /Users/naichenzhao/esp/esp-idf/components/vfs/vfs_console.c:75
+[0m
+[0;33m0x42004c94: uart_ll_get_txfifo_len at /Users/naichenzhao/esp/esp-idf/components/hal/esp32c6/include/hal/uart_ll.h:578
+ (inlined by) uart_tx_char at /Users/naichenzhao/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c:171
+[0m
+[0;33m0x42005db4: uart_write at /Users/naichenzhao/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c:216 (discriminator 2)
+[0m
+[0;33m0x40806f58: esp_ptr_executable at /Users/naichenzhao/esp/esp-idf/components/esp_hw_support/include/esp_memory_utils.h:232
+ (inlined by) vPortTLSPointersDelCb at /Users/naichenzhao/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:722
+[0m
+[0;33m0x40028140: __retarget_lock_acquire_recursive in ROM
+[0m
+[0;33m0x42007538: console_write at /Users/naichenzhao/esp/esp-idf/components/vfs/vfs_console.c:75
+[0m
+[0;33m0x42004c86: uart_ll_get_txfifo_len at /Users/naichenzhao/esp/esp-idf/components/hal/esp32c6/include/hal/uart_ll.h:577
+ (inlined by) uart_tx_char at /Users/naichenzhao/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c:171
+[0m
+[0;33m0x42005db4: uart_write at /Users/naichenzhao/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c:216 (discriminator 2)
+[0m
+[0;33m0x40806f58: esp_ptr_executable at /Users/naichenzhao/esp/esp-idf/components/esp_hw_support/include/esp_memory_utils.h:232
+ (inlined by) vPortTLSPointersDelCb at /Users/naichenzhao/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:722
+[0m
+[0;33m0x40028140: __retarget_lock_acquire_recursive in ROM
+[0m
+[0;33m0x42007538: console_write at /Users/naichenzhao/esp/esp-idf/components/vfs/vfs_console.c:75
+[0m
+[0;33m0x42004cb0: uart_tx_char at /Users/naichenzhao/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c:171 (discriminator 1)
+[0m
+[0;33m0x42005db4: uart_write at /Users/naichenzhao/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c:216 (discriminator 2)
+[0m
+[0;33m0x40806f58: esp_ptr_executable at /Users/naichenzhao/esp/esp-idf/components/esp_hw_support/include/esp_memory_utils.h:232
+ (inlined by) vPortTLSPointersDelCb at /Users/naichenzhao/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:722
+[0m
+[0;33m0x40028140: __retarget_lock_acquire_recursive in ROM
+[0m
+[0;33m0x42007538: console_write at /Users/naichenzhao/esp/esp-idf/components/vfs/vfs_console.c:75
+[0m
+[0;33m0x42004c94: uart_ll_get_txfifo_len at /Users/naichenzhao/esp/esp-idf/components/hal/esp32c6/include/hal/uart_ll.h:578
+ (inlined by) uart_tx_char at /Users/naichenzhao/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c:171
+[0m
+[0;33m0x42005db4: uart_write at /Users/naichenzhao/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c:216 (discriminator 2)
+[0m
+[0;33m0x40806f58: esp_ptr_executable at /Users/naichenzhao/esp/esp-idf/components/esp_hw_support/include/esp_memory_utils.h:232
+ (inlined by) vPortTLSPointersDelCb at /Users/naichenzhao/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:722
+[0m
+[0;33m0x40028140: __retarget_lock_acquire_recursive in ROM
+[0m
+[0;33m0x42007538: console_write at /Users/naichenzhao/esp/esp-idf/components/vfs/vfs_console.c:75
+[0m
+[0;33m0x4002d094: __muldf3 in ROM
+[0m
+[0;33m0x4003ee50: _dtoa_r in ROM
+[0m
+[0;33m0x40806f58: esp_ptr_executable at /Users/naichenzhao/esp/esp-idf/components/esp_hw_support/include/esp_memory_utils.h:232
+ (inlined by) vPortTLSPointersDelCb at /Users/naichenzhao/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:722
+[0m
+[0;33m0x42004c94: uart_ll_get_txfifo_len at /Users/naichenzhao/esp/esp-idf/components/hal/esp32c6/include/hal/uart_ll.h:578
+ (inlined by) uart_tx_char at /Users/naichenzhao/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c:171
+[0m
+[0;33m0x42005db4: uart_write at /Users/naichenzhao/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c:216 (discriminator 2)
+[0m
+[0;33m0x40806f58: esp_ptr_executable at /Users/naichenzhao/esp/esp-idf/components/esp_hw_support/include/esp_memory_utils.h:232
+ (inlined by) vPortTLSPointersDelCb at /Users/naichenzhao/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:722
+[0m
+[0;33m0x40028140: __retarget_lock_acquire_recursive in ROM
+[0m
+[0;33m0x42007538: console_write at /Users/naichenzhao/esp/esp-idf/components/vfs/vfs_console.c:75
+[0m
+[0;33m0x42004c94: uart_ll_get_txfifo_len at /Users/naichenzhao/esp/esp-idf/components/hal/esp32c6/include/hal/uart_ll.h:578
+ (inlined by) uart_tx_char at /Users/naichenzhao/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c:171
+[0m
+[0;33m0x42005db4: uart_write at /Users/naichenzhao/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c:216 (discriminator 2)
+[0m
+[0;33m0x40806f58: esp_ptr_executable at /Users/naichenzhao/esp/esp-idf/components/esp_hw_support/include/esp_memory_utils.h:232
+ (inlined by) vPortTLSPointersDelCb at /Users/naichenzhao/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:722
+[0m
+[0;33m0x40028140: __retarget_lock_acquire_recursive in ROM
+[0m
+[0;33m0x42007538: console_write at /Users/naichenzhao/esp/esp-idf/components/vfs/vfs_console.c:75
+[0m
+[0;33m0x42004ca2: uart_ll_get_txfifo_len at /Users/naichenzhao/esp/esp-idf/components/hal/esp32c6/include/hal/uart_ll.h:578
+ (inlined by) uart_tx_char at /Users/naichenzhao/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c:171
+[0m
+[0;33m0x42005db4: uart_write at /Users/naichenzhao/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c:216 (discriminator 2)
+[0m
+[0;33m0x40806f58: esp_ptr_executable at /Users/naichenzhao/esp/esp-idf/components/esp_hw_support/include/esp_memory_utils.h:232
+ (inlined by) vPortTLSPointersDelCb at /Users/naichenzhao/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:722
+[0m
+[0;33m0x40028140: __retarget_lock_acquire_recursive in ROM
+[0m
+[0;33m0x42007538: console_write at /Users/naichenzhao/esp/esp-idf/components/vfs/vfs_console.c:75
+[0m
+[0m
