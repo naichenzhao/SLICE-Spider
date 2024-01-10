@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="spider-viz">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0266900629514275 0.0373682215528626 0.0414401671660664"
+        rpy="0 0 0" />
+      <mass
+        value="0.0599747186219502" />
+      <inertia
+        ixx="1.77017378156563E-05"
+        ixy="8.82629017457995E-11"
+        ixz="4.93027123446305E-10"
+        iyy="2.88229975274139E-05"
+        iyz="5.45278550957386E-08"
+        izz="1.74156454854551E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider-viz/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider-viz/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Upper0_Link">
+    <inertial>
+      <origin
+        xyz="0.021476139074384 0.015254727578512 -0.0014907670536348"
+        rpy="0 0 0" />
+      <mass
+        value="0.0112993413960727" />
+      <inertia
+        ixx="4.17757958138213E-07"
+        ixy="6.32246142390847E-08"
+        ixz="-4.83397104885625E-08"
+        iyy="1.7602699581182E-06"
+        iyz="-7.47401160587861E-10"
+        izz="1.54529235020534E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider-viz/meshes/Upper0_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider-viz/meshes/Upper0_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Upper0"
+    type="revolute">
+    <origin
+      xyz="-0.00245284745286685 -0.0237725392912402 0.0320074126580795"
+      rpy="1.5707963267949 0 3.14159265358979" />
+    <parent
+      link="base_link" />
+    <child
+      link="Upper0_Link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      effort="1000.0" lower="-1.57" upper="0.17" velocity="0.5"/>
+  </joint>
+  <link
+    name="Lower0_Link">
+    <inertial>
+      <origin
+        xyz="-0.00200000000000073 -0.0121644422551732 0.0152866791815001"
+        rpy="0 0 0" />
+      <mass
+        value="0.00511403475106287" />
+      <inertia
+        ixx="3.40097557199021E-06"
+        ixy="-4.0355113211309E-22"
+        ixz="4.91401358931856E-22"
+        iyy="3.28327036320465E-06"
+        iyz="1.35078946161002E-07"
+        izz="1.31342634788399E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider-viz/meshes/Lower0_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider-viz/meshes/Lower0_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Lower0"
+    type="revolute">
+    <origin
+      xyz="0.0550943670538193 0.01315 -9.9999999999479E-05"
+      rpy="1.57079632679491 -1.5707963267949 0" />
+    <parent
+      link="Upper0_Link" />
+    <child
+      link="Lower0_Link" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      effort="1000.0" lower="-0.96" upper="0.70" velocity="0.5"/>
+  </joint>
+  <link
+    name="Upper1_Link">
+    <inertial>
+      <origin
+        xyz="0.0213801728228362 0.0152547283369141 0.0014673545578197"
+        rpy="0 0 0" />
+      <mass
+        value="0.0112993383446934" />
+      <inertia
+        ixx="4.17757830091756E-07"
+        ixy="6.31950953264347E-08"
+        ixz="4.92357002610727E-08"
+        iyy="1.76026956304799E-06"
+        iyz="7.53422005757815E-10"
+        izz="1.54529208399824E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider-viz/meshes/Upper1_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider-viz/meshes/Upper1_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Upper1"
+    type="revolute">
+    <origin
+      xyz="-0.0024528474528662 -0.0820568105387026 0.0320074126580794"
+      rpy="1.5707963267949 0 3.14159265358979" />
+    <parent
+      link="base_link" />
+    <child
+      link="Upper1_Link" />
+    <axis
+      xyz="0 1 0" />
+      <limit
+      effort="1000.0" lower="-0.17" upper="1.85" velocity="0.5"/>
+  </joint>
+  <link
+    name="Lower1_Link">
+    <inertial>
+      <origin
+        xyz="0.0020000000000001 -0.012164442255174 0.0152866791815"
+        rpy="0 0 0" />
+      <mass
+        value="0.00511403475106288" />
+      <inertia
+        ixx="3.40097557199021E-06"
+        ixy="-4.11618944416582E-22"
+        ixz="5.39851538017933E-22"
+        iyy="3.28327036320465E-06"
+        iyz="1.35078946161002E-07"
+        izz="1.31342634788399E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider-viz/meshes/Lower1_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider-viz/meshes/Lower1_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Lower1"
+    type="revolute">
+    <origin
+      xyz="0.055 0.0131500000000001 9.99999999997392E-05"
+      rpy="1.57079632679491 -1.5707963267949 0" />
+    <parent
+      link="Upper1_Link" />
+    <child
+      link="Lower1_Link" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      effort="1000.0" lower="-0.96" upper="0.70" velocity="0.5"/>
+  </joint>
+  <link
+    name="Upper2_Link">
+    <inertial>
+      <origin
+        xyz="0.0214745398766555 0.0152547283369141 0.00146735455781985"
+        rpy="0 0 0" />
+      <mass
+        value="0.0112993383446934" />
+      <inertia
+        ixx="4.17757830091755E-07"
+        ixy="6.31950953264345E-08"
+        ixz="4.92357002610657E-08"
+        iyy="1.76026956304799E-06"
+        iyz="7.53422005758282E-10"
+        izz="1.54529208399824E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider-viz/meshes/Upper2_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider-viz/meshes/Upper2_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Upper2"
+    type="revolute">
+    <origin
+      xyz="0.055831423794595 -0.02377253929124 0.0320074126580794"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Upper2_Link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      effort="1000.0" lower="-0.17" upper="1.57" velocity="0.5"/>
+  </joint>
+  <link
+    name="Lower2_Link">
+    <inertial>
+      <origin
+        xyz="0.00200000000000116 -0.0121644422551723 0.0152866791815003"
+        rpy="0 0 0" />
+      <mass
+        value="0.00511403475106288" />
+      <inertia
+        ixx="3.40097557199021E-06"
+        ixy="-2.42025679605417E-21"
+        ixz="6.79340847722994E-20"
+        iyy="3.28327036320465E-06"
+        iyz="1.35078946160937E-07"
+        izz="1.31342634788394E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider-viz/meshes/Lower2_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider-viz/meshes/Lower2_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Lower2"
+    type="revolute">
+    <origin
+      xyz="0.0550943670538194 0.0131500000000001 0.000100000000000329"
+      rpy="1.57079632679489 -1.5707963267949 0" />
+    <parent
+      link="Upper2_Link" />
+    <child
+      link="Lower2_Link" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      effort="1000.0" lower="-0.96" upper="0.70" velocity="0.5"/>
+  </joint>
+  <link
+    name="Upper3_Link">
+    <inertial>
+      <origin
+        xyz="0.0214761390743841 0.0152547275785121 -0.00149076705363482"
+        rpy="0 0 0" />
+      <mass
+        value="0.0112993413960727" />
+      <inertia
+        ixx="4.17757958138214E-07"
+        ixy="6.32246142390847E-08"
+        ixz="-4.83397104885701E-08"
+        iyy="1.76026995811821E-06"
+        iyz="-7.47401160587356E-10"
+        izz="1.54529235020535E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider-viz/meshes/Upper3_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider-viz/meshes/Upper3_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Upper3"
+    type="revolute">
+    <origin
+      xyz="0.0558314237945942 -0.082056810538703 0.0320074126580794"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Upper3_Link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      effort="1000.0" lower="-1.85" upper="0.17" velocity="0.5"/>
+  </joint>
+  <link
+    name="Lower3_Link">
+    <inertial>
+      <origin
+        xyz="-0.00200000000000015 -0.0121644422551734 0.0152866791814997"
+        rpy="0 0 0" />
+      <mass
+        value="0.00511403475106288" />
+      <inertia
+        ixx="3.40097557199022E-06"
+        ixy="-1.22157413983963E-21"
+        ixz="1.42154197655372E-21"
+        iyy="3.28327036320466E-06"
+        iyz="1.35078946160937E-07"
+        izz="1.31342634788394E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider-viz/meshes/Lower3_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spider-viz/meshes/Lower3_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Lower3"
+    type="revolute">
+    <origin
+      xyz="0.0550943670538194 0.0131500000000001 -0.000100000000001266"
+      rpy="1.57079632679489 -1.5707963267949 0" />
+    <parent
+      link="Upper3_Link" />
+    <child
+      link="Lower3_Link" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      effort="1000.0" lower="-0.96" upper="0.70" velocity="0.5"/>
+  </joint>
+</robot>

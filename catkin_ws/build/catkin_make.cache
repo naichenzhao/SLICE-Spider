@@ -1,0 +1,2 @@
+spider-viz
+-DCATKIN_DEVEL_PREFIX=/home/naichenzhao/Desktop/SLICE-Spider/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/naichenzhao/Desktop/SLICE-Spider/catkin_ws/install -G Unix Makefiles
