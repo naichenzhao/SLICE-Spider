@@ -24,3 +24,4 @@ void read_switches() {
 uint8_t read_switch(int num) {
     return (0x01) & (vals >> SW_REMAP[num]);
 }
+

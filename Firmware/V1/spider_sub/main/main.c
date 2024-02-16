@@ -14,8 +14,8 @@
 #define RD_LENGTH 4
 #define WR_LENGTH 4
 
-uint8_t *data_rd;
-uint8_t *encoder_pos;
+int8_t *data_rd;
+int8_t *encoder_pos;
 
 int rcv_rdy = 0;
 
@@ -48,18 +48,29 @@ void app_main(void) {
     for(int i = 0; i < 4; i++) {
         data_rd[i] = 0;
     }
-    init_position();
+    // init_position();
 
-    printf("Starting main loop\n");
     xTaskCreate(i2c_task, "i2c_task", 4096, NULL, 2, NULL);
+
+    printf("---------- Finished Initialization ---------- \n\n");
+    int print_count = 0;
+    int print_interv = 100;
     while (1) {
         get_counts(encoder_pos);
+        // move_positions(encoder_pos);
         // update_positions(data_rd);
         // printf("data: %d %d %d %d\n", (int)data_rd[0], (int)data_rd[1], (int)data_rd[2], (int)data_rd[3]);
         // update_positions(data_rd);
 
+        // Run anything in the main loop
+        // if (print_count >= print_interv) {
         printf("encoders: %d %d %d %d\n", (int)encoder_pos[0], (int)encoder_pos[1], (int)encoder_pos[2], (int)encoder_pos[3]);
-        vTaskDelay(10 / portTICK_PERIOD_MS);
+        //     print_count = 0;
+        // } else {
+        //     print_count++;
+        // }
+
+        vTaskDelay(100 / portTICK_PERIOD_MS);
     }
 }
 
@@ -74,8 +85,8 @@ void i2c_setup() {
         .slave_addr = I2C_ADDR,
     }; // I have no idea wht TF I need this delay
 
-    data_rd = (uint8_t *)malloc(RD_LENGTH);
-    encoder_pos = (uint8_t *)malloc(WR_LENGTH);
+    data_rd = (int8_t *)malloc(RD_LENGTH);
+    encoder_pos = (int8_t *)malloc(WR_LENGTH);
     for (int i = 0; i < WR_LENGTH; i++)
     {
         encoder_pos[i] = i + 1;
@@ -93,9 +104,9 @@ void i2c_setup() {
 
 static void i2c_task(void *arg) {
     while (true) {
-        ESP_ERROR_CHECK(i2c_slave_receive(slave_handle, data_rd, RD_LENGTH));
+        ESP_ERROR_CHECK(i2c_slave_receive(slave_handle, (uint8_t *) data_rd, RD_LENGTH));
         xQueueReceive(s_receive_queue, &rx_data, pdMS_TO_TICKS(10000));
-        ESP_ERROR_CHECK(i2c_slave_transmit(slave_handle, encoder_pos, 4, -1));
+        ESP_ERROR_CHECK(i2c_slave_transmit(slave_handle, (uint8_t *) encoder_pos, 4, -1));
         // vTaskDelay(50 / portTICK_PERIOD_MS);
     }
 
@@ -108,13 +119,18 @@ static void i2c_task(void *arg) {
 
 void init_position() {
     home_motor_enc(0);
-    goto_pos(0, 65);
+    goto_pos(0, 14);
     home_motor_enc(1);
-    goto_pos(1, 65);
+    goto_pos(1, 70);
     home_motor_enc(2);
-    goto_pos(2, 65);
+    goto_pos(2, 15);
     home_motor_enc(3);
-    goto_pos(3, 65);
+    goto_pos(3, 70);
+
+    reset_encoder(0);
+    reset_encoder(1);
+    reset_encoder(2);
+    reset_encoder(3);
 }
 
 

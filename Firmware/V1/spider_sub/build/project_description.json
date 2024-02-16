@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "app-template",
-    "project_version":    "e85ee8e-dirty",
+    "project_version":    "fb2c77d-dirty",
     "project_path":       "/Users/naichenzhao/Desktop/SLICE/SLICE-Spider/Firmware/V1/spider_sub",
     "idf_path":           "/Users/naichenzhao/esp/esp-idf",
     "build_dir":          "/Users/naichenzhao/Desktop/SLICE/SLICE-Spider/Firmware/V1/spider_sub/build",

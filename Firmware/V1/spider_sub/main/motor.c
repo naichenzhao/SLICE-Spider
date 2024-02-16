@@ -10,8 +10,8 @@
 #define LEDC_TIMER LEDC_TIMER_0
 #define LEDC_MODE LEDC_LOW_SPEED_MODE
 #define LEDC_DUTY_RES LEDC_TIMER_13_BIT
-#define LEDC_FREQUENCY (4000) // Frequency in Hertz. Set frequency at 4 kHz
-#define MAX_SPEED (8192)      // Set duty to 50%. (2 ** 13) * 50% = 4096
+#define LEDC_FREQUENCY (8000) // Frequency in Hertz. Set frequency at 4 kHz
+#define MAX_SPEED (7000)      // Set duty to 50%. (2 ** 13) * 50% = 4096
 
 /*  Motor 0: UPPER FRONT
     Motor 1: LOWER FRONT
@@ -23,16 +23,18 @@ ledc_channel_t CHANNELS[4] = {LEDC_CHANNEL_0, LEDC_CHANNEL_1, LEDC_CHANNEL_2, LE
 int PWM_PINS[4] = {GPIO_NUM_3, GPIO_NUM_0, GPIO_NUM_4, GPIO_NUM_6};
 int DIR_PINS[4] = {GPIO_NUM_2, GPIO_NUM_1, GPIO_NUM_5, GPIO_NUM_7};
 
-int DIR[4] = {1, -1, -1, 1};
+int DIR[4] = {1, 1, 1, 1};
+
+int8_t MAX_VALUES[4] = {65, 52, 100, 52};
+int8_t MIN_VALUES[4] = {-12, -63, -12, -63};
 
 uint8_t motor_positions[4] = {0, 0, 0, 0};
 
-float Kp = 40;
-float Ki = 1;
-float Kd = 6;
+float Kp = 110;
+float Ki = 2;
+float Kd = 150;
 
-
-float MAX_SAT = 700;
+float MAX_SAT = 1000;
 
 uint64_t last_time[4] = {0, 0, 0, 0};
 float error_i[4] = {0, 0, 0, 0};
@@ -42,9 +44,7 @@ uint8_t last_pos[4] = {0, 0, 0, 0};
 // Setup Functions
 // ---------------------------------
 
-    void
-    init_single_motor(int num)
-{
+void init_single_motor(int num) {
     ledc_timer_config_t ledc_timer = {
         .speed_mode = LEDC_MODE,
         .duty_resolution = LEDC_DUTY_RES,
@@ -79,11 +79,18 @@ void motor_init(void) {
 // Movement Functions
 // ---------------------------------
 
-void update_positions(uint8_t* pos) {
-    motor_positions[0] = pos[0];
-    motor_positions[1] = pos[1];
-    motor_positions[2] = pos[2];
-    motor_positions[3] = pos[3];
+void update_single_pos(int8_t pos, int num) {
+    pos = pos > MAX_VALUES[num] ? MAX_VALUES[num] : pos;
+    pos = pos < MIN_VALUES[num] ? MIN_VALUES[num] : pos;
+    motor_positions[num] = pos;
+}
+
+
+void update_positions(int8_t* pos) {
+    update_single_pos(pos[0], 0);
+    update_single_pos(pos[1], 1);
+    update_single_pos(pos[2], 2);
+    update_single_pos(pos[3], 3);
 }
 
 void set_motor(int num, float speed) {
@@ -107,7 +114,7 @@ void set_motor(int num, float speed) {
     
 }
 
-void move_pos(int num, uint8_t curr_pos) {
+void move_pos(int num, int8_t curr_pos) {
     if (num >= 4) {
         printf("Invalid number for this ESPP\n");
         return ;
@@ -126,13 +133,13 @@ void move_pos(int num, uint8_t curr_pos) {
     } else if ((error_p + error_i[num]) < -MAX_SAT) {
         error_i[num] = -MAX_SAT;
     } else {
-        error_i[num] = error_i[num] + error_p;
+        error_i[num] = error_i[num] + error_p * 0.01;
     }
     
 
     // calculate final output
     float pid_out = Kp * error_p + Ki * error_i[num] + Kd * error_d;
-    printf("motor speed: %f\n", pid_out);
+    // printf("motor speed: %f\n", pid_out);
 
     // update state
     last_time[num] = curr_time;
@@ -144,13 +151,26 @@ void move_pos(int num, uint8_t curr_pos) {
 
 void goto_pos(int num, int target) {
     motor_positions[num] = target;
-    uint8_t current = get_angle(num);
-    while (motor_positions[num] - current != 0) {
+    int8_t current = get_angle(num);
+    int counter = 0;
+    while (counter < 1000) {
+        current = get_angle(num);
+
+        if (((motor_positions[num] - current) < 3) && ((motor_positions[num] - current) > -3)) {
+            counter++;
+        } else {
+            counter = 0;
+        }
         move_pos(num, current);
-        current = get_count(num);
-        vTaskDelay(5 / portTICK_PERIOD_MS);
     }
     set_motor(num, 0);
+}
+
+void move_positions(int8_t* curr_poses) {
+    move_pos(0, curr_poses[0]);
+    move_pos(1, curr_poses[1]);
+    move_pos(2, curr_poses[2]);
+    move_pos(3, curr_poses[3]);
 }
 
 
@@ -168,15 +188,15 @@ void home_motor_enc(int num) {
 
     int last_count = 360;
     int counter = 0;
-    while (counter < 40) {
+    while (counter < 10) {
         if ((last_count - get_count(num)) == 0) {
             counter++;
         } else {
             counter = 0;
         }
-        set_motor(num, -6000);
+        set_motor(num, -5000);
         last_count = get_count(num);
-        vTaskDelay(10 / portTICK_PERIOD_MS);
+        vTaskDelay(50 / portTICK_PERIOD_MS);
     }
 
     set_motor(num, 0);
